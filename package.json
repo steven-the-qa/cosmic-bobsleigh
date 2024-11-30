@@ -1,0 +1,19 @@
+{
+  "name": "cosmic-bobsleigh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steven-the-qa/cosmic-bobsleigh.git"
+  },
+  "author": "Steven Boutcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steven-the-qa/cosmic-bobsleigh/issues"
+  },
+  "homepage": "https://github.com/steven-the-qa/cosmic-bobsleigh#readme",
+  "description": ""
+}
