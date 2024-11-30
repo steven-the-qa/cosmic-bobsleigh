@@ -101,56 +101,56 @@ export const collections: Collection[] = [
                 id: 'olive-garden',
                 title: 'Olive Garden',
                 description: 'First stop on our Darden restaurants tour',
-                imageUrl: '/images/olive-garden.jpg',
+                imageUrl: '/darden/olive_garden.png',
                 date: '2023-07-01'
             },
             {
                 id: 'longhorn-steakhouse',
                 title: 'LongHorn Steakhouse',
                 description: 'Legendary steaks done right',
-                imageUrl: '/images/longhorn-steakhouse.jpg',
+                imageUrl: '/darden/longhorn_steakhouse.png',
                 date: '2023-07-01'
             },
             {
-                id: 'cheddar-scratch-kitchen',
+                id: 'cheddars',
                 title: 'Cheddar\'s Scratch Kitchen',
                 description: 'Made-from-scratch comfort food',
-                imageUrl: '/images/cheddars.jpg',
+                imageUrl: '/darden/cheddars.png',
                 date: '2023-07-01'
             },
             {
                 id: 'yard-house',
                 title: 'Yard House',
                 description: 'Great food and world\'s largest selection of draft beer',
-                imageUrl: '/images/yard-house.jpg',
+                imageUrl: '/darden/yard_house.png',
                 date: '2023-07-01'
             },
             {
                 id: 'seasons-52',
                 title: 'Seasons 52',
                 description: 'Fresh grill and wine bar',
-                imageUrl: '/images/seasons-52.jpg',
+                imageUrl: '/darden/seasons_52.png',
                 date: '2023-07-01'
             },
             {
                 id: 'bahama-breeze',
                 title: 'Bahama Breeze',
                 description: 'Caribbean-inspired food and tropical drinks',
-                imageUrl: '/images/bahama-breeze.jpg',
+                imageUrl: '/darden/bahama_breeze.png',
                 date: '2023-07-01'
             },
             {
                 id: 'capital-grille',
                 title: 'The Capital Grille',
                 description: 'Upscale steakhouse and fine dining',
-                imageUrl: '/images/capital-grille.jpg',
+                imageUrl: '/darden/capital_grille.png',
                 date: '2023-07-01'
             },
             {
                 id: 'eddie-v',
                 title: 'Eddie V\'s Prime Seafood',
                 description: 'Luxury dining with fresh seafood and steaks',
-                imageUrl: '/images/eddie-v.jpg',
+                imageUrl: '/darden/eddie_v.png',
                 date: '2023-07-01'
             }
         ]
