@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 interface Props {
     title: string;
 }
@@ -10,37 +11,17 @@ const { title } = Astro.props;
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>{title} | Honeyz Adventures</title>
     </head>
     <body>
-        <nav class="tabs">
-            <a href="/">Home</a>
-            <a href="/collections/lighthouses">Lighthouses</a>
-            <a href="/collections/darden-restaurants">Darden Restaurants</a>
+        <nav class="flex gap-4 p-4 bg-gray-100">
+            <a href="/" class="text-gray-800 px-4 py-2 rounded-md hover:bg-gray-200">Home</a>
+            <a href="/collections/lighthouses" class="text-gray-800 px-4 py-2 rounded-md hover:bg-gray-200">Lighthouses</a>
+            <a href="/collections/darden-restaurants" class="text-gray-800 px-4 py-2 rounded-md hover:bg-gray-200">Darden Restaurants</a>
         </nav>
         <main>
             <slot />
         </main>
     </body>
-</html>
-
-<style>
-    .tabs {
-        display: flex;
-        gap: 1rem;
-        padding: 1rem;
-        background: #f5f5f5;
-    }
-    
-    .tabs a {
-        text-decoration: none;
-        color: #333;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-    }
-    
-    .tabs a:hover {
-        background: #e0e0e0;
-    }
-</style> 
+</html> 
