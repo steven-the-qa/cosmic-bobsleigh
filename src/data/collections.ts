@@ -75,6 +75,20 @@ export const collections: Collection[] = [
                 description: 'Visit the beautiful Sturgeon Bay Ship Canal lighthouse',
                 imageUrl: '/lighthouses/sturgen_bay_ship_canal.png',
                 date: '2023-06-15'
+            },
+            {
+                id: 'sturgeon-bay-coast-guard-station',
+                title: 'Sturgeon Bay Coast Guard Station',
+                description: 'Visit the beautiful Sturgeon Bay Coast Guard Station lighthouse',
+                imageUrl: '/lighthouses/sturgeon_bay_coast_guard_station.png',
+                date: '2023-06-15'
+            },
+            {
+                id: 'winter-island',
+                title: 'Winter Island Lighthouse',
+                description: 'Visit the beautiful Winter Island lighthouse',
+                imageUrl: '/lighthouses/winter_island.png',
+                date: '2023-06-15'
             }
         ]
     },
