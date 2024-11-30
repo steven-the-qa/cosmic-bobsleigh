@@ -3,8 +3,8 @@ import type { Collection } from '../types';
 export const collections: Collection[] = [
     {
         id: 'lighthouses',
-        title: 'Door County Lighthouses',
-        description: 'Our journey to see every lighthouse in Door County',
+        title: 'Lighthouses',
+        description: 'Our journey to see every lighthouse in Door County and beyond',
         experiences: [
             {
                 id: 'baileys-harbor-range-1',
@@ -94,7 +94,7 @@ export const collections: Collection[] = [
     },
     {
         id: 'darden-restaurants',
-        title: 'Darden Restaurant Tour',
+        title: 'Darden Restaurants',
         description: 'Our quest to dine at every Darden restaurant',
         experiences: [
             {
