@@ -1,16 +1,43 @@
 ---
-
+import MainLayout from '../layouts/MainLayout.astro';
+import { collections } from '../data/collections';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Home">
+    <h1>Honeyz Adventures</h1>
+    <div class="collections-grid">
+        {collections.map(collection => (
+            <a href={`/collections/${collection.id}`} class="collection-card">
+                <h2>{collection.title}</h2>
+                <p>{collection.description}</p>
+            </a>
+        ))}
+    </div>
+</MainLayout>
+
+<style>
+    h1 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+    
+    .collections-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .collection-card {
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s;
+    }
+    
+    .collection-card:hover {
+        transform: translateY(-4px);
+    }
+</style>
