@@ -121,7 +121,7 @@ export const collections: Collection[] = [
             {
                 id: 'yard-house',
                 title: 'Yard House',
-                description: 'Great food and world's largest selection of draft beer',
+                description: 'Great food and world\'s largest selection of draft beer',
                 imageUrl: '/images/yard-house.jpg',
                 date: '2023-07-01'
             },
