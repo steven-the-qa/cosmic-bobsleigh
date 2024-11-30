@@ -1,19 +1,16 @@
 {
   "name": "cosmic-bobsleigh",
-  "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "test"
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/steven-the-qa/cosmic-bobsleigh.git"
-  },
-  "author": "Steven Boutcher",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/steven-the-qa/cosmic-bobsleigh/issues"
-  },
-  "homepage": "https://github.com/steven-the-qa/cosmic-bobsleigh#readme",
-  "description": ""
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^4.16.16",
+    "typescript": "^5.7.2"
+  }
 }
