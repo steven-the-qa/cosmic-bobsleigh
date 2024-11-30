@@ -1,0 +1,124 @@
+{
+  "lighthouses": [
+    {
+      "name": "Baileys_harbor_range_1",
+      "image": "/lighthouses/baileys_harbor_range_1.png",
+      "description": "Visit the beautiful Baileys_harbor_range_1 lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Baileys_harbor_range_2",
+      "image": "/lighthouses/baileys_harbor_range_2.png",
+      "description": "Visit the beautiful Baileys_harbor_range_2 lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Birdcage",
+      "image": "/lighthouses/birdcage.png",
+      "description": "Visit the beautiful Birdcage lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Cana_island",
+      "image": "/lighthouses/cana_island.png",
+      "description": "Visit the beautiful Cana_island lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Eagle_bluff",
+      "image": "/lighthouses/eagle_bluff.png",
+      "description": "Visit the beautiful Eagle_bluff lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Kenosha_north_pier",
+      "image": "/lighthouses/kenosha_north_pier.png",
+      "description": "Visit the beautiful Kenosha_north_pier lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Kimberly_point",
+      "image": "/lighthouses/kimberly_point.png",
+      "description": "Visit the beautiful Kimberly_point lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Lobster_point",
+      "image": "/lighthouses/lobster_point.png",
+      "description": "Visit the beautiful Lobster_point lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Plum_island",
+      "image": "/lighthouses/plum_island.png",
+      "description": "Visit the beautiful Plum_island lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Sturgen_bay_ship_canal",
+      "image": "/lighthouses/sturgen_bay_ship_canal.png",
+      "description": "Visit the beautiful Sturgen_bay_ship_canal lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Sturgeon_bay_coast_guard_station",
+      "image": "/lighthouses/sturgeon_bay_coast_guard_station.png",
+      "description": "Visit the beautiful Sturgeon_bay_coast_guard_station lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    },
+    {
+      "name": "Winter_island",
+      "image": "/lighthouses/winter_island.png",
+      "description": "Visit the beautiful Winter_island lighthouse",
+      "location": "Location TBD",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      }
+    }
+  ]
+}
