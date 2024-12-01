@@ -3,7 +3,7 @@ export interface Experience {
     title: string;
     description: string;
     imageUrl: string;
-    date?: string;
+    date: string;
 }
 
 export interface Collection {
