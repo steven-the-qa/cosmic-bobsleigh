@@ -11,7 +11,14 @@ const { title } = Astro.props;
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <!-- Standard favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+        <!-- For Safari -->
+        <link rel="mask-icon" href="/favicon.ico" color="#000000" />
+        <!-- For modern browsers -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <!-- Force favicon refresh -->
+        <link rel="icon" href="/favicon.ico?v=2" />
         <title>{title} | Honeyz Adventures</title>
     </head>
     <body>
