@@ -1,0 +1,44 @@
+[
+  {
+    "id": "bahama_breeze",
+    "title": "Bahama Breeze",
+    "description": "Caribbean-inspired food and tropical drinks",
+    "imageUrl": "/darden/bahama_breeze.png",
+    "date": "2023-07-01"
+  },
+  {
+    "id": "capital_grille",
+    "title": "Capital Grille",
+    "description": "Upscale steakhouse and fine dining",
+    "imageUrl": "/darden/capital_grille.png",
+    "date": "2023-07-01"
+  },
+  {
+    "id": "cheddars",
+    "title": "Cheddars",
+    "description": "Made-from-scratch comfort food",
+    "imageUrl": "/darden/cheddars.png",
+    "date": "2023-07-01"
+  },
+  {
+    "id": "eddie_v",
+    "title": "Eddie V",
+    "description": "Luxury dining with fresh seafood and steaks",
+    "imageUrl": "/darden/eddie_v.png",
+    "date": "2023-07-01"
+  },
+  {
+    "id": "longhorn_steakhouse",
+    "title": "Longhorn Steakhouse",
+    "description": "Legendary steaks done right",
+    "imageUrl": "/darden/longhorn_steakhouse.png",
+    "date": "2023-07-01"
+  },
+  {
+    "id": "yard_house",
+    "title": "Yard House",
+    "description": "Great food and world's largest selection of draft beer",
+    "imageUrl": "/darden/yard_house.png",
+    "date": "2023-07-01"
+  }
+]
