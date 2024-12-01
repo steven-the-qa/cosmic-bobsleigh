@@ -14,13 +14,6 @@ export const collections: Collection[] = [
                 date: 'May 26, 2019'
             },
             {
-                id: 'eagle-bluff',
-                title: 'Eagle Bluff Lighthouse',
-                description: 'A must-see while we were at Peninsula State Park',
-                imageUrl: '/lighthouses/eagle_bluff.png',
-                date: 'July 14, 2024'
-            },
-            {
                 id: 'sturgeon-bay-ship-canal',
                 title: 'Sturgeon Bay Ship Canal Lighthouse',
                 description: 'The 2nd lighthouse we saw after moving to Sturgeon Bay',
@@ -33,6 +26,13 @@ export const collections: Collection[] = [
                 description: 'The 1st lighthouse we saw after moving to Sturgeon Bay',
                 imageUrl: '/lighthouses/sturgeon_bay_coast_guard_station.png',
                 date: 'July 4, 2024'
+            },
+            {
+                id: 'eagle-bluff',
+                title: 'Eagle Bluff Lighthouse',
+                description: 'A must-see while we were at Peninsula State Park',
+                imageUrl: '/lighthouses/eagle_bluff.png',
+                date: 'July 14, 2024'
             },
             {
                 id: 'baileys-harbor-range-1',
