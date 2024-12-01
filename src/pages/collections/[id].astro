@@ -14,20 +14,20 @@ const { collection } = Astro.props;
 
 <MainLayout title={collection.title}>
     <div class="p-8">
-        <h1 class="text-4xl font-bold text-center">{collection.title}</h1>
-        <p class="text-center text-gray-600 mb-8">{collection.description}</p>
+        <h1 class="text-4xl font-bold text-center text-gray-100">{collection.title}</h1>
+        <p class="text-center text-gray-400 mb-8">{collection.description}</p>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collection.experiences.map(experience => (
-                <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+                <div class="border border-gray-700 rounded-lg overflow-hidden shadow-sm bg-gray-900">
                     <img 
                         src={experience.imageUrl} 
                         alt={experience.title}
                         class="w-full aspect-[2/3] object-cover object-[center_25%]"
                     />
                     <div class="p-4">
-                        <h3 class="text-xl font-semibold mb-2">{experience.title}</h3>
-                        <p class="text-gray-600 mb-2">{experience.description}</p>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">{experience.title}</h3>
+                        <p class="text-gray-400 mb-2">{experience.description}</p>
                         {experience.date && 
                             <small class="text-gray-500">
                                 {new Date(experience.date).toLocaleDateString()}

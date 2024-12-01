@@ -4,13 +4,13 @@ import { collections } from '../data/collections';
 ---
 
 <MainLayout title="Home">
-    <h1 class="text-4xl font-bold text-center my-8">Honeyz Adventures</h1>
+    <h1 class="text-4xl font-bold text-center my-8 text-gray-100">Honeyz Adventures</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
         {collections.map(collection => (
             <a href={`/collections/${collection.id}`} 
-               class="p-6 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-transform hover:-translate-y-1">
-                <h2 class="text-2xl font-semibold mb-2">{collection.title}</h2>
-                <p class="text-gray-600">{collection.description}</p>
+               class="p-6 border border-gray-700 rounded-lg bg-gray-900 shadow-sm hover:shadow-md transition-transform hover:-translate-y-1">
+                <h2 class="text-2xl font-semibold mb-2 text-gray-100">{collection.title}</h2>
+                <p class="text-gray-400">{collection.description}</p>
             </a>
         ))}
     </div>
