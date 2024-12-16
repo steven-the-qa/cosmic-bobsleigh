@@ -167,7 +167,7 @@ export const collections: Collection[] = [
     {
         id: 'wisconsinstateparks',
         title: 'Wisconsin State Parks',
-        description: 'Soaking in the natural beauty of Wisconsin\'s State Parks',
+        description: 'Our mission to visit every state park in Wisconsin together',
         experiences: [
             {
                     id: "governor_dodge",
