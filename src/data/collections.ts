@@ -1,5 +1,7 @@
 import type { Collection } from '../types';
 
+export type CollectionId = 'darden' | 'lighthouses' | 'wisconsinstateparks';
+
 export const collections: Collection[] = [
     {
         id: 'lighthouses',
@@ -12,6 +14,13 @@ export const collections: Collection[] = [
                 description: 'The first lighthouse we ever saw together ❤️',
                 imageUrl: '/lighthouses/kenosha_north_pier.png',
                 date: 'May 26, 2019'
+            },
+            {
+                id: 'asylum-point',
+                title: 'Asylum Point Lighthouse',
+                description: 'We were in Oshkosh to try a local chocolate shop and decided to swing by a lighthouse too!',
+                imageUrl: '/lighthouses/asylum_point.jpeg',
+                date: 'March 2, 2023'
             },
             {
                 id: 'sturgeon-bay-ship-canal',
@@ -142,9 +151,9 @@ export const collections: Collection[] = [
             {
                 id: 'olive-garden',
                 title: 'Olive Garden',
-                description: 'No pic yet',
-                imageUrl: '/darden/olive_garden.png',
-                date: 'Date TBD'
+                description: 'We\'d gone here so many times but somehow had zero photos to prove it, so we stopped by the nearest Olive Garden to make it official 😂',
+                imageUrl: '/darden/olive_garden.jpeg',
+                date: 'December 7, 2024'
             },
             {
                 id: 'seasons-52',
@@ -152,6 +161,83 @@ export const collections: Collection[] = [
                 description: 'No pic yet',
                 imageUrl: '/darden/seasons_52.png',
                 date: 'Date TBD'
+            }
+        ]
+    },
+    {
+        id: 'wisconsinstateparks',
+        title: 'Wisconsin State Parks',
+        description: 'Soaking in the natural beauty of Wisconsin\'s State Parks',
+        experiences: [
+            {
+                    id: "governor_dodge",
+                    title: "Governor Dodge State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/governor_dodge.png",
+                    date: "June 3, 2018"
+            },
+            {
+                    id: "devils_lake",
+                    title: "Devils Lake State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/devils_lake.png",
+                    date: "April 2, 2020"
+            },
+            {
+                    id: "whitefish_dunes",
+                    title: "Whitefish Dunes State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/whitefish_dunes.png",
+                    date: "October 7, 2020"
+            },
+            {
+                    id: "newport_beach",
+                    title: "Newport Beach State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/newport_beach.png",
+                    date: "September 25, 2021"
+            },
+            {
+                    id: "mirror_lake",
+                    title: "Mirror Lake State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/mirror_lake.png",
+                    date: "July 7, 2022"
+            },
+            {
+                    id: "kohler_andre",
+                    title: "Kohler Andre State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/kohler_andre.png",
+                    date: "June 18, 2023"
+            },
+            {
+                    id: "wyalusing",
+                    title: "Wyalusing State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/wyalusing.png",
+                    date: "May 1, 2024"
+            },
+            {
+                    id: "blue_mound",
+                    title: "Blue Mound State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/blue_mound.png",
+                    date: "May 27, 2024"
+            },
+            {
+                    id: "peninsula",
+                    title: "Peninsula State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/peninsula.png",
+                    date: "July 14, 2024"
+            },
+            {
+                    id: "potawatomi",
+                    title: "Potawatomi State Park",
+                    description: "",
+                    imageUrl: "/wisconsinstateparks/potawatomi.png",
+                    date: "August 18, 2024"
             }
         ]
     }
