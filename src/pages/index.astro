@@ -27,10 +27,10 @@ function getRandomImage(collection: Collection) {
                                 <img 
                                     src={randomImage} 
                                     alt={`Preview of ${collection.title}`}
-                                    class="absolute inset-0 w-full h-full object-cover"
+                                    class="absolute inset-0 w-full h-full object-cover bg-[#1B4D3E]"
                                 />
                             ) : (
-                                <div class="absolute inset-0 flex items-center justify-center text-gray-600">
+                                <div class="absolute inset-0 flex items-center justify-center bg-[#1B4D3E] text-gray-300">
                                     <span class="text-sm">No image available</span>
                                 </div>
                             )}
