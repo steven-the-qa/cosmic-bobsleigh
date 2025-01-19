@@ -12,6 +12,29 @@ export function getStaticPaths() {
 const { collection } = Astro.props;
 ---
 
+<style>
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .loading-gradient {
+        background: linear-gradient(90deg, #000000, #1e40af, #000000);
+        background-size: 200% 200%;
+        animation: gradient 2s ease infinite;
+    }
+
+    .placeholder-svg {
+        background-color: #1a1a1a;
+    }
+
+    .placeholder-svg .coming-soon-text {
+        font-size: 24px;
+        fill: #4a5568;
+    }
+</style>
+
 <MainLayout title={collection.title}>
     <div class="p-8">
         <h1 class="text-4xl font-bold text-center text-gray-100">{collection.title}</h1>
@@ -20,11 +43,41 @@ const { collection } = Astro.props;
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collection.experiences.map(experience => (
                 <div class="border border-gray-700 rounded-lg overflow-hidden shadow-sm bg-gray-900">
-                    <img 
-                        src={experience.imageUrl} 
-                        alt={experience.title}
-                        class="w-full aspect-[2/3] object-cover object-[center_25%]"
-                    />
+                    <div class="relative">
+                        {experience.imageUrl ? (
+                            <>
+                                <div class="loading-gradient w-full aspect-[2/3]"></div>
+                                <img 
+                                    src={experience.imageUrl} 
+                                    alt={experience.title}
+                                    width="800"
+                                    height="1200"
+                                    loading="lazy"
+                                    decoding="async"
+                                    fetchpriority="high"
+                                    class="w-full aspect-[2/3] object-cover object-[center_25%] absolute top-0 left-0"
+                                    onload="this.style.opacity = 1"
+                                    style="opacity: 0; transition: opacity 0.3s ease-in-out;"
+                                />
+                            </>
+                        ) : (
+                            <svg 
+                                class="placeholder-svg w-full aspect-[2/3]" 
+                                viewBox="0 0 400 800" 
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <text 
+                                    x="200" 
+                                    y="400" 
+                                    text-anchor="middle" 
+                                    class="coming-soon-text"
+                                    font-family="system-ui, -apple-system"
+                                >
+                                    Coming Soon
+                                </text>
+                            </svg>
+                        )}
+                    </div>
                     <div class="p-4">
                         <h3 class="text-xl font-semibold mb-2 text-gray-100">{experience.title}</h3>
                         <p class="text-gray-400 mb-2">{experience.description}</p>
