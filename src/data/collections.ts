@@ -219,8 +219,8 @@ export const collections: Collection[] = [
                 date: ''
             },
             {
-                id: 'hong_kong',
-                title: 'Hong Kong',
+                id: 'shanghai',
+                title: 'Shanghai',
                 description: '',
                 imageUrl: '',
                 date: ''
