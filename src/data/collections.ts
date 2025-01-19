@@ -1,6 +1,6 @@
 import type { Collection } from '../types';
 
-export type CollectionId = 'darden' | 'lighthouses' | 'wisconsinstateparks';
+export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks';
 
 export const collections: Collection[] = [
     {
@@ -179,7 +179,7 @@ export const collections: Collection[] = [
         ]
     },
     {
-        id: 'starbucksreserveroasteries',
+        id: 'starbucks-reserve-roasteries',
         title: 'Starbucks Reserve Roasteries',
         description: 'Our quest to visit all 6 Starbucks Reserve Roasteries',
         experiences: [
@@ -187,21 +187,21 @@ export const collections: Collection[] = [
                 id: 'chicago',
                 title: 'Chicago',
                 description: 'Our first Starbucks Reserve Roastery visit! This inspired us to try to hit all 6. Definitely the most impressive one in the US.',
-                imageUrl: '/starbucksreserveroasteries/chicago.jpg',
+                imageUrl: '/starbucks-reserve-roasteries/chicago.jpg',
                 date: 'October 1, 2021'
             },
             {
                 id: 'seattle',
                 title: 'Seattle',
                 description: 'This was our first stop after arriving in Seattle for our honeymoon. We rode Lime scooters in the rain to get there!',
-                imageUrl: '/starbucksreserveroasteries/seattle.jpg',
+                imageUrl: '/starbucks-reserve-roasteries/seattle.jpg',
                 date: 'November 4, 2021'
             },
             {
-                id: 'new_york_city',
+                id: 'new-york-city',
                 title: 'New York City',
                 description: 'We went to New York City for our birthdays! Obviously had to stop here too.',
-                imageUrl: '/starbucksreserveroasteries/new_york_city.jpg',
+                imageUrl: '/starbucks-reserve-roasteries/new_york_city.jpg',
                 date: 'April 2, 2022'
             },
             {
@@ -228,78 +228,78 @@ export const collections: Collection[] = [
         ]
     },
     {
-        id: 'wisconsinstateparks',
+        id: 'wisconsin-state-parks',
         title: 'Wisconsin State Parks',
         description: 'Our mission to visit every state park in Wisconsin together',
         experiences: [
             {
-                    id: "governor_dodge",
+                    id: "governor-dodge",
                     title: "Governor Dodge State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/governor_dodge.png",
+                    imageUrl: "/wisconsin-state-parks/governor_dodge.png",
                     date: "June 3, 2018"
             },
             {
-                    id: "devils_lake",
+                    id: "devils-lake",
                     title: "Devils Lake State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/devils_lake.png",
+                    imageUrl: "/wisconsin-state-parks/devils_lake.png",
                     date: "April 2, 2020"
             },
             {
-                    id: "whitefish_dunes",
+                    id: "whitefish-dunes",
                     title: "Whitefish Dunes State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/whitefish_dunes.png",
+                    imageUrl: "/wisconsin-state-parks/whitefish_dunes.png",
                     date: "October 7, 2020"
             },
             {
-                    id: "newport_beach",
+                    id: "newport-beach",
                     title: "Newport Beach State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/newport_beach.png",
+                    imageUrl: "/wisconsin-state-parks/newport_beach.png",
                     date: "September 25, 2021"
             },
             {
-                    id: "mirror_lake",
+                    id: "mirror-lake",
                     title: "Mirror Lake State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/mirror_lake.png",
+                    imageUrl: "/wisconsin-state-parks/mirror_lake.png",
                     date: "July 7, 2022"
             },
             {
-                    id: "kohler_andre",
+                    id: "kohler-andre",
                     title: "Kohler Andre State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/kohler_andre.png",
+                    imageUrl: "/wisconsin-state-parks/kohler_andre.png",
                     date: "June 18, 2023"
             },
             {
                     id: "wyalusing",
                     title: "Wyalusing State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/wyalusing.png",
+                    imageUrl: "/wisconsin-state-parks/wyalusing.png",
                     date: "May 1, 2024"
             },
             {
-                    id: "blue_mound",
+                    id: "blue-mound",
                     title: "Blue Mound State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/blue_mound.png",
+                    imageUrl: "/wisconsin-state-parks/blue_mound.png",
                     date: "May 27, 2024"
             },
             {
                     id: "peninsula",
                     title: "Peninsula State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/peninsula.png",
+                    imageUrl: "/wisconsin-state-parks/peninsula.png",
                     date: "July 14, 2024"
             },
             {
                     id: "potawatomi",
                     title: "Potawatomi State Park",
                     description: "",
-                    imageUrl: "/wisconsinstateparks/potawatomi.png",
+                    imageUrl: "/wisconsin-state-parks/potawatomi.png",
                     date: "August 18, 2024"
             }
         ]
