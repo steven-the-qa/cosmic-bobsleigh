@@ -21,13 +21,13 @@ const { title } = Astro.props;
         <link rel="icon" href="/favicon.ico?v=2" />
         <title>{title} | Honeyz Adventures</title>
     </head>
-    <body class="bg-gray-950 text-gray-100">
-        <nav class="bg-gray-900 sticky top-0 z-50 shadow-md">
+    <body class="bg-[#071512] text-emerald-50">
+        <nav class="bg-[#0A1F19] sticky top-0 z-50 shadow-lg shadow-black/20">
             <div class="max-w-7xl mx-auto px-4">
                 <div class="relative flex items-center justify-between h-16">
                     <!-- Mobile menu button -->
                     <div class="lg:hidden">
-                        <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-emerald-300 hover:text-emerald-50 hover:bg-[#1B4D3E] focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <!-- Icon when menu is closed -->
                             <svg id="menu-closed-icon" class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,22 +42,22 @@ const { title } = Astro.props;
 
                     <!-- Desktop menu -->
                     <div class="hidden lg:flex lg:items-center lg:space-x-4">
-                        <a href="/" class="text-gray-100 px-4 py-2 rounded-md hover:bg-gray-800">Home</a>
-                        <a href="/collections/lighthouses" class="text-gray-100 px-4 py-2 rounded-md hover:bg-gray-800">Lighthouses</a>
-                        <a href="/collections/darden-restaurants" class="text-gray-100 px-4 py-2 rounded-md hover:bg-gray-800">Darden Restaurants</a>
-                        <a href="/collections/starbucksreserveroasteries" class="text-gray-100 px-4 py-2 rounded-md hover:bg-gray-800">Starbucks Reserve Roasteries</a>
-                        <a href="/collections/wisconsinstateparks" class="text-gray-100 px-4 py-2 rounded-md hover:bg-gray-800">Wisconsin State Parks</a>
+                        <a href="/" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Home</a>
+                        <a href="/collections/lighthouses" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Lighthouses</a>
+                        <a href="/collections/darden-restaurants" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Darden Restaurants</a>
+                        <a href="/collections/starbucksreserveroasteries" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Starbucks Reserve Roasteries</a>
+                        <a href="/collections/wisconsinstateparks" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Wisconsin State Parks</a>
                     </div>
                 </div>
 
                 <!-- Mobile menu -->
                 <div id="mobile-menu" class="hidden lg:hidden">
                     <div class="px-2 pt-2 pb-3 space-y-1">
-                        <a href="/" class="block text-gray-100 px-3 py-2 rounded-md hover:bg-gray-800">Home</a>
-                        <a href="/collections/lighthouses" class="block text-gray-100 px-3 py-2 rounded-md hover:bg-gray-800">Lighthouses</a>
-                        <a href="/collections/darden-restaurants" class="block text-gray-100 px-3 py-2 rounded-md hover:bg-gray-800">Darden Restaurants</a>
-                        <a href="/collections/starbucksreserveroasteries" class="block text-gray-100 px-3 py-2 rounded-md hover:bg-gray-800">Starbucks Reserve Roasteries</a>
-                        <a href="/collections/wisconsinstateparks" class="block text-gray-100 px-3 py-2 rounded-md hover:bg-gray-800">Wisconsin State Parks</a>
+                        <a href="/" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Home</a>
+                        <a href="/collections/lighthouses" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Lighthouses</a>
+                        <a href="/collections/darden-restaurants" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Darden Restaurants</a>
+                        <a href="/collections/starbucksreserveroasteries" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Starbucks Reserve Roasteries</a>
+                        <a href="/collections/wisconsinstateparks" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Wisconsin State Parks</a>
                     </div>
                 </div>
             </div>

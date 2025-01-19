@@ -27,14 +27,14 @@ function getValidImages(collection: Collection) {
 
 <MainLayout title="Home">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 class="text-4xl font-bold text-center mb-12 text-gray-100">Honeyz Adventures</h1>
+        <h1 class="text-4xl font-bold text-center mb-12 text-emerald-50">Honeyz Adventures</h1>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {collections.map(collection => {
                 const validImages = getValidImages(collection);
                 return (
                     <a href={`/collections/${collection.id}`} 
-                       class="group block overflow-hidden rounded-2xl bg-gray-900 border border-gray-800 transition-all duration-300 hover:border-gray-600 hover:shadow-xl hover:-translate-y-1">
+                       class="group block overflow-hidden rounded-2xl bg-[#0A1F19] border border-[#1B4D3E] transition-all duration-300 hover:border-emerald-600 hover:shadow-xl hover:-translate-y-1">
                         <div class="relative" style="padding-top: 125%;">
                             {validImages.length > 0 ? (
                                 <>
@@ -47,16 +47,16 @@ function getValidImages(collection: Collection) {
                                     />
                                 </>
                             ) : (
-                                <div class="absolute inset-0 flex items-center justify-center loading-gradient text-gray-300">
+                                <div class="absolute inset-0 flex items-center justify-center loading-gradient text-emerald-200">
                                     <span class="text-sm">No image available</span>
                                 </div>
                             )}
                         </div>
                         <div class="p-6">
-                            <h2 class="text-2xl font-semibold mb-3 text-gray-100 group-hover:text-[#1B4D3E] transition-colors">
+                            <h2 class="text-2xl font-semibold mb-3 text-emerald-50 group-hover:text-emerald-400 transition-colors">
                                 {collection.title}
                             </h2>
-                            <p class="text-gray-400 text-sm line-clamp-2">
+                            <p class="text-emerald-300/70 text-sm line-clamp-2">
                                 {collection.description}
                             </p>
                         </div>
@@ -75,8 +75,8 @@ function getValidImages(collection: Collection) {
             if (images.length > 0) {
                 const randomIndex = Math.floor(Math.random() * images.length);
                 (img as HTMLImageElement).src = images[randomIndex];
-                img.addEventListener('load', () => {
-                    img.style.opacity = '1';
+                (img as HTMLImageElement).addEventListener('load', () => {
+                    (img as HTMLImageElement).style.opacity = '1';
                 }, { once: true }); // Ensure the load event only fires once
             }
         });
