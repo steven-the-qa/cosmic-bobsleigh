@@ -3,13 +3,27 @@ import MainLayout from '../layouts/MainLayout.astro';
 import { collections } from '../data/collections';
 import type { Collection } from '../types';
 
-// Move the random image selection to client-side
-function getRandomImage(collection: Collection) {
-    const validImages = collection.experiences.filter(exp => exp.imageUrl);
-    if (validImages.length === 0) return null;
-    return validImages.map(exp => exp.imageUrl); // Return all valid images instead of just one
+// Get all valid images for a collection
+function getValidImages(collection: Collection) {
+    return collection.experiences
+        .filter(exp => exp.imageUrl)
+        .map(exp => exp.imageUrl);
 }
 ---
+
+<style>
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .loading-gradient {
+        background: linear-gradient(90deg, #000000, #1B4D3E, #000000);
+        background-size: 200% 200%;
+        animation: gradient 2s ease infinite;
+    }
+</style>
 
 <MainLayout title="Home">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -17,26 +31,29 @@ function getRandomImage(collection: Collection) {
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {collections.map(collection => {
-                const images = getRandomImage(collection);
+                const validImages = getValidImages(collection);
                 return (
                     <a href={`/collections/${collection.id}`} 
                        class="group block overflow-hidden rounded-2xl bg-gray-900 border border-gray-800 transition-all duration-300 hover:border-gray-600 hover:shadow-xl hover:-translate-y-1">
                         <div class="relative" style="padding-top: 125%;">
-                            {images ? (
-                                <img 
-                                    src={images[0]}
-                                    data-images={JSON.stringify(images)}
-                                    alt={`Preview of ${collection.title}`}
-                                    class="absolute inset-0 w-full h-full object-cover bg-[#1B4D3E]"
-                                />
+                            {validImages.length > 0 ? (
+                                <>
+                                    <div class="loading-gradient absolute inset-0"></div>
+                                    <img 
+                                        class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300"
+                                        style="opacity: 0;"
+                                        data-images={JSON.stringify(validImages)}
+                                        alt={`Preview of ${collection.title}`}
+                                    />
+                                </>
                             ) : (
-                                <div class="absolute inset-0 flex items-center justify-center bg-[#1B4D3E] text-gray-300">
+                                <div class="absolute inset-0 flex items-center justify-center loading-gradient text-gray-300">
                                     <span class="text-sm">No image available</span>
                                 </div>
                             )}
                         </div>
                         <div class="p-6">
-                            <h2 class="text-2xl font-semibold mb-3 text-gray-100 group-hover:text-blue-400 transition-colors">
+                            <h2 class="text-2xl font-semibold mb-3 text-gray-100 group-hover:text-[#1B4D3E] transition-colors">
                                 {collection.title}
                             </h2>
                             <p class="text-gray-400 text-sm line-clamp-2">
@@ -51,16 +68,17 @@ function getRandomImage(collection: Collection) {
 </MainLayout>
 
 <script>
-    function randomizeImages() {
+    // Select random images once when the page loads
+    document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('img[data-images]').forEach(img => {
             const images = JSON.parse((img as HTMLImageElement).dataset.images || '[]');
             if (images.length > 0) {
                 const randomIndex = Math.floor(Math.random() * images.length);
                 (img as HTMLImageElement).src = images[randomIndex];
+                img.addEventListener('load', () => {
+                    img.style.opacity = '1';
+                }, { once: true }); // Ensure the load event only fires once
             }
         });
-    }
-
-    // Randomize on page load
-    randomizeImages();
+    });
 </script>
