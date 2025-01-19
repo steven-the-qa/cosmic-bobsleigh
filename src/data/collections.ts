@@ -98,6 +98,20 @@ export const collections: Collection[] = [
                 description: 'We found out the daughter of Kimberly-Clark\'s cofounder gave this lighthouse to the city of Neenah in 1945!',
                 imageUrl: '/lighthouses/kimberly_point.png',
                 date: 'October 25, 2024'
+            },
+            {
+                id: 'sheboygan-breakwater',
+                title: 'Sheboygan Breakwater Lighthouse',
+                description: 'It was freezing and windy, but we got as close as we could! Definitely returning in the summer to get up close and personal.',
+                imageUrl: '/lighthouses/sheboygan_breakwater.jpg',
+                date: 'January 18, 2025'
+            },
+            {
+                id: 'manitowoc-north-breakwater',
+                title: 'Manitowoc North Breakwater Lighthouse',
+                description: 'We were on the way back from our trip to the Green House in Sheboygan and decided to stop by this lighthouse! We plan to visit again when it\'s warmer to get closer.',
+                imageUrl: '/lighthouses/manitowoc_north_breakwater.jpg',
+                date: 'January 18, 2025'
             }
         ]
     },
