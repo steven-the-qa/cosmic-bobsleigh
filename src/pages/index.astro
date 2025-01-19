@@ -3,12 +3,11 @@ import MainLayout from '../layouts/MainLayout.astro';
 import { collections } from '../data/collections';
 import type { Collection } from '../types';
 
-// Helper function to get a random image from a collection's experiences
+// Move the random image selection to client-side
 function getRandomImage(collection: Collection) {
     const validImages = collection.experiences.filter(exp => exp.imageUrl);
     if (validImages.length === 0) return null;
-    const randomIndex = Math.floor(Math.random() * validImages.length);
-    return validImages[randomIndex].imageUrl;
+    return validImages.map(exp => exp.imageUrl); // Return all valid images instead of just one
 }
 ---
 
@@ -18,14 +17,15 @@ function getRandomImage(collection: Collection) {
         
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {collections.map(collection => {
-                const randomImage = getRandomImage(collection);
+                const images = getRandomImage(collection);
                 return (
                     <a href={`/collections/${collection.id}`} 
                        class="group block overflow-hidden rounded-2xl bg-gray-900 border border-gray-800 transition-all duration-300 hover:border-gray-600 hover:shadow-xl hover:-translate-y-1">
                         <div class="relative" style="padding-top: 125%;">
-                            {randomImage ? (
+                            {images ? (
                                 <img 
-                                    src={randomImage} 
+                                    src={images[0]}
+                                    data-images={JSON.stringify(images)}
                                     alt={`Preview of ${collection.title}`}
                                     class="absolute inset-0 w-full h-full object-cover bg-[#1B4D3E]"
                                 />
@@ -49,3 +49,18 @@ function getRandomImage(collection: Collection) {
         </div>
     </div>
 </MainLayout>
+
+<script>
+    function randomizeImages() {
+        document.querySelectorAll('img[data-images]').forEach(img => {
+            const images = JSON.parse((img as HTMLImageElement).dataset.images || '[]');
+            if (images.length > 0) {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                (img as HTMLImageElement).src = images[randomIndex];
+            }
+        });
+    }
+
+    // Randomize on page load
+    randomizeImages();
+</script>
