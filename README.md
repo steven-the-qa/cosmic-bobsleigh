@@ -2,6 +2,8 @@
 
 A personal adventure tracking website built with Astro, where my wife and I document our travels, experiences, and collections as we explore the world together.
 
+**🌐 Visit the site: [cosmicbobsleigh.com](https://cosmicbobsleigh.com)**
+
 ## 🎯 What This Website Is For
 
 **Honeyz Adventures** is our personal travel and experience documentation platform where we track our adventures together as collectible experiences across multiple categories. Think of it as our digital scrapbook where every visit, every meal, and every destination becomes part of our growing collection of shared memories.
