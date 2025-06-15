@@ -1,6 +1,6 @@
 import type { Collection } from '../types';
 
-export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks';
+export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries';
 
 export const collections: Collection[] = [
     {
@@ -770,6 +770,489 @@ export const collections: Collection[] = [
                 description: "",
                 imageUrl: "",
                 date: ""
+            }
+        ]
+    },
+    {
+        id: 'states',
+        title: 'US States',
+        description: 'Our adventures exploring all 50 United States',
+        experiences: [
+            {
+                id: 'alabama',
+                title: 'Alabama',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'alaska',
+                title: 'Alaska',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'arizona',
+                title: 'Arizona',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'arkansas',
+                title: 'Arkansas',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'california',
+                title: 'California',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'colorado',
+                title: 'Colorado',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'connecticut',
+                title: 'Connecticut',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'delaware',
+                title: 'Delaware',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'florida',
+                title: 'Florida',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'georgia',
+                title: 'Georgia',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'hawaii',
+                title: 'Hawaii',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'idaho',
+                title: 'Idaho',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'illinois',
+                title: 'Illinois',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'indiana',
+                title: 'Indiana',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'iowa',
+                title: 'Iowa',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'kansas',
+                title: 'Kansas',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'kentucky',
+                title: 'Kentucky',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'louisiana',
+                title: 'Louisiana',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'maine',
+                title: 'Maine',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'maryland',
+                title: 'Maryland',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'massachusetts',
+                title: 'Massachusetts',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'michigan',
+                title: 'Michigan',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'minnesota',
+                title: 'Minnesota',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'mississippi',
+                title: 'Mississippi',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'missouri',
+                title: 'Missouri',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'montana',
+                title: 'Montana',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'nebraska',
+                title: 'Nebraska',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'nevada',
+                title: 'Nevada',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'new-hampshire',
+                title: 'New Hampshire',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'new-jersey',
+                title: 'New Jersey',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'new-mexico',
+                title: 'New Mexico',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'new-york',
+                title: 'New York',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'north-carolina',
+                title: 'North Carolina',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'north-dakota',
+                title: 'North Dakota',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'ohio',
+                title: 'Ohio',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'oklahoma',
+                title: 'Oklahoma',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'oregon',
+                title: 'Oregon',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'pennsylvania',
+                title: 'Pennsylvania',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'rhode-island',
+                title: 'Rhode Island',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'south-carolina',
+                title: 'South Carolina',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'south-dakota',
+                title: 'South Dakota',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'tennessee',
+                title: 'Tennessee',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'texas',
+                title: 'Texas',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'utah',
+                title: 'Utah',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'vermont',
+                title: 'Vermont',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'virginia',
+                title: 'Virginia',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'washington',
+                title: 'Washington',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'west-virginia',
+                title: 'West Virginia',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'wisconsin',
+                title: 'Wisconsin',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'wyoming',
+                title: 'Wyoming',
+                description: '',
+                imageUrl: '',
+                date: ''
+            }
+        ]
+    },
+    {
+        id: 'provinces',
+        title: 'Canadian Provinces',
+        description: 'Our adventures exploring the provinces and territories of Canada',
+        experiences: [
+            {
+                id: 'alberta',
+                title: 'Alberta',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'british-columbia',
+                title: 'British Columbia',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'manitoba',
+                title: 'Manitoba',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'new-brunswick',
+                title: 'New Brunswick',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'newfoundland-and-labrador',
+                title: 'Newfoundland and Labrador',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'northwest-territories',
+                title: 'Northwest Territories',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'nova-scotia',
+                title: 'Nova Scotia',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'nunavut',
+                title: 'Nunavut',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'ontario',
+                title: 'Ontario',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'prince-edward-island',
+                title: 'Prince Edward Island',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'quebec',
+                title: 'Quebec',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'saskatchewan',
+                title: 'Saskatchewan',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'yukon',
+                title: 'Yukon',
+                description: '',
+                imageUrl: '',
+                date: ''
+            }
+        ]
+    },
+    {
+        id: 'countries',
+        title: 'Countries',
+        description: 'Our international adventures around the world',
+        experiences: [
+            {
+                id: 'spain',
+                title: 'Spain',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'canada',
+                title: 'Canada',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'mexico',
+                title: 'Mexico',
+                description: '',
+                imageUrl: '',
+                date: ''
             }
         ]
     }

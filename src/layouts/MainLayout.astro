@@ -41,13 +41,58 @@ const { title } = Astro.props;
                     </div>
 
                     <!-- Desktop menu -->
-                    <div class="hidden lg:flex lg:items-center lg:space-x-4">
-                        <a href="/" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Home</a>
-                        <a href="/collections/lighthouses" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Lighthouses</a>
-                        <a href="/collections/darden-restaurants" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Darden Restaurants</a>
-                        <a href="/collections/starbucks-reserve-roasteries" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Starbucks Reserve Roasteries</a>
-                        <a href="/collections/wisconsin-state-parks" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Wisconsin State Parks</a>
-                        <a href="/collections/door-county-parks" class="text-emerald-50 px-4 py-2 rounded-md hover:bg-[#1B4D3E]">Door County Parks</a>
+                    <div class="hidden lg:flex lg:items-center lg:space-x-1">
+                        <a href="/" class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Home</a>
+                        
+                        <!-- Places Dropdown -->
+                        <div class="relative group">
+                            <button class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm flex items-center">
+                                Places
+                                <svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-1 w-56 bg-[#0A1F19] border border-[#1B4D3E] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <div class="py-1">
+                                    <a href="/collections/lighthouses" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Lighthouses</a>
+                                    <a href="/collections/wisconsin-state-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Wisconsin State Parks</a>
+                                    <a href="/collections/door-county-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Door County Parks</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Dropdown -->
+                        <div class="relative group">
+                            <button class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm flex items-center">
+                                Travel
+                                <svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-1 w-48 bg-[#0A1F19] border border-[#1B4D3E] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <div class="py-1">
+                                    <a href="/collections/states" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">US States</a>
+                                    <a href="/collections/provinces" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Canadian Provinces</a>
+                                    <a href="/collections/countries" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Countries</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Food & Drink Dropdown -->
+                        <div class="relative group">
+                            <button class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm flex items-center">
+                                Food & Drink
+                                <svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-1 w-56 bg-[#0A1F19] border border-[#1B4D3E] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <div class="py-1">
+                                    <a href="/collections/darden-restaurants" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Darden Restaurants</a>
+                                    <a href="/collections/starbucks-reserve-roasteries" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Starbucks Reserve Roasteries</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -55,11 +100,29 @@ const { title } = Astro.props;
                 <div id="mobile-menu" class="hidden lg:hidden">
                     <div class="px-2 pt-2 pb-3 space-y-1">
                         <a href="/" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Home</a>
-                        <a href="/collections/lighthouses" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Lighthouses</a>
-                        <a href="/collections/darden-restaurants" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Darden Restaurants</a>
-                        <a href="/collections/starbucks-reserve-roasteries" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Starbucks Reserve Roasteries</a>
-                        <a href="/collections/wisconsin-state-parks" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Wisconsin State Parks</a>
-                        <a href="/collections/door-county-parks" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Door County Parks</a>
+                        
+                        <!-- Places Section -->
+                        <div class="pt-2">
+                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Places</div>
+                            <a href="/collections/lighthouses" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Lighthouses</a>
+                            <a href="/collections/wisconsin-state-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Wisconsin State Parks</a>
+                            <a href="/collections/door-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Door County Parks</a>
+                        </div>
+
+                        <!-- Travel Section -->
+                        <div class="pt-2">
+                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Travel</div>
+                            <a href="/collections/states" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">US States</a>
+                            <a href="/collections/provinces" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Canadian Provinces</a>
+                            <a href="/collections/countries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Countries</a>
+                        </div>
+
+                        <!-- Food & Drink Section -->
+                        <div class="pt-2">
+                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Food & Drink</div>
+                            <a href="/collections/darden-restaurants" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Darden Restaurants</a>
+                            <a href="/collections/starbucks-reserve-roasteries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Starbucks Reserve Roasteries</a>
+                        </div>
                     </div>
                 </div>
             </div>
