@@ -22,7 +22,20 @@ const { Content } = await entry.render();
 // Find the corresponding experience
 const experienceId = entry.data.experienceId;
 const collection = collections.find(c => experienceId.startsWith(c.id));
-const experience = collection?.experiences.find(e => `${collection.id}-${e.id}` === experienceId);
+
+let experience;
+if (collection) {
+    if (collection.experiences) {
+        // Collection has direct experiences
+        experience = collection.experiences.find(e => `${collection.id}-${e.id}` === experienceId);
+    } else if (collection.subCollections) {
+        // Collection has sub-collections, search through them
+        for (const subCollection of collection.subCollections) {
+            experience = subCollection.experiences.find(e => `${collection.id}-${e.id}` === experienceId);
+            if (experience) break;
+        }
+    }
+}
 ---
 
 <style is:global>
