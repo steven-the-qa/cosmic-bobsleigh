@@ -219,9 +219,9 @@ export const collections: Collection[] = [
                     {
                         id: 'sherwood-point',
                         title: 'Sherwood Point Lighthouse',
-                        description: '',
-                        imageUrl: '',
-                        date: ''
+                        description: 'The last Door County lighthouse to be automated, and the only one made with red bricks! We didn\'t end up going inside because they took forever to get the key 🫠',
+                        imageUrl: '/lighthouses/sherwood_point.png',
+                        date: 'June 7, 2025'
                     },
                     {
                         id: 'chambers-island',
