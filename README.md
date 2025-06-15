@@ -2,7 +2,7 @@
 
 A personal adventure tracking website built with Astro, where my wife and I document our travels, experiences, and collections as we explore the world together.
 
-**🌐 Visit the site: [cosmicbobsleigh.com](https://cosmicbobsleigh.com)**
+**🌐 Visit the site: <a href="https://cosmicbobsleigh.com" target="_blank" rel="noopener noreferrer">cosmicbobsleigh.com</a>**
 
 ## 🎯 What This Website Is For
 
