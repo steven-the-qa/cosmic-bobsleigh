@@ -19,4 +19,6 @@ export interface Collection {
     description: string;
     experiences?: Experience[];
     subCollections?: SubCollection[];
-} 
+}
+
+export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries'; 
