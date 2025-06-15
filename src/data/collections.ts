@@ -424,70 +424,70 @@ export const collections: Collection[] = [
             {
                 id: "governor-dodge",
                 title: "Governor Dodge State Park",
-                description: "",
+                description: "The first waterfall we ever saw together was here!",
                 imageUrl: "/wisconsin-state-parks/governor_dodge.png",
                 date: "June 3, 2018"
             },
             {
                 id: "devils-lake",
                 title: "Devil's Lake State Park",
-                description: "",
+                description: "One of my favorite state parks because of the parkour events I attended here, but now we have our own memories, some of them traumatic 😂",
                 imageUrl: "/wisconsin-state-parks/devils_lake.png",
                 date: "April 2, 2020"
             },
             {
                 id: "whitefish-dunes",
                 title: "Whitefish Dunes State Park",
-                description: "",
+                description: "We went here during COVID and most of the cool stuff was closed off, and haven't been back since. We're usually at Cave Point next door to it.",
                 imageUrl: "/wisconsin-state-parks/whitefish_dunes.png",
                 date: "October 7, 2020"
             },
             {
                 id: "newport",
                 title: "Newport State Park",
-                description: "",
+                description: "We didn't come back here again til 2025 but by then the branch structure behind us had been removed. We love walking along the shore and the nature trail parallel to it.",
                 imageUrl: "/wisconsin-state-parks/newport.png",
                 date: "September 25, 2021"
             },
             {
                 id: "mirror-lake",
                 title: "Mirror Lake State Park",
-                description: "",
+                description: "We had our first state park picnic here! It was a gorgeous day and we sat up the hill with a nice view of the lake.",
                 imageUrl: "/wisconsin-state-parks/mirror_lake.png",
                 date: "July 7, 2022"
             },
             {
                 id: "kohler-andrae",
                 title: "Kohler-Andrae State Park",
-                description: "",
+                description: "This was the first time we played badminton together! The wind was awful for it, though, and we had more fun looking for cool rocks and shells.",
                 imageUrl: "/wisconsin-state-parks/kohler_andre.png",
                 date: "June 18, 2023"
             },
             {
                 id: "wyalusing",
                 title: "Wyalusing State Park",
-                description: "",
+                description: "This park had a lovely overlook, but we also carefully traversed a trail that led to a hidden waterfall.",
                 imageUrl: "/wisconsin-state-parks/wyalusing.png",
                 date: "May 1, 2024"
             },
             {
                 id: "blue-mound",
                 title: "Blue Mound State Park",
-                description: "",
+                description: "This was where we found out about the lookout towers at Wisconsin state parks. It's not one of the tallest, but it had a beautiful view.",
                 imageUrl: "/wisconsin-state-parks/blue_mound.png",
                 date: "May 27, 2024"
             },
             {
                 id: "peninsula",
                 title: "Peninsula State Park",
-                description: "",
+                description: "We didn't visit this one until after we moved to Door County! There's a lot to see here, including the lighthouse and the lookout tower.",
                 imageUrl: "/wisconsin-state-parks/peninsula.png",
                 date: "July 14, 2024"
             },
             {
                 id: "potawatomi",
                 title: "Potawatomi State Park",
-                description: "",
+                description: "Our favorite part of this park is the lookout tower because it's the tallest one in Wisconsin! It was closed for 7 years for repairs and we couldn't see it the first time we visited. When we moved to Sturgeon Bay in 2025, it finally opened again and we got to climb it!",
                 imageUrl: "/wisconsin-state-parks/potawatomi.png",
                 date: "August 18, 2024"
             },
