@@ -43,66 +43,139 @@ const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; };
         <h1 class="text-4xl font-bold text-center text-emerald-50">{collection.title}</h1>
         <p class="text-center text-emerald-300/70 mb-8">{collection.description}</p>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {collection.experiences.map(experience => {
-                const blogSlug = blogPostMap.get(`${collection.id}-${experience.id}`);
-                const ExperienceWrapper = blogSlug ? 'a' : 'div';
-                const wrapperProps = blogSlug ? { href: `/blog/${blogSlug}` } : {};
-                
-                return (
-                    <ExperienceWrapper 
-                        {...wrapperProps}
-                        class={`block border border-[#1B4D3E] rounded-lg overflow-hidden shadow-sm bg-[#0A1F19] ${
-                            blogSlug ? 'hover:border-emerald-600 transition-colors duration-300 cursor-pointer' : ''
-                        }`}
-                    >
-                        <div class="relative">
-                            {experience.imageUrl ? (
-                                <>
-                                    <div class="loading-gradient w-full aspect-[2/3]"></div>
-                                    <img 
-                                        src={experience.imageUrl} 
-                                        alt={experience.title}
-                                        width="800"
-                                        height="1200"
-                                        loading="lazy"
-                                        decoding="async"
-                                        fetchpriority="high"
-                                        class="w-full aspect-[2/3] object-cover object-[center_25%] absolute top-0 left-0"
-                                        onload="this.style.opacity = 1"
-                                        style="opacity: 0; transition: opacity 0.3s ease-in-out;"
-                                    />
-                                </>
-                            ) : (
-                                <svg 
-                                    class="placeholder-svg w-full aspect-[2/3]" 
-                                    viewBox="0 0 400 800" 
-                                    xmlns="http://www.w3.org/2000/svg"
+        {collection.subCollections ? (
+            // Render sub-collections
+            collection.subCollections.map(subCollection => (
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-emerald-50 mb-4">{subCollection.title}</h2>
+                    <p class="text-emerald-300/70 mb-6">{subCollection.description}</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {subCollection.experiences.map(experience => {
+                            const blogSlug = blogPostMap.get(`${collection.id}-${experience.id}`);
+                            const ExperienceWrapper = blogSlug ? 'a' : 'div';
+                            const wrapperProps = blogSlug ? { href: `/blog/${blogSlug}` } : {};
+                            
+                            return (
+                                <ExperienceWrapper 
+                                    {...wrapperProps}
+                                    class={`block border border-[#1B4D3E] rounded-lg overflow-hidden shadow-sm bg-[#0A1F19] ${
+                                        blogSlug ? 'hover:border-emerald-600 transition-colors duration-300 cursor-pointer' : ''
+                                    }`}
                                 >
-                                    <text 
-                                        x="200" 
-                                        y="400" 
-                                        text-anchor="middle" 
-                                        class="coming-soon-text"
-                                        font-family="system-ui, -apple-system"
+                                    <div class="relative">
+                                        {experience.imageUrl ? (
+                                            <>
+                                                <div class="loading-gradient w-full aspect-[2/3]"></div>
+                                                <img 
+                                                    src={experience.imageUrl} 
+                                                    alt={experience.title}
+                                                    width="800"
+                                                    height="1200"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    fetchpriority="high"
+                                                    class="w-full aspect-[2/3] object-cover object-[center_25%] absolute top-0 left-0"
+                                                    onload="this.style.opacity = 1"
+                                                    style="opacity: 0; transition: opacity 0.3s ease-in-out;"
+                                                />
+                                            </>
+                                        ) : (
+                                            <svg 
+                                                class="placeholder-svg w-full aspect-[2/3]" 
+                                                viewBox="0 0 400 800" 
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <text 
+                                                    x="200" 
+                                                    y="400" 
+                                                    text-anchor="middle" 
+                                                    class="coming-soon-text"
+                                                    font-family="system-ui, -apple-system"
+                                                >
+                                                    Coming Soon
+                                                </text>
+                                            </svg>
+                                        )}
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="text-xl font-semibold mb-2 text-emerald-50">{experience.title}</h3>
+                                        <p class="text-emerald-300/70 mb-2">{experience.description}</p>
+                                        {experience.date && 
+                                            <small class="text-emerald-400/60">
+                                                {new Date(experience.date).toLocaleDateString()}
+                                            </small>
+                                        }
+                                    </div>
+                                </ExperienceWrapper>
+                            );
+                        })}
+                    </div>
+                </div>
+            ))
+        ) : (
+            // Render regular collection experiences
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {collection.experiences?.map(experience => {
+                    const blogSlug = blogPostMap.get(`${collection.id}-${experience.id}`);
+                    const ExperienceWrapper = blogSlug ? 'a' : 'div';
+                    const wrapperProps = blogSlug ? { href: `/blog/${blogSlug}` } : {};
+                    
+                    return (
+                        <ExperienceWrapper 
+                            {...wrapperProps}
+                            class={`block border border-[#1B4D3E] rounded-lg overflow-hidden shadow-sm bg-[#0A1F19] ${
+                                blogSlug ? 'hover:border-emerald-600 transition-colors duration-300 cursor-pointer' : ''
+                            }`}
+                        >
+                            <div class="relative">
+                                {experience.imageUrl ? (
+                                    <>
+                                        <div class="loading-gradient w-full aspect-[2/3]"></div>
+                                        <img 
+                                            src={experience.imageUrl} 
+                                            alt={experience.title}
+                                            width="800"
+                                            height="1200"
+                                            loading="lazy"
+                                            decoding="async"
+                                            fetchpriority="high"
+                                            class="w-full aspect-[2/3] object-cover object-[center_25%] absolute top-0 left-0"
+                                            onload="this.style.opacity = 1"
+                                            style="opacity: 0; transition: opacity 0.3s ease-in-out;"
+                                        />
+                                    </>
+                                ) : (
+                                    <svg 
+                                        class="placeholder-svg w-full aspect-[2/3]" 
+                                        viewBox="0 0 400 800" 
+                                        xmlns="http://www.w3.org/2000/svg"
                                     >
-                                        Coming Soon
-                                    </text>
-                                </svg>
-                            )}
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-semibold mb-2 text-emerald-50">{experience.title}</h3>
-                            <p class="text-emerald-300/70 mb-2">{experience.description}</p>
-                            {experience.date && 
-                                <small class="text-emerald-400/60">
-                                    {new Date(experience.date).toLocaleDateString()}
-                                </small>
-                            }
-                        </div>
-                    </ExperienceWrapper>
-                );
-            })}
-        </div>
+                                        <text 
+                                            x="200" 
+                                            y="400" 
+                                            text-anchor="middle" 
+                                            class="coming-soon-text"
+                                            font-family="system-ui, -apple-system"
+                                        >
+                                            Coming Soon
+                                        </text>
+                                    </svg>
+                                )}
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold mb-2 text-emerald-50">{experience.title}</h3>
+                                <p class="text-emerald-300/70 mb-2">{experience.description}</p>
+                                {experience.date && 
+                                    <small class="text-emerald-400/60">
+                                        {new Date(experience.date).toLocaleDateString()}
+                                    </small>
+                                }
+                            </div>
+                        </ExperienceWrapper>
+                    );
+                })}
+            </div>
+        )}
     </div>
-</MainLayout> 
+</MainLayout>

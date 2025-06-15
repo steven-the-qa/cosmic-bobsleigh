@@ -6,9 +6,17 @@ export interface Experience {
     date: string;
 }
 
-export interface Collection {
+export interface SubCollection {
     id: string;
     title: string;
     description: string;
     experiences: Experience[];
+}
+
+export interface Collection {
+    id: string;
+    title: string;
+    description: string;
+    experiences?: Experience[];
+    subCollections?: SubCollection[];
 } 
