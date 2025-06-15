@@ -5,9 +5,19 @@ import type { Collection } from '../types';
 
 // Get all valid images for a collection
 function getValidImages(collection: Collection) {
-    return collection.experiences
-        .filter(exp => exp.imageUrl)
-        .map(exp => exp.imageUrl);
+    if (collection.subCollections) {
+        // If collection has sub-collections, get images from all sub-collections
+        return collection.subCollections
+            .flatMap(subCollection => subCollection.experiences)
+            .filter(exp => exp.imageUrl)
+            .map(exp => exp.imageUrl);
+    } else if (collection.experiences) {
+        // Regular collection
+        return collection.experiences
+            .filter(exp => exp.imageUrl)
+            .map(exp => exp.imageUrl);
+    }
+    return [];
 }
 ---
 
