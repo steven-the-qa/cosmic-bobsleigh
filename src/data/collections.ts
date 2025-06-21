@@ -3,11 +3,61 @@ import type { Collection } from '../types';
 export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries';
 
 export const collections: Collection[] = [
+    // Door County Parks
     {
         id: 'door-county-parks',
         title: 'Door County Parks',
         description: 'Our adventures exploring the beautiful parks of Door County',
         experiences: [
+            {
+                id: 'cave-point',
+                title: 'Cave Point',
+                description: 'We got married here on October 31, 2021! Our first visit was a litle over a year prior and we totally fell in love with the place. It continues to be our favorite park in Door County.',
+                imageUrl: '/door-county-parks/cave_point.jpg',
+                date: 'October 7, 2020'
+            },
+            {
+                id: 'cana-island-lighthouse',
+                title: 'Cana Island Lighthouse',
+                description: 'We climbed the stairs to the top of this one! Such a beautiful view ❤️',
+                imageUrl: '/door-county-parks/cana_island_lighthouse.png',
+                date: 'August 31, 2024'
+            },
+            {
+                id: 'ellison-bluff',
+                title: 'Ellison Bluff',
+                description: 'This one actually has a fenced-in walkway that let us get a better view of the forest below! The heights kinda freaked me out, though.',
+                imageUrl: '/door-county-parks/ellison_bluff.jpg',
+                date: 'May 31, 2025'
+            },
+            {
+                id: 'door-bluff-headlands',
+                title: 'Door Bluff Headlands',
+                description: 'This place got W I L D lol. We descended the steep hill off the trail to get to the rocky beach below. Had to go super slow to avoid tumbling down.',
+                imageUrl: '',
+                date: 'May 31, 2025'
+            },
+            {
+                id: 'robert-lasalle',
+                title: 'Robert LaSalle',
+                description: 'We watched seagulls on the beach and found a small ravine at the end of a trail on the upper half of the park. We had to climb like 20 stairs to get up there, though.',
+                imageUrl: '',
+                date: 'June 8, 2025'
+            },
+            {
+                id: 'frank-e-murphy',
+                title: 'Frank E. Murphy',
+                description: 'This is where we learned from a plaque that George K. Pinney used to be the Door County Parks Director! .',
+                imageUrl: '/door-county-parks/frank_e_murphy.jpg',
+                date: 'June 14, 2025'
+            },
+            {
+                id: 'george-k-pinney',
+                title: 'George K. Pinney',
+                description: 'This one used to be an old quarry. We could see Sherwood Point Lighthouse from here!',
+                imageUrl: '/door-county-parks/george_k_pinney.jpg',
+                date: 'June 1, 2025'
+            },
             {
                 id: 'ahnapee-state-trail',
                 title: 'Ahnapee State Trail',
@@ -23,20 +73,6 @@ export const collections: Collection[] = [
                 date: ''
             },
             {
-                id: 'cana-island-lighthouse',
-                title: 'Cana Island Lighthouse',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'cave-point',
-                title: 'Cave Point',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
                 id: 'chaudoirs-dock',
                 title: 'Chaudoir\'s Dock',
                 description: '',
@@ -44,36 +80,8 @@ export const collections: Collection[] = [
                 date: ''
             },
             {
-                id: 'door-bluff-headlands',
-                title: 'Door Bluff Headlands',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'ellison-bluff',
-                title: 'Ellison Bluff',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
                 id: 'forestville-dam',
                 title: 'Forestville Dam',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'frank-e-murphy',
-                title: 'Frank E. Murphy',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'george-k-pinney',
-                title: 'George K. Pinney',
                 description: '',
                 imageUrl: '',
                 date: ''
@@ -121,13 +129,6 @@ export const collections: Collection[] = [
                 date: ''
             },
             {
-                id: 'robert-lasalle',
-                title: 'Robert LaSalle',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
                 id: 'robert-m-carmody',
                 title: 'Robert M. Carmody',
                 description: '',
@@ -150,11 +151,13 @@ export const collections: Collection[] = [
             }
         ]
     },
+    // Lighthouses
     {
         id: 'lighthouses',
         title: 'Lighthouses',
         description: 'Our journey to see every lighthouse in Door County and beyond',
         subCollections: [
+            // Door County Lighthouses
             {
                 id: 'door-county',
                 title: 'Door County Lighthouses',
@@ -164,63 +167,63 @@ export const collections: Collection[] = [
                         id: 'sturgeon-bay-ship-canal',
                         title: 'Sturgeon Bay Ship Canal Lighthouse',
                         description: 'The 2nd lighthouse we saw after moving to Sturgeon Bay',
-                        imageUrl: '/lighthouses/sturgen_bay_ship_canal.png',
+                        imageUrl: '/lighthouses/door-county/sturgen_bay_ship_canal.png',
                         date: 'July 4, 2024'
                     },
                     {
                         id: 'sturgeon-bay-coast-guard-station',
                         title: 'Sturgeon Bay Coast Guard Station',
                         description: 'The 1st lighthouse we saw after moving to Sturgeon Bay',
-                        imageUrl: '/lighthouses/sturgeon_bay_coast_guard_station.png',
+                        imageUrl: '/lighthouses/door-county/sturgeon_bay_coast_guard_station.png',
                         date: 'July 4, 2024'
                     },
                     {
                         id: 'eagle-bluff',
                         title: 'Eagle Bluff Lighthouse',
                         description: 'A must-see while we were at Peninsula State Park',
-                        imageUrl: '/lighthouses/eagle_bluff.png',
+                        imageUrl: '/lighthouses/door-county/eagle_bluff.png',
                         date: 'July 14, 2024'
                     },
                     {
                         id: 'baileys-harbor-range-1',
                         title: 'Baileys Harbor Range Light 1',
                         description: 'The first of the 2 range lights, near the entrance to the Ridges Sanctuary. It\'s so tiny!',
-                        imageUrl: '/lighthouses/baileys_harbor_range_1.png',
+                        imageUrl: '/lighthouses/door-county/baileys_harbor_range_1.png',
                         date: 'August 31, 2024'
                     },
                     {
                         id: 'baileys-harbor-range-2',
                         title: 'Baileys Harbor Range Light 2',
                         description: 'This one is much bigger! It\'s the house where the lighthouse keeper lived. We got to view the other range light using an old telescope in the attic.',
-                        imageUrl: '/lighthouses/baileys_harbor_range_2.png',
+                        imageUrl: '/lighthouses/door-county/baileys_harbor_range_2.png',
                         date: 'August 31, 2024'
                     },
                     {
                         id: 'cana-island',
                         title: 'Cana Island Lighthouse',
                         description: 'We climbed the stairs to the top of this one! Such a beautiful view ❤️',
-                        imageUrl: '/lighthouses/cana_island.png',
+                        imageUrl: '/lighthouses/door-county/cana_island.png',
                         date: 'August 31, 2024'
                     },
                     {
                         id: 'birdcage',
                         title: 'Old Baileys Harbor Lighthouse (Bird Cage)',
                         description: 'Only accessible by boat, but we got to see it on a Bailey\'s Harbor cruise 🛥️',
-                        imageUrl: '/lighthouses/birdcage.png',
+                        imageUrl: '/lighthouses/door-county/birdcage.png',
                         date: 'September 8, 2024'
                     },
                     {
                         id: 'plum-island',
                         title: 'Plum Island Lighthouse',
                         description: 'Spotted on the ferry ride to Washington Island',
-                        imageUrl: '/lighthouses/plum_island.png',
+                        imageUrl: '/lighthouses/door-county/plum_island.png',
                         date: 'October 5, 2024'
                     },
                     {
                         id: 'sherwood-point',
                         title: 'Sherwood Point Lighthouse',
                         description: 'The last Door County lighthouse to be automated, and the only one made with red bricks! We didn\'t end up going inside because they took forever to get the key 🫠',
-                        imageUrl: '/lighthouses/sherwood_point.png',
+                        imageUrl: '/lighthouses/door-county/sherwood_point.png',
                         date: 'June 7, 2025'
                     },
                     {
@@ -246,6 +249,7 @@ export const collections: Collection[] = [
                     }
                 ]
             },
+            // Other Lighthouses
             {
                 id: 'other-lighthouses',
                 title: 'Other Lighthouses',
@@ -255,55 +259,77 @@ export const collections: Collection[] = [
                         id: 'kenosha-north-pier',
                         title: 'Kenosha North Pier Lighthouse',
                         description: 'The first lighthouse we ever saw together ❤️',
-                        imageUrl: '/lighthouses/kenosha_north_pier.png',
+                        imageUrl: '/lighthouses/other/kenosha_north_pier.png',
                         date: 'May 26, 2019'
+                    },
+                    {
+                        id: 'wind-point',
+                        title: 'Wind Point Lighthouse',
+                        description: 'We stopped by these lighthouses when we were shopping at the outlet mall in Kenosha! It was super hot that day.',
+                        imageUrl: '/lighthouses/other/wind_point.jpg',
+                        date: 'August 9, 2020'
                     },
                     {
                         id: 'asylum-point',
                         title: 'Asylum Point Lighthouse',
                         description: 'We were in Oshkosh to try a local chocolate shop and decided to swing by a lighthouse too!',
-                        imageUrl: '/lighthouses/asylum_point.jpeg',
+                        imageUrl: '/lighthouses/other/asylum_point.jpeg',
                         date: 'March 2, 2023'
+                    },
+                    {
+                        id: 'race-rocks-light',
+                        title: 'Race Rocks Light',
+                        description: 'We saw this on a harbor cruise in Victoria, British Columbia, on our 2nd wedding anniversary! So many seals!',
+                        imageUrl: '/lighthouses/other/race_rocks.jpg',
+                        date: 'October 30, 2023'
                     },
                     {
                         id: 'lobster-point',
                         title: 'Lobster Point Lighthouse',
                         description: 'The tiniest little lighthouse in Ogunquit, at the end of a half-mile footpath overlooking the Atlantic Ocean. Barely made it with my knee flaring up.',
-                        imageUrl: '/lighthouses/lobster_point.png',
+                        imageUrl: '/lighthouses/other/lobster_point.png',
                         date: 'September 22, 2024'
                     },
                     {
                         id: 'winter-island',
                         title: 'Winter Island Lighthouse',
                         description: 'Surprise lighthouse visit on our trolley tour around Salem, Massachusetts',
-                        imageUrl: '/lighthouses/winter_island.png',
+                        imageUrl: '/lighthouses/other/winter_island.png',
                         date: 'September 22, 2024'
                     },
                     {
                         id: 'kimberly-point',
                         title: 'Kimberly Point Lighthouse',
                         description: 'We found out the daughter of Kimberly-Clark\'s cofounder gave this lighthouse to the city of Neenah in 1945!',
-                        imageUrl: '/lighthouses/kimberly_point.png',
+                        imageUrl: '/lighthouses/other/kimberly_point.png',
                         date: 'October 25, 2024'
                     },
                     {
                         id: 'sheboygan-breakwater',
                         title: 'Sheboygan Breakwater Lighthouse',
                         description: 'It was freezing and windy, but we got as close as we could! Definitely returning in the summer to get up close and personal.',
-                        imageUrl: '/lighthouses/sheboygan_breakwater.jpg',
+                        imageUrl: '/lighthouses/other/sheboygan_breakwater.jpg',
                         date: 'January 18, 2025'
                     },
                     {
                         id: 'manitowoc-north-breakwater',
                         title: 'Manitowoc North Breakwater Lighthouse',
                         description: 'We were on the way back from our trip to the Green House in Sheboygan and decided to stop by this lighthouse! We plan to visit again when it\'s warmer to get closer.',
-                        imageUrl: '/lighthouses/manitowoc_north_breakwater.jpg',
+                        imageUrl: '/lighthouses/other/manitowoc_north_breakwater.jpg',
                         date: 'January 18, 2025'
+                    },
+                    {
+                        id: 'algoma-pierhead',
+                        title: 'Algoma Pierhead Lighthouse',
+                        description: 'I saw this one on my first drive to Algoma. When I told Sam about it, we went together to a local café there on a weekend and took this photo afterward!',
+                        imageUrl: '/lighthouses/other/algoma_pierhead.jpg',
+                        date: 'April 19, 2025'
                     }
                 ]
             }
         ]
     },
+    // Darden Restaurants
     {
         id: 'darden-restaurants',
         title: 'Darden Restaurants',
@@ -367,6 +393,7 @@ export const collections: Collection[] = [
             }
         ]
     },
+    // Starbucks Reserve Roasteries
     {
         id: 'starbucks-reserve-roasteries',
         title: 'Starbucks Reserve Roasteries',
@@ -416,6 +443,7 @@ export const collections: Collection[] = [
             }
         ]
     },
+    // Wisconsin State Parks
     {
         id: 'wisconsin-state-parks',
         title: 'Wisconsin State Parks',
@@ -773,6 +801,7 @@ export const collections: Collection[] = [
             }
         ]
     },
+    // US States
     {
         id: 'states',
         title: 'US States',
@@ -1130,6 +1159,7 @@ export const collections: Collection[] = [
             }
         ]
     },
+    // Canadian Provinces
     {
         id: 'provinces',
         title: 'Canadian Provinces',
@@ -1228,6 +1258,7 @@ export const collections: Collection[] = [
             }
         ]
     },
+    // Countries
     {
         id: 'countries',
         title: 'Countries',
@@ -1236,23 +1267,23 @@ export const collections: Collection[] = [
             {
                 id: 'spain',
                 title: 'Spain',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: 'Mostly stayed in Sevilla and Granada, got to witness Semana Santa processions from a balcony! We had as many adventures as misadventures lol',
+                imageUrl: '/countries/spain.jpg',
+                date: 'April 13, 2022'
             },
             {
                 id: 'canada',
                 title: 'Canada',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: 'We went to Canada for our 2nd wedding anniversary. Originally we decided on Victoria, BC, because of a gift card we accidentally bought to one of their coffee shops. And yes, we DID get a drink there (and some merch).',
+                imageUrl: '/countries/canada.jpg',
+                date: 'October 28, 2023'
             },
             {
                 id: 'mexico',
                 title: 'Mexico',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: 'This was our birthday trip to Cabo San Lucas, our first time in Mexico. We went bungee jumping and snorkeling, and we saw the famous arch!',
+                imageUrl: '/countries/mexico.png',
+                date: 'April 5, 2024'
             }
         ]
     }
