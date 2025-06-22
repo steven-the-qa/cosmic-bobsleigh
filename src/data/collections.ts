@@ -34,20 +34,20 @@ export const collections: Collection[] = [
                 id: 'door-bluff-headlands',
                 title: 'Door Bluff Headlands',
                 description: 'This place got W I L D lol. We descended the steep hill off the trail to get to the rocky beach below. Had to go super slow to avoid tumbling down.',
-                imageUrl: '',
+                imageUrl: '/door-county-parks/door_bluff_headlands.jpg',
                 date: 'May 31, 2025'
             },
             {
                 id: 'robert-lasalle',
                 title: 'Robert LaSalle',
                 description: 'We watched seagulls on the beach and found a small ravine at the end of a trail on the upper half of the park. We had to climb like 20 stairs to get up there, though.',
-                imageUrl: '',
+                imageUrl: '/door-county-parks/robert_lasalle.jpg',
                 date: 'June 8, 2025'
             },
             {
                 id: 'frank-e-murphy',
                 title: 'Frank E. Murphy',
-                description: 'This is where we learned from a plaque that George K. Pinney used to be the Door County Parks Director! .',
+                description: 'This is where we learned from a plaque that George K. Pinney used to be the Door County Parks Director!',
                 imageUrl: '/door-county-parks/frank_e_murphy.jpg',
                 date: 'June 14, 2025'
             },
@@ -284,17 +284,17 @@ export const collections: Collection[] = [
                         date: 'October 30, 2023'
                     },
                     {
-                        id: 'lobster-point',
-                        title: 'Lobster Point Lighthouse',
-                        description: 'The tiniest little lighthouse in Ogunquit, at the end of a half-mile footpath overlooking the Atlantic Ocean. Barely made it with my knee flaring up.',
-                        imageUrl: '/lighthouses/other/lobster_point.png',
-                        date: 'September 22, 2024'
-                    },
-                    {
                         id: 'winter-island',
                         title: 'Winter Island Lighthouse',
                         description: 'Surprise lighthouse visit on our trolley tour around Salem, Massachusetts',
                         imageUrl: '/lighthouses/other/winter_island.png',
+                        date: 'September 20, 2024'
+                    },
+                    {
+                        id: 'lobster-point',
+                        title: 'Lobster Point Lighthouse',
+                        description: 'The tiniest little lighthouse in Ogunquit, at the end of a half-mile footpath overlooking the Atlantic Ocean. Barely made it with my knee flaring up.',
+                        imageUrl: '/lighthouses/other/lobster_point.png',
                         date: 'September 22, 2024'
                     },
                     {
