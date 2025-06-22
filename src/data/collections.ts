@@ -460,7 +460,7 @@ export const collections: Collection[] = [
                 id: "devils-lake",
                 title: "Devil's Lake State Park",
                 description: "One of my favorite state parks because of the parkour events I attended here, but now we have our own memories, some of them traumatic 😂",
-                imageUrl: "/wisconsin-state-parks/devils_lake.png",
+                imageUrl: "/wisconsin-state-parks/devils_lake.jpg",
                 date: "April 2, 2020"
             },
             {
@@ -803,10 +803,17 @@ export const collections: Collection[] = [
     },
     // US States
     {
-        id: 'states',
+        id: 'us-states',
         title: 'US States',
         description: 'Our adventures exploring all 50 United States',
         experiences: [
+            {
+                id: 'indiana',
+                title: 'Indiana',
+                description: 'We went to Indiana for my brother\'s wedding!',
+                imageUrl: '/us-states/indiana.jpg',
+                date: 'July 27, 2019'
+            },
             {
                 id: 'alabama',
                 title: 'Alabama',
@@ -894,13 +901,6 @@ export const collections: Collection[] = [
             {
                 id: 'illinois',
                 title: 'Illinois',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'indiana',
-                title: 'Indiana',
                 description: '',
                 imageUrl: '',
                 date: ''
@@ -1161,7 +1161,7 @@ export const collections: Collection[] = [
     },
     // Canadian Provinces
     {
-        id: 'provinces',
+        id: 'canadian-provinces',
         title: 'Canadian Provinces',
         description: 'Our adventures exploring the provinces and territories of Canada',
         experiences: [
@@ -1262,7 +1262,7 @@ export const collections: Collection[] = [
     {
         id: 'countries',
         title: 'Countries',
-        description: 'Our international adventures around the world',
+        description: 'Our international adventures',
         experiences: [
             {
                 id: 'spain',
