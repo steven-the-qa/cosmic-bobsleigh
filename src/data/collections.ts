@@ -38,6 +38,13 @@ export const collections: Collection[] = [
                 date: 'May 31, 2025'
             },
             {
+                id: 'george-k-pinney',
+                title: 'George K. Pinney',
+                description: 'This one used to be an old quarry. We could see Sherwood Point Lighthouse from here!',
+                imageUrl: '/door-county-parks/george_k_pinney.jpg',
+                date: 'June 1, 2025'
+            },
+            {
                 id: 'robert-lasalle',
                 title: 'Robert LaSalle',
                 description: 'We watched seagulls on the beach and found a small ravine at the end of a trail on the upper half of the park. We had to climb like 20 stairs to get up there, though.',
@@ -50,13 +57,6 @@ export const collections: Collection[] = [
                 description: 'This is where we learned from a plaque that George K. Pinney used to be the Door County Parks Director!',
                 imageUrl: '/door-county-parks/frank_e_murphy.jpg',
                 date: 'June 14, 2025'
-            },
-            {
-                id: 'george-k-pinney',
-                title: 'George K. Pinney',
-                description: 'This one used to be an old quarry. We could see Sherwood Point Lighthouse from here!',
-                imageUrl: '/door-county-parks/george_k_pinney.jpg',
-                date: 'June 1, 2025'
             },
             {
                 id: 'ahnapee-state-trail',
