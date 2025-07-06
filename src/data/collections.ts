@@ -59,29 +59,50 @@ export const collections: Collection[] = [
                 date: 'June 14, 2025'
             },
             {
-                id: 'ahnapee-state-trail',
-                title: 'Ahnapee State Trail',
-                description: '',
-                imageUrl: '',
-                date: ''
+                id: 'robert-m-carmody',
+                title: 'Robert M. Carmody',
+                description: 'This park is basically a big boat launch! Lots of jet skis and pontoon boats were out on the water in Little Sturgeon Bay when we stopped by.',
+                imageUrl: '/door-county-parks/robert_m_carmody.png',
+                date: 'July 5, 2025'
             },
             {
-                id: 'baileys-harbor-ridges',
-                title: 'Baileys Harbor Ridges',
-                description: '',
-                imageUrl: '',
-                date: ''
+                id: 'tornado-memorial',
+                title: 'Tornado Memorial',
+                description: 'We learned that this park has a tragic history! A fire tornado decimated a small town named Williamsonville in 1871, leaving few survivors. The park sits on the land that used to be Williamsonville.',
+                imageUrl: '/door-county-parks/tornado_memorial.png',
+                date: 'July 5, 2025'
+            },
+            {
+                id: 'sugar-creek',
+                title: 'Sugar Creek',
+                description: 'This park has a beach that\'s not easy to spot from the parking lot. We found lots of shiny seashells and an amazing view of the peninsula coast!',
+                imageUrl: '/door-county-parks/sugar_creek.png',
+                date: 'July 5, 2025'
             },
             {
                 id: 'chaudoirs-dock',
                 title: 'Chaudoir\'s Dock',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: 'This county park has a local bar up the hill from the boat launch -- and yeah, this park is a boat launch. We shared some onion rings and ate burgers before taking this photo!',
+                imageUrl: '/door-county-parks/chaudoirs_dock.png',
+                date: 'July 5, 2025'
             },
             {
                 id: 'forestville-dam',
                 title: 'Forestville Dam',
+                description: 'This was a nice fishing spot with a playground and trail access to Ahnapee State Trail. The view of the dam was pretty! Too bad the dam walkway is government property or we would\'ve walked on it.',
+                imageUrl: '/door-county-parks/forestville_dam.png',
+                date: 'July 5, 2025'
+            },
+            {
+                id: 'ahnapee-state-trail',
+                title: 'Ahnapee State Trail',
+                description: 'We made sure to get a photo at the trail access point before leaving Forestville Dam County Park. It was a nice way to end the day!',
+                imageUrl: '/door-county-parks/ahnapee_state_trail.png',
+                date: 'July 5, 2025'
+            },
+            {
+                id: 'baileys-harbor-ridges',
+                title: 'Baileys Harbor Ridges',
                 description: '',
                 imageUrl: '',
                 date: ''
@@ -128,27 +149,6 @@ export const collections: Collection[] = [
                 imageUrl: '',
                 date: ''
             },
-            {
-                id: 'robert-m-carmody',
-                title: 'Robert M. Carmody',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'sugar-creek',
-                title: 'Sugar Creek',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'tornado-memorial',
-                title: 'Tornado Memorial',
-                description: '',
-                imageUrl: '',
-                date: ''
-            }
         ]
     },
     // Lighthouses
@@ -815,6 +815,27 @@ export const collections: Collection[] = [
                 date: 'July 27, 2019'
             },
             {
+                id: 'tennessee',
+                title: 'Tennessee',
+                description: 'Stayed overnight in Chattanooga on the way to Florida! Wasn\'t her first Waffle House, but it was mine!',
+                imageUrl: '/us-states/tennessee.png',
+                date: 'October 1, 2019'
+            },
+            {
+                id: 'georgia',
+                title: 'Georgia',
+                description: 'Stopped in Georgia for some peach merch on the way to Florida! Still need to go back for a proper visit.',
+                imageUrl: '/us-states/georgia.png',
+                date: 'October 2, 2019'
+            },
+            {
+                id: 'kentucky',
+                title: 'Kentucky',
+                description: 'We drove through Kentucky on our way to & from Florida! Still need to go back for a proper visit.',
+                imageUrl: '/us-states/kentucky.png',
+                date: 'October 6, 2019'
+            },
+            {
                 id: 'alabama',
                 title: 'Alabama',
                 description: '',
@@ -878,13 +899,6 @@ export const collections: Collection[] = [
                 date: ''
             },
             {
-                id: 'georgia',
-                title: 'Georgia',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
                 id: 'hawaii',
                 title: 'Hawaii',
                 description: '',
@@ -915,13 +929,6 @@ export const collections: Collection[] = [
             {
                 id: 'kansas',
                 title: 'Kansas',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'kentucky',
-                title: 'Kentucky',
                 description: '',
                 imageUrl: '',
                 date: ''
@@ -1090,13 +1097,6 @@ export const collections: Collection[] = [
             {
                 id: 'south-dakota',
                 title: 'South Dakota',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'tennessee',
-                title: 'Tennessee',
                 description: '',
                 imageUrl: '',
                 date: ''
