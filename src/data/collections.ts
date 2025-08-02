@@ -1,6 +1,6 @@
 import type { Collection } from '../types';
 
-export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries';
+export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries' | 'national-parks';
 
 export const collections: Collection[] = [
     // Door County Parks
@@ -1285,6 +1285,28 @@ export const collections: Collection[] = [
                 imageUrl: '/countries/mexico.png',
                 date: 'April 5, 2024'
             }
+        ]
+    },
+    // National Parks
+    {
+        id: 'national-parks',
+        title: 'National Parks',
+        description: 'Our adventures exploring America\'s beautiful national parks',
+        experiences: [
+            {
+                id: 'pictured-rocks-national-lakeshore',
+                title: 'Pictured Rocks National Lakeshore',
+                description: 'Our first trip up to the UP! We got to see Munising Falls along the way ❤️',
+                imageUrl: '',
+                date: 'October 19, 2024'
+            },
+            {
+                id: 'apostle-islands-national-lakeshore',
+                title: 'Apostle Islands National Lakeshore',
+                description: 'We got to see Devil\'s Island, the highest point in Wisconsin!',
+                imageUrl: '',
+                date: 'July 12, 2025'
+            },
         ]
     }
 ]; 
