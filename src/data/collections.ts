@@ -226,16 +226,16 @@ export const collections: Collection[] = [
                         imageUrl: '/lighthouses/door-county/sherwood_point.png',
                         date: 'June 7, 2025'
                     },
+                                        {
+                        id: 'pilot-island',
+                        title: 'Pilot Island Lighthouse',
+                        description: 'We took a boat out to Plum Island so we could finally glimpse Pilot Island! And the Plum Island lighthouse up close, of course 😏',
+                        imageUrl: '',
+                        date: 'August 2, 2025'
+                    },
                     {
                         id: 'chambers-island',
                         title: 'Chambers Island Lighthouse',
-                        description: '',
-                        imageUrl: '',
-                        date: ''
-                    },
-                    {
-                        id: 'pilot-island',
-                        title: 'Pilot Island Lighthouse',
                         description: '',
                         imageUrl: '',
                         date: ''
