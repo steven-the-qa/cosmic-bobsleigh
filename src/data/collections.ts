@@ -103,9 +103,9 @@ export const collections: Collection[] = [
             {
                 id: 'baileys-harbor-ridges',
                 title: 'Baileys Harbor Ridges',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: 'We technically went here when we saw the Range Lights a year ago, but we never went across the street to see the beach or the boardwalk leading to it, so we didn\'t get the full experience.',
+                imageUrl: '/door-county-parks/baileys_harbor_ridges.jpeg',
+                date: 'July 19, 2025'
             },
             {
                 id: 'john-miles',
@@ -215,8 +215,8 @@ export const collections: Collection[] = [
                     {
                         id: 'plum-island',
                         title: 'Plum Island Lighthouse',
-                        description: 'Spotted on the ferry ride to Washington Island',
-                        imageUrl: '/lighthouses/door-county/plum_island.png',
+                        description: 'Our first sighting was on the ferry ride to Washington Island; this photo is from the day we saw the Pilot Island lighthouse!',
+                        imageUrl: '/lighthouses/door-county/plum_island.jpeg',
                         date: 'October 5, 2024'
                     },
                     {
@@ -230,7 +230,14 @@ export const collections: Collection[] = [
                         id: 'pilot-island',
                         title: 'Pilot Island Lighthouse',
                         description: 'We took a boat out to Plum Island so we could finally glimpse Pilot Island! And the Plum Island lighthouse up close, of course 😏',
-                        imageUrl: '',
+                        imageUrl: '/lighthouses/door-county/pilot_island.jpeg',
+                        date: 'August 2, 2025'
+                    },
+                    {
+                        id: 'old-plum-island',
+                        title: '**BONUS** Old Plum Island Lighthouse Ruins',
+                        description: 'We had no idea the current Plum Island lighthouse was actually a "remake"! The old one was built in the wrong spot and with cheap materials.',
+                        imageUrl: '/lighthouses/door-county/old_plum_island.jpeg',
                         date: 'August 2, 2025'
                     },
                     {
@@ -520,6 +527,48 @@ export const collections: Collection[] = [
                 date: "August 18, 2024"
             },
             {
+                id: "high-cliff",
+                title: "High Cliff State Park",
+                description: "This is maybe the most underrated Wisconsin state park! They had cute gophers hanging out near the trail, one of the tallest observation towers in the Wisconsin State Park system, a mysterious gulch where you could find the occasional rock climber, and a variety of different ways to experience the park! On a hiking trail we saw a deer a few feet from our faces!",
+                imageUrl: "/wisconsin-state-parks/high_cliff.jpg",
+                date: "May 24, 2025"
+            },
+            {
+                id: "copper-falls",
+                title: "Copper Falls State Park",
+                description: "These were the most impressive waterfalls we'd seen in the state of Wisconsin! Apparently the bridge connecting both halves of the park got restored after the original was destroyed in a 1946 flood.",
+                imageUrl: "/wisconsin-state-parks/copper_falls.jpeg",
+                date: "July 11, 2025"
+            },
+            {
+                id: "council-grounds",
+                title: "Council Grounds State Park",
+                description: "They had a dam here! And a tight hiking trail skirting the Wisconsin River riverbank downstream of the dam where we did a little bit of exploring.",
+                imageUrl: "/wisconsin-state-parks/council_grounds.jpg",
+                date: "July 13, 2025"
+            },
+            {
+                id: "governor-nelson",
+                title: "Governor Nelson State Park",
+                description: "We had a little bit of time before meeting Kate Flannery at the Madison Mallards game, so we checked another state park off the list! This one is mostly a boat launch but there are some trails to explore. Lake Mendota is behind us, and we could see the capital from here!",
+                imageUrl: "/wisconsin-state-parks/governor_nelson.jpeg",
+                date: "July 20, 2025"
+            },
+            {
+                id: "cross-plains",
+                title: "Cross Plains State Park",
+                description: "Definitely hard to find! We ended up parking at the National Park Service employee lot before a staff member pointed us to the correct parking lot down the road. Even in the rain -- perhaps especially -- the forest on the entry trail has a magical way of making you feel like you're lost in the woods (maybe somewhere in Jurassic Park)!",
+                imageUrl: "/wisconsin-state-parks/cross_plains.jpeg",
+                date: "July 30, 2025"
+            },
+                        {
+                id: "lake-kegonsa",
+                title: "Lake Kegonsa State Park",
+                description: "It was still raining by the time we got here, but there wasn't a whole lot to see, either. We found a cute swing by the water and relaxed on it until we decided we didn't want to get rained on anymore. Next time we'll rent out the horseshoes -- we saw a place to play some if you put down a $5 deposit 🐴 😉",
+                imageUrl: "/wisconsin-state-parks/lake_kegonsa.jpeg",
+                date: "July 30, 2025"
+            },
+            {
                 id: "amnicon-falls",
                 title: "Amnicon Falls State Park",
                 description: "",
@@ -576,27 +625,6 @@ export const collections: Collection[] = [
                 date: ""
             },
             {
-                id: "copper-falls",
-                title: "Copper Falls State Park",
-                description: "",
-                imageUrl: "",
-                date: ""
-            },
-            {
-                id: "council-grounds",
-                title: "Council Grounds State Park",
-                description: "",
-                imageUrl: "",
-                date: ""
-            },
-            {
-                id: "governor-nelson",
-                title: "Governor Nelson State Park",
-                description: "",
-                imageUrl: "",
-                date: ""
-            },
-            {
                 id: "governor-thompson",
                 title: "Governor Thompson State Park",
                 description: "",
@@ -625,13 +653,6 @@ export const collections: Collection[] = [
                 date: ""
             },
             {
-                id: "high-cliff",
-                title: "High Cliff State Park",
-                description: "",
-                imageUrl: "",
-                date: ""
-            },
-            {
                 id: "interstate",
                 title: "Interstate State Park",
                 description: "",
@@ -641,13 +662,6 @@ export const collections: Collection[] = [
             {
                 id: "kinnickinnic",
                 title: "Kinnickinnic State Park",
-                description: "",
-                imageUrl: "",
-                date: ""
-            },
-            {
-                id: "lake-kegonsa",
-                title: "Lake Kegonsa State Park",
                 description: "",
                 imageUrl: "",
                 date: ""
@@ -792,13 +806,6 @@ export const collections: Collection[] = [
                 imageUrl: "",
                 date: ""
             },
-            {
-                id: "cross-plains",
-                title: "Cross Plains State Park",
-                description: "",
-                imageUrl: "",
-                date: ""
-            }
         ]
     },
     // US States
@@ -1294,17 +1301,24 @@ export const collections: Collection[] = [
         description: 'Our adventures exploring America\'s beautiful national parks',
         experiences: [
             {
+                id: 'grand-canyon-national-park',
+                title: 'Grand Canyon National Park',
+                description: 'This was a double "first" for us: first time at the Grand Canyon and first helicopter ride!',
+                imageUrl: '/national-parks/grand_canyon.jpeg',
+                date: 'November 10, 2021'
+            },
+            {
                 id: 'pictured-rocks-national-lakeshore',
                 title: 'Pictured Rocks National Lakeshore',
                 description: 'Our first trip up to the UP! We got to see Munising Falls along the way ❤️',
-                imageUrl: '',
+                imageUrl: '/national-parks/pictured_rocks_national_lakeshore.jpg',
                 date: 'October 19, 2024'
             },
             {
                 id: 'apostle-islands-national-lakeshore',
                 title: 'Apostle Islands National Lakeshore',
                 description: 'We got to see Devil\'s Island, the highest point in Wisconsin!',
-                imageUrl: '',
+                imageUrl: '/national-parks/apostle_islands_national_lakeshore.jpg',
                 date: 'July 12, 2025'
             },
         ]
