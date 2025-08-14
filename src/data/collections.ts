@@ -569,6 +569,13 @@ export const collections: Collection[] = [
                 date: "July 30, 2025"
             },
             {
+                id: "richard-bong",
+                title: "Richard Bong State Recreation Area",
+                description: "We stopped here on the way back from visiting my grandparents in Illinois. It's an old haunt for me since I grew up in Burlington, but I hadn't been here for almost a decade. The best was seeing a monarch butterfly ❤️ 🦋",
+                imageUrl: "/wisconsin-state-parks/richard_bong.jpg",
+                date: "August 9, 2025"
+            },
+            {
                 id: "amnicon-falls",
                 title: "Amnicon Falls State Park",
                 description: "",
