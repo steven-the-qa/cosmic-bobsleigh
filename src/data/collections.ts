@@ -110,9 +110,9 @@ export const collections: Collection[] = [
             {
                 id: 'john-miles',
                 title: 'John Miles',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: 'This county park is where the Door County Fair is hosted every year. This year was our first visit! We saw lots of cute animals: pigs, cows, bunnies, roosters, and even the Clydesdales! Obviously we got some fair food, but I also got some tacos from the Osorio\'s food truck. Sam got some "hot butter sweet corn" (the vendor was announcing it like this lol).',
+                imageUrl: '/door-county-parks/john_miles.jpeg',
+                date: 'August 16, 2025'
             },
             {
                 id: 'lily-bay',
