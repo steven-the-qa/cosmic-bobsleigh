@@ -576,6 +576,13 @@ export const collections: Collection[] = [
                 date: "August 9, 2025"
             },
             {
+                id: "rib-mountain",
+                title: "Rib Mountain State Park",
+                description: "This park had the 3rd-highest point in Wisconsin! I climbed the Queen's and King's Chair rock formations, and we both climbed the stairs of the observation tower! What a view! 🔭 Here you can see us posing in front of the #TravelWisconsin sign 😏",
+                imageUrl: "/wisconsin-state-parks/rib_mountain.jpg",
+                date: "August 23, 2025"
+            },
+            {
                 id: "amnicon-falls",
                 title: "Amnicon Falls State Park",
                 description: "",
@@ -739,13 +746,6 @@ export const collections: Collection[] = [
             {
                 id: "perrot",
                 title: "Perrot State Park",
-                description: "",
-                imageUrl: "",
-                date: ""
-            },
-            {
-                id: "rib-mountain",
-                title: "Rib Mountain State Park",
                 description: "",
                 imageUrl: "",
                 date: ""
