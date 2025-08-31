@@ -117,34 +117,34 @@ export const collections: Collection[] = [
             {
                 id: 'lily-bay',
                 title: 'Lily Bay',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'lyle-harter-matter-sanctuary',
-                title: 'Lyle-Harter-Matter Sanctuary',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'meridian',
-                title: 'Meridian',
-                description: '',
-                imageUrl: '',
-                date: ''
-            },
-            {
-                id: 'percy-johnson-memorial',
-                title: 'Percy Johnson Memorial',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: "This one had the wrong address on the website, so we had to guess our way to the boat launch 😂 We did find it, though, and there's a whole public beach over there! 🏖️",
+                imageUrl: '/door-county-parks/lily_bay.jpg',
+                date: 'August 30, 2025'
             },
             {
                 id: 'plum-bottom',
                 title: 'Plum Bottom',
+                description: "This was where we found our first geocache together! We'd been meaning to try geocaching for years but kept forgetting to go do it. We swapped a fun Wisconsin sticker for a cool owl craft (we named it Owlberta 🦉).",
+                imageUrl: '/door-county-parks/plum_bottom.jpg',
+                date: 'August 30, 2025'
+            },
+            {
+                id: 'meridian',
+                title: 'Meridian',
+                description: "This one was tricky to find because it's adjacent to Lyle-Harter-Matter Sanctuary County Park. It's the part with the visitor sign and the picnic tables.",
+                imageUrl: '/door-county-parks/meridian.jpg',
+                date: 'August 30, 2025'
+            },
+            {
+                id: 'lyle-harter-matter-sanctuary',
+                title: 'Lyle-Harter-Matter Sanctuary',
+                description: "This is the trail leading away from Meridian County Park, but we only found that out after exploring a bit on said trail. The woods here have such beautiful rock formations and it doesn't take more than a few minutes of walking before you stop hearing car traffic ❤️",
+                imageUrl: '/door-county-parks/lyle_harter_matter_sanctuary.jpg',
+                date: 'August 30, 2025'
+            },
+            {
+                id: 'percy-johnson-memorial',
+                title: 'Percy Johnson Memorial',
                 description: '',
                 imageUrl: '',
                 date: ''
