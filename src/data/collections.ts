@@ -145,9 +145,9 @@ export const collections: Collection[] = [
             {
                 id: 'percy-johnson-memorial',
                 title: 'Percy Johnson Memorial',
-                description: '',
-                imageUrl: '',
-                date: ''
+                description: "This one was our last Door County Park! We had the joy of seeing a woolly bear caterpillar on our way back to the car 🐛",
+                imageUrl: '/door-county-parks/percy_johnson.jpeg',
+                date: 'September 7, 2025'
             },
         ]
     },
@@ -240,16 +240,16 @@ export const collections: Collection[] = [
                         imageUrl: '/lighthouses/door-county/old_plum_island.jpeg',
                         date: 'August 2, 2025'
                     },
+                                        {
+                        id: 'pottawatomie',
+                        title: 'Pottawatomie Lighthouse',
+                        description: "This one was probably our hardest-won lighthouse passport stamp yet! We hiked 1.25 miles uphill from the dock after driving 1 hour and taking 2 ferries! Once we reached it, we got a tour of the lighthouse and even got to be right up next to the fresnel lens! Nearby, we visited the grave of the lighthouse's 1st keeper (it's also the 1st lighthouse on Lake Michigan!). One more fun fact is that the lighthouse tower is the highest point in Door County. It's also close enough to connect to a cell tower in Michigan, so our phones changed to Eastern Time a few times.",
+                        imageUrl: '/lighthouses/door-county/pottawatomie.jpeg',
+                        date: 'September 7, 2025'
+                    },
                     {
                         id: 'chambers-island',
                         title: 'Chambers Island Lighthouse',
-                        description: '',
-                        imageUrl: '',
-                        date: ''
-                    },
-                    {
-                        id: 'pottawatomie',
-                        title: 'Pottawatomie Lighthouse',
                         description: '',
                         imageUrl: '',
                         date: ''
@@ -493,9 +493,9 @@ export const collections: Collection[] = [
                     {
                         id: "rock-island",
                         title: "Rock Island State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: ""
+                        description: "The boat ride here was the like the log ride at an amusement park (lots of splashing 🤣 🌊)! We came here to see the Pottawatomie Lighthouse, but we also played checkers in the boathouse/museum, found a geocache on the trails, and spotted tons of monarch butterflies and even a woodpecker!",
+                        imageUrl: "/wisconsin-state-parks/rock_island.jpeg",
+                        date: "September 7, 2025"
                     },
                 ]
             },
