@@ -4,6 +4,9 @@ export interface Experience {
     description: string;
     imageUrl: string;
     date: string;
+    // Optional metadata
+    designation?: string; // e.g., 'national park', 'national lakeshore', 'park', 'recreation area'
+    former?: boolean; // mark former units
 }
 
 export interface SubCollection {
@@ -21,4 +24,4 @@ export interface Collection {
     subCollections?: SubCollection[];
 }
 
-export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries'; 
+export type CollectionId = 'darden-restaurants' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'kewaunee-county-parks' | 'brown-county-parks' | 'starbucks-reserve-roasteries' | 'us-states' | 'canadian-provinces' | 'countries' | 'national-parks';

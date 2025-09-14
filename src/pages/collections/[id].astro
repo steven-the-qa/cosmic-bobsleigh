@@ -13,6 +13,91 @@ export function getStaticPaths() {
 const { collection } = Astro.props;
 const blogPosts = await getCollection('blog');
 const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; }; slug: any; }) => [post.data.experienceId, post.slug]));
+
+// Progress calculations
+function countVisited(experiences: Array<{ imageUrl?: string; date?: string }>) {
+    return experiences.filter(exp => (exp.imageUrl && exp.imageUrl.trim()) || (exp.date && exp.date.trim())).length;
+}
+
+const isLighthouses = collection.id === 'lighthouses';
+const doorCountyOnly = isLighthouses && collection.subCollections?.find((sc: any) => sc.id === 'wisconsin');
+
+const totalInCollection = doorCountyOnly
+    ? doorCountyOnly.experiences.length
+    : collection.subCollections
+        ? collection.subCollections.reduce((acc: number, sc: any) => acc + sc.experiences.length, 0)
+        : (collection.experiences?.length || 0);
+
+const visitedInCollection = doorCountyOnly
+    ? countVisited(doorCountyOnly.experiences)
+    : collection.subCollections
+        ? collection.subCollections.reduce((acc: number, sc: any) => acc + countVisited(sc.experiences), 0)
+        : countVisited(collection.experiences || []);
+
+const collectionPercent = totalInCollection > 0 ? Math.round((visitedInCollection / totalInCollection) * 100) : 0;
+
+// Special grouping for Wisconsin State Parks: split by designation
+const subCollectionsToRender = (() => {
+    if (collection.id !== 'wisconsin-state-parks' || !collection.subCollections) return collection.subCollections;
+    const allExperiences = collection.subCollections.flatMap((sc: any) => sc.experiences);
+    const parks = allExperiences.filter((e: any) => (e.designation || 'park') !== 'recreation area' && (e.designation || 'park') !== 'historical park');
+    const recreationAreas = allExperiences.filter((e: any) => (e.designation || '').toLowerCase() === 'recreation area');
+    const historicalParks = allExperiences.filter((e: any) => (e.designation || '').toLowerCase() === 'historical park');
+    const groups: any[] = [];
+    if (parks.length) groups.push({ id: 'parks', title: 'Wisconsin State Parks', description: 'All Wisconsin State Parks', experiences: parks });
+    if (recreationAreas.length) groups.push({ id: 'recreation-areas', title: 'Wisconsin State Recreation Areas', description: 'All Wisconsin State Recreation Areas', experiences: recreationAreas });
+    if (historicalParks.length) groups.push({ id: 'historical-parks', title: 'Wisconsin State Historical Parks', description: 'All Wisconsin State Historical Parks', experiences: historicalParks });
+    return groups;
+})();
+
+// Group National Parks by designation into subcollections for rendering
+const nationalSubCollections = (() => {
+    if (collection.id !== 'national-parks') return null;
+    const items = collection.experiences || [];
+    const titleFor = (k: string) => {
+        const key = (k || '').toLowerCase();
+        switch (key) {
+            case 'national park': return 'National Parks';
+            case 'national lakeshore': return 'National Lakeshores';
+            case 'national monument': return 'National Monuments';
+            case 'national preserve': return 'National Preserves';
+            case 'national reserve': return 'National Reserves';
+            case 'national recreation area': return 'National Recreation Areas';
+            case 'national seashore': return 'National Seashores';
+            case 'national river': return 'National Rivers';
+            case 'wild and scenic river': return 'Wild and Scenic Rivers';
+            case 'national scenic trail': return 'National Scenic Trails';
+            case 'national parkway': return 'National Parkways';
+            case 'national historic site': return 'National Historic Sites';
+            case 'international historic site': return 'International Historic Site';
+            case 'national historical park': return 'National Historical Parks';
+            case 'national battlefield': return 'National Battlefields';
+            case 'national battlefield site': return 'National Battlefield Sites';
+            case 'national battlefield park': return 'National Battlefield Parks';
+            case 'national military park': return 'National Military Parks';
+            case 'national memorial': return 'National Memorials';
+            default: return 'Other Units';
+        }
+    };
+    const buckets = new Map<string, any[]>();
+    for (const exp of items) {
+        const key = (exp.designation || 'national park').toLowerCase();
+        if (!buckets.has(key)) buckets.set(key, []);
+        buckets.get(key)!.push(exp);
+    }
+    return Array.from(buckets.entries()).map(([key, exps]) => ({
+        id: key.replace(/\s+/g, '-'),
+        title: titleFor(key),
+        description: '',
+        experiences: exps
+    }));
+})();
+
+const renderedSubCollections = (
+    collection.id === 'wisconsin-state-parks'
+        ? subCollectionsToRender
+        : (collection.id === 'national-parks' ? nationalSubCollections : collection.subCollections)
+) || [];
 ---
 
 <style>
@@ -47,15 +132,77 @@ const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; };
         <h1 class="text-4xl font-bold text-center text-emerald-50">{collection.title}</h1>
         <p class="text-center text-emerald-300/70 mb-8">{collection.description}</p>
         
-        {collection.subCollections ? (
+        {/* Collection progress (hide for Lighthouses; show for others) */}
+        {!isLighthouses && (
+            <div class="max-w-5xl mx-auto mb-8">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-emerald-200 text-sm">Progress</span>
+                    <span class="text-emerald-200 text-sm">{visitedInCollection} / {totalInCollection} ({collectionPercent}%)</span>
+                </div>
+                <div class="h-3 bg-[#071512] border border-[#1B4D3E] rounded-full overflow-hidden">
+                    <div class="h-full bg-emerald-600" style={`width: ${collectionPercent}%`}></div>
+                </div>
+            </div>
+        )}
+        
+        {/* Filters */}
+        <div class="max-w-5xl mx-auto mb-10 grid grid-cols-1 md:grid-cols-4 gap-3">
+            <div class="space-y-1">
+                <label for="textFilter" class="block text-emerald-300/80 text-xs font-semibold uppercase tracking-wider">Search</label>
+                <input id="textFilter" type="text" aria-label="Search title or description" placeholder="Search title/description..." class="w-full px-3 py-2 rounded-md bg-[#0A1F19] border border-[#1B4D3E] text-emerald-50 placeholder:text-emerald-300/50" />
+            </div>
+            <div class="space-y-1">
+                <label for="startDate" class="block text-emerald-300/80 text-xs font-semibold uppercase tracking-wider">Visited on/after</label>
+                <input id="startDate" type="date" aria-label="Visited on or after" placeholder="Start date" class="w-full px-3 py-2 rounded-md bg-[#0A1F19] border border-[#1B4D3E] text-emerald-50 placeholder:text-emerald-300/50" />
+            </div>
+            <div class="space-y-1">
+                <label for="endDate" class="block text-emerald-300/80 text-xs font-semibold uppercase tracking-wider">Visited on/before</label>
+                <input id="endDate" type="date" aria-label="Visited on or before" placeholder="End date" class="w-full px-3 py-2 rounded-md bg-[#0A1F19] border border-[#1B4D3E] text-emerald-50 placeholder:text-emerald-300/50" />
+            </div>
+            {renderedSubCollections.length > 0 ? (
+                <div class="space-y-1">
+                    <label for="subcollectionFilter" class="block text-emerald-300/80 text-xs font-semibold uppercase tracking-wider">Subcollection</label>
+                    <select id="subcollectionFilter" aria-label="Subcollection filter" class="w-full px-3 py-2 rounded-md bg-[#0A1F19] border border-[#1B4D3E] text-emerald-50">
+                        <option value="">All subcollections</option>
+                        {renderedSubCollections.map(sc => (
+                            <option value={sc.id}>{sc.title}</option>
+                        ))}
+                    </select>
+                </div>
+            ) : (
+                <div class="space-y-1">
+                    <label class="block text-transparent text-xs font-semibold uppercase tracking-wider select-none">Clear</label>
+                    <button id="clearFilters" class="px-3 py-2 rounded-md bg-[#0A1F19] border border-[#1B4D3E] text-emerald-50">Clear filters</button>
+                </div>
+            )}
+        </div>
+        
+        {renderedSubCollections.length > 0 ? (
             // Render sub-collections
-            collection.subCollections.map(subCollection => (
-                <div class="mb-12">
-                    <h2 class="text-3xl font-bold text-emerald-50 mb-4">{subCollection.title}</h2>
+            renderedSubCollections.map(subCollection => (
+                <div class="mb-12" data-subcollection-id={subCollection.id}>
+                    <h2 class="text-3xl font-bold text-emerald-50 mb-2">{subCollection.title}</h2>
+                    {/* Subcollection progress */}
+                    {(!isLighthouses || subCollection.id === 'wisconsin') && (() => {
+                        const total = subCollection.experiences.length;
+                        const visited = countVisited(subCollection.experiences);
+                        const percent = total > 0 ? Math.round((visited / total) * 100) : 0;
+                        return (
+                            <div class="mb-4">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="text-emerald-200 text-xs">Progress</span>
+                                    <span class="text-emerald-200 text-xs">{visited} / {total} ({percent}%)</span>
+                                </div>
+                                <div class="h-2 bg-[#071512] border border-[#1B4D3E] rounded-full overflow-hidden">
+                                    <div class="h-full bg-emerald-600" style={`width: ${percent}%`}></div>
+                                </div>
+                            </div>
+                        );
+                    })()}
                     <p class="text-emerald-300/70 mb-6">{subCollection.description}</p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                        {subCollection.experiences.map(experience => {
+                        {subCollection.experiences.map((experience: any) => {
                             const blogSlug = blogPostMap.get(`${collection.id}-${experience.id}`);
                             const ExperienceWrapper = blogSlug ? 'a' : 'div';
                             const wrapperProps = blogSlug ? { href: `/blog/${blogSlug}` } : {};
@@ -63,9 +210,12 @@ const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; };
                             return (
                                 <ExperienceWrapper 
                                     {...wrapperProps}
-                                    class={`block border border-[#1B4D3E] rounded-lg overflow-hidden shadow-sm bg-[#0A1F19] ${
+                                    class={`collection-card block border border-[#1B4D3E] rounded-lg overflow-hidden shadow-sm bg-[#0A1F19] ${
                                         blogSlug ? 'hover:border-emerald-600 transition-colors duration-300 cursor-pointer' : ''
                                     }`}
+                                    data-title={experience.title}
+                                    data-description={experience.description}
+                                    data-date={experience.date}
                                 >
                                     <div class="relative">
                                         {experience.imageUrl ? (
@@ -103,7 +253,9 @@ const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; };
                                         )}
                                     </div>
                                     <div class="p-4">
-                                        <h3 class="text-xl font-semibold mb-2 text-emerald-50">{experience.title}</h3>
+                                        <h3 class="text-xl font-semibold mb-2 text-emerald-50">
+                                            {experience.title}{experience.former ? ' †' : ''}
+                                        </h3>
                                         {experience.description ? (
                                             <p class="text-emerald-300/70 mb-2">{experience.description}</p>
                                         ) : (
@@ -136,9 +288,12 @@ const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; };
                     return (
                         <ExperienceWrapper 
                             {...wrapperProps}
-                            class={`block border border-[#1B4D3E] rounded-lg overflow-hidden shadow-sm bg-[#0A1F19] ${
+                            class={`collection-card block border border-[#1B4D3E] rounded-lg overflow-hidden shadow-sm bg-[#0A1F19] ${
                                 blogSlug ? 'hover:border-emerald-600 transition-colors duration-300 cursor-pointer' : ''
                             }`}
+                            data-title={experience.title}
+                            data-description={experience.description}
+                            data-date={experience.date}
                         >
                             <div class="relative">
                                 {experience.imageUrl ? (
@@ -199,3 +354,69 @@ const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; };
         )}
     </div>
 </MainLayout>
+
+<script>
+    const textFilter = document.getElementById('textFilter') as HTMLInputElement | null;
+    const startDate = document.getElementById('startDate') as HTMLInputElement | null;
+    const endDate = document.getElementById('endDate') as HTMLInputElement | null;
+    const subFilter = document.getElementById('subcollectionFilter') as HTMLSelectElement | null;
+    const clearBtn = document.getElementById('clearFilters') as HTMLButtonElement | null;
+
+    function parseDate(value: string): number | null {
+        if (!value) return null;
+        const t = Date.parse(value);
+        return isNaN(t) ? null : t;
+    }
+
+    function matchesText(el: Element, q: string): boolean {
+        if (!q) return true;
+        const title = (el.getAttribute('data-title') || '').toLowerCase();
+        const desc = (el.getAttribute('data-description') || '').toLowerCase();
+        const needle = q.toLowerCase();
+        return title.includes(needle) || desc.includes(needle);
+    }
+
+    function matchesDate(el: Element, startMs: number | null, endMs: number | null): boolean {
+        const raw = el.getAttribute('data-date') || '';
+        if (!raw) return startMs == null && endMs == null ? true : false;
+        const candidate = Date.parse(raw);
+        if (isNaN(candidate)) return true; // ignore unparsable
+        if (startMs != null && candidate < startMs) return false;
+        if (endMs != null && candidate > endMs) return false;
+        return true;
+    }
+
+    function applyFilters() {
+        const q = textFilter?.value || '';
+        const s = parseDate(startDate?.value || '');
+        const e = parseDate(endDate?.value || '');
+        const sub = subFilter?.value || '';
+
+        // Toggle subcollections visibility if dropdown exists
+        document.querySelectorAll('[data-subcollection-id]')
+            .forEach(sc => {
+                const id = sc.getAttribute('data-subcollection-id') || '';
+                const show = !sub || sub === id;
+                (sc as HTMLElement).style.display = show ? '' : 'none';
+            });
+
+        document.querySelectorAll('.collection-card').forEach(card => {
+            const show = matchesText(card, q) && matchesDate(card, s, e);
+            (card as HTMLElement).style.display = show ? '' : 'none';
+        });
+    }
+
+    textFilter?.addEventListener('input', applyFilters);
+    startDate?.addEventListener('change', applyFilters);
+    endDate?.addEventListener('change', applyFilters);
+    subFilter?.addEventListener('change', applyFilters);
+    clearBtn?.addEventListener('click', () => {
+        if (textFilter) textFilter.value = '';
+        if (startDate) startDate.value = '';
+        if (endDate) endDate.value = '';
+        applyFilters();
+    });
+
+    // Initial filter run to normalize states
+    applyFilters();
+</script>
