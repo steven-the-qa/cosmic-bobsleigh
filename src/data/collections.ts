@@ -227,7 +227,15 @@ export const collections: Collection[] = [
         title: 'Kewaunee County Parks',
         description: 'Our adventures exploring the parks of Kewaunee County',
         experiences: [
-            // Add parks as we visit them
+            { id: 'blahnik-park', title: 'Blahnik Park', description: '', imageUrl: '', date: '' },
+            { id: 'bruemmer-park-zoo', title: 'Bruemmer Park & Zoo', description: '', imageUrl: '', date: '' },
+            { id: 'bruemmerville-park', title: 'Bruemmerville Park', description: '', imageUrl: '', date: '' },
+            { id: 'reckelberg-park', title: 'Reckelberg Park', description: '', imageUrl: '', date: '' },
+            { id: 'red-river-park', title: 'Red River Park', description: '', imageUrl: '', date: '' },
+            { id: 'riverview-atv-park', title: 'Riverview ATV Park', description: '', imageUrl: '', date: '' },
+            { id: 'ryan-park', title: 'Ryan Park', description: '', imageUrl: '', date: '' },
+            { id: 'winter-park', title: 'Winter Park', description: '', imageUrl: '', date: '' },
+            { id: 'dana-farm', title: 'Dana Farm (at Winter Park)', description: '', imageUrl: '', date: '' },
         ]
     },
     // Brown County Parks
@@ -236,7 +244,25 @@ export const collections: Collection[] = [
         title: 'Brown County Parks',
         description: 'Our adventures exploring the parks of Brown County',
         experiences: [
-            // Add parks as we visit them
+            { id: 'barkhausen-waterfowl-preserve', title: 'Barkhausen Waterfowl Preserve', description: '', imageUrl: '', date: '' },
+            { id: 'bay-shore-park', title: 'Bay Shore Park', description: '', imageUrl: '', date: '' },
+            { id: 'brown-county-fairgrounds', title: 'Brown County Fairgrounds', description: '', imageUrl: '', date: '' },
+            { id: 'brown-county-dog-park', title: 'Brown County Dog Park', description: '', imageUrl: '', date: '' },
+            { id: 'brown-county-rifle-range', title: 'Brown County Rifle Range', description: '', imageUrl: '', date: '' },
+            { id: 'devils-river-state-recreational-trail', title: 'Devils River State Recreational Trail', description: '', imageUrl: '', date: '' },
+            { id: 'eagles-nest-park-and-boat-launch', title: 'Eagles Nest Park and Boat Launch', description: '', imageUrl: '', date: '' },
+            { id: 'fonfereks-glen', title: "Fonferek's Glen", description: '', imageUrl: '', date: '' },
+            { id: 'fox-river-state-recreational-trail', title: 'Fox River State Recreational Trail', description: '', imageUrl: '', date: '' },
+            { id: 'lily-lake-park', title: 'Lily Lake Park', description: '', imageUrl: '', date: '' },
+            { id: 'mountain-bay-state-recreational-trail', title: 'Mountain-Bay State Recreational Trail', description: '', imageUrl: '', date: '' },
+            { id: 'neshota-park', title: 'Neshota Park', description: '', imageUrl: '', date: '' },
+            { id: 'pamperin-park', title: 'Pamperin Park', description: '', imageUrl: '', date: '' },
+            { id: 'reforestation-camp', title: 'Reforestation Camp', description: '', imageUrl: '', date: '' },
+            { id: 'st-francis-park', title: 'St. Francis Park', description: '', imageUrl: '', date: '' },
+            { id: 'suamico-boat-landing', title: 'Suamico Boat Landing', description: '', imageUrl: '', date: '' },
+            { id: 'vande-hei-property', title: 'Vande Hei Property', description: '', imageUrl: '', date: '' },
+            { id: 'way-morr-park', title: 'Way-Morr Park', description: '', imageUrl: '', date: '' },
+            { id: 'wequiock-falls', title: 'Wequiock Falls', description: '', imageUrl: '', date: '' },
         ]
     },
     // Lighthouses
