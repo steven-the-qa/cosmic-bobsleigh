@@ -43,11 +43,31 @@ const { title } = Astro.props;
                     <!-- Desktop menu -->
                     <div class="hidden lg:flex lg:items-center lg:space-x-1">
                         <a href="/" class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Home</a>
-                        
-                        <!-- Places Dropdown -->
+
+                        <!-- Parks Dropdown -->
                         <div class="relative group">
                             <button class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm flex items-center">
-                                Places
+                                Parks
+                                <svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-1 w-64 bg-[#0A1F19] border border-[#1B4D3E] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <div class="py-1">
+                                    <a href="/collections/wisconsin-state-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Wisconsin State Parks</a>
+                                    <a href="/collections/national-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">National Parks</a>
+                                    <div class="border-t border-[#1B4D3E] my-1"></div>
+                                    
+                                    <a href="/collections/kewaunee-county-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Kewaunee County Parks</a>
+                                    <a href="/collections/brown-county-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Brown County Parks</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Landmarks Dropdown (non-parks) -->
+                        <div class="relative group">
+                            <button class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm flex items-center">
+                                Landmarks
                                 <svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
@@ -55,9 +75,6 @@ const { title } = Astro.props;
                             <div class="absolute left-0 mt-1 w-56 bg-[#0A1F19] border border-[#1B4D3E] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                                 <div class="py-1">
                                     <a href="/collections/lighthouses" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Lighthouses</a>
-                                    <a href="/collections/wisconsin-state-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Wisconsin State Parks</a>
-                                    <a href="/collections/door-county-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Door County Parks</a>
-                                    <a href="/collections/national-parks" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">National Parks</a>
                                 </div>
                             </div>
                         </div>
@@ -72,6 +89,7 @@ const { title } = Astro.props;
                             </button>
                             <div class="absolute left-0 mt-1 w-48 bg-[#0A1F19] border border-[#1B4D3E] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                                 <div class="py-1">
+                                    <a href="/collections/door-county" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Door County</a>
                                     <a href="/collections/us-states" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">US States</a>
                                     <a href="/collections/canadian-provinces" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Canadian Provinces</a>
                                     <a href="/collections/countries" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Countries</a>
@@ -102,13 +120,20 @@ const { title } = Astro.props;
                     <div class="px-2 pt-2 pb-3 space-y-1">
                         <a href="/" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Home</a>
                         
-                        <!-- Places Section -->
+                        <!-- Parks Section -->
                         <div class="pt-2">
-                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Places</div>
-                            <a href="/collections/lighthouses" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Lighthouses</a>
+                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Parks</div>
                             <a href="/collections/wisconsin-state-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Wisconsin State Parks</a>
-                            <a href="/collections/door-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Door County Parks</a>
                             <a href="/collections/national-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">National Parks</a>
+                            
+                            <a href="/collections/kewaunee-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Kewaunee County Parks</a>
+                            <a href="/collections/brown-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Brown County Parks</a>
+                        </div>
+
+                        <!-- Landmarks Section -->
+                        <div class="pt-2">
+                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Landmarks</div>
+                            <a href="/collections/lighthouses" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Lighthouses</a>
                         </div>
 
                         <!-- Travel Section -->
@@ -117,6 +142,7 @@ const { title } = Astro.props;
                             <a href="/collections/us-states" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">US States</a>
                             <a href="/collections/canadian-provinces" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Canadian Provinces</a>
                             <a href="/collections/countries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Countries</a>
+                            <a href="/collections/door-county" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Door County</a>
                         </div>
 
                         <!-- Food & Drink Section -->
