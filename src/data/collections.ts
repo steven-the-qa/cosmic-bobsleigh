@@ -1011,9 +1011,9 @@ export const collections: Collection[] = [
                     {
                         id: "heritage-hill",
                         title: "Heritage Hill State Historical Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
+                        description: "We accidentally visited this park during a family-friendly event, so the education center was closed and so were a lot of the historical buildings! We made the best of a weird situation by exploring as much as we could, including an old blacksmith shop and military jail. We also got some tasty birria tacos from a food truck there. We'll likely come back next year during the summer to get the full tour.",
+                        imageUrl: "/wisconsin-state-parks/heritage_hill.png",
+                        date: "September 20, 2025",
                         designation: 'historical park'
                     },
                     // Recreation Areas
