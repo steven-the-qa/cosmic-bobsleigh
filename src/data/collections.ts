@@ -71,6 +71,21 @@ export const collections: Collection[] = [
                     { id: 'percy-johnson-memorial', title: 'Percy Johnson Memorial', description: 'This one was our last Door County Park! We had the joy of seeing a woolly bear caterpillar on our way back to the car 🐛', imageUrl: '/door-county-parks/percy_johnson.jpeg', date: 'September 7, 2025' },
                 ]
             },
+            {
+                id: 'door-county-libraries',
+                title: 'Door County Libraries',
+                description: 'Libraries across Door County',
+                experiences: [
+                    { id: 'sturgeon-bay-library', title: 'Sturgeon Bay Library', description: '', imageUrl: '', date: '' },
+                    { id: 'baileys-harbor-library', title: 'Baileys Harbor Library', description: '', imageUrl: '', date: '' },
+                    { id: 'egg-harbor-library', title: 'Egg Harbor Library', description: '', imageUrl: '', date: '' },
+                    { id: 'ephraim-library', title: 'Ephraim Library', description: '', imageUrl: '', date: '' },
+                    { id: 'fish-creek-library', title: 'Fish Creek Library', description: '', imageUrl: '', date: '' },
+                    { id: 'forestville-library', title: 'Forestville Library', description: '', imageUrl: '', date: '' },
+                    { id: 'sister-bay-liberty-grove-library', title: 'Sister Bay/Liberty Grove Library', description: '', imageUrl: '', date: '' },
+                    { id: 'washington-island-library', title: 'Washington Island Library', description: '', imageUrl: '', date: '' },
+                ]
+            },
         ]
     },
     // Door County Parks
