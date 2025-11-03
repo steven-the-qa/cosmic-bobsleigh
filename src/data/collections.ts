@@ -1127,15 +1127,24 @@ export const collections: Collection[] = [
                     {
                         id: "lizard-mound",
                         title: "Lizard Mound State Park",
-                        description: "",
+                        description: "We walked all the prairie trails and saw tons of mounds! More than 10 for sure. It was so peaceful and quiet and the forest trail was our favorite!",
                         imageUrl: "/wisconsin-state-parks/lizard_mound.jpg",
                         date: "September 27, 2025",
                         designation: 'park'
                     },
                     {
+                        id: "lost-dauphin",
+                        title: "Lost Dauphin State Park",
+                        description: "This one used to be a state park! In the 2025 Wisconsin State Park Adventure Journal, it's still included as a state park! We posed on the cool sign they had there, and then hiked up the super steep paved path to the playground where we swung on the swings for a bit. The swings have a wonderful view of the city from the hilltop. Nearby we saw a couple of people filming a video or a news story or something, it was odd haha.",
+                        imageUrl: "/wisconsin-state-parks/lost_dauphin.jpg",
+                        date: "September 27, 2025",
+                        designation: 'park',
+                        former: true
+                    },
+                    {
                         id: "straight-lake",
                         title: "Straight Lake State Park",
-                        description: "",
+                        description: "We stopped by Rainbow Lake first, but then hiked a short ways to where the trail from the parking lot joins with the Ice Age Trail, and then we took that to Straight Lake! We accidentally found a geocache here, and we saw a new kind of woodpecker! There were some stepping stones to cross the water to continue on the Ice Age Trail but we didn't want to risk getting wet when we still had 3 more parks to see that day.",
                         imageUrl: "/wisconsin-state-parks/straight_lake.jpeg",
                         date: "November 1, 2025",
                         designation: 'park'
@@ -1143,7 +1152,7 @@ export const collections: Collection[] = [
                     {
                         id: "interstate",
                         title: "Interstate State Park",
-                        description: "",
+                        description: "We hiked the Potholes Trail! And lo and behold, we saw many potholes (and stood inside some of them). And we saw Minnesota! It was crazy to see people across the river knowing they were in a different state! The views here are breathtaking.",
                         imageUrl: "/wisconsin-state-parks/interstate.jpeg",
                         date: "November 1, 2025",
                         designation: 'park'
@@ -1151,7 +1160,7 @@ export const collections: Collection[] = [
                     {
                         id: "willow-river",
                         title: "Willow River State Park",
-                        description: "",
+                        description: "The descent to Willow Falls was STEEP! And the climb back up was no walk in the park (though technically it was hehe). The falls are so beautiful! And huge! I remember feeling so tiny in their presence. We found a little cave near the falls and could swear we saw like 4 bats in there looking back at us! We could only see their eyes, though, since our phone flashlights only reached so far.",
                         imageUrl: "/wisconsin-state-parks/willow_river.png",
                         date: "November 1, 2025",
                         designation: 'park'
@@ -1159,7 +1168,7 @@ export const collections: Collection[] = [
                     {
                         id: "kinnickinnic",
                         title: "Kinnickinnic State Park",
-                        description: "",
+                        description: "This one had an observation deck with an incredible view of the St. Croix River! Same coast as Interstate State Park, different vantage point. We got an up-close view of the floodplains. By the time we got to this one, we were exhausted! It was the 4th state park we saw that day.",
                         imageUrl: "/wisconsin-state-parks/kinnickinnic.jpg",
                         date: "November 1, 2025",
                         designation: 'park'
@@ -1167,7 +1176,7 @@ export const collections: Collection[] = [
                     {
                         id: "lake-wissota",
                         title: "Lake Wissota State Park",
-                        description: "",
+                        description: "We were here earlier than we usually go to state parks! At 8am, we were the only ones there to enjoy the lake overlook. From the overlook, we could see Pine Harbor Island!",
                         imageUrl: "/wisconsin-state-parks/lake_wissota.jpeg",
                         date: "November 2, 2025",
                         designation: 'park'
@@ -1408,15 +1417,6 @@ export const collections: Collection[] = [
                         designation: 'park'
                     },
                     // Former parks
-                    {
-                        id: "lost-dauphin",
-                        title: "Lost Dauphin State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park',
-                        former: true
-                    },
                     {
                         id: "old-wade-house",
                         title: "Old Wade House State Park",
