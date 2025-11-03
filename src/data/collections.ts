@@ -3,7 +3,7 @@ import type { Collection } from '../types';
 export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries' | 'national-parks' | 'door-county';
 
 export const collections: Collection[] = [
-    // Door County Aggregate
+    // Door County
     {
         id: 'door-county',
         title: 'Door County',
@@ -28,19 +28,104 @@ export const collections: Collection[] = [
                 description: 'All the lighthouses in Door County',
                 experiences: [
                     // from Lighthouses → Door County
-                    { id: 'sturgeon-bay-coast-guard-station', title: 'Sturgeon Bay Coast Guard Station', description: 'The 1st lighthouse we saw after moving to Sturgeon Bay', imageUrl: '/lighthouses/door-county/sturgeon_bay_coast_guard_station.png', date: 'July 4, 2024' },
-                    { id: 'sturgeon-bay-ship-canal', title: 'Sturgeon Bay Ship Canal Lighthouse', description: 'The 2nd lighthouse we saw after moving to Sturgeon Bay', imageUrl: '/lighthouses/door-county/sturgen_bay_ship_canal.png', date: 'July 4, 2024' },
-                    { id: 'eagle-bluff', title: 'Eagle Bluff Lighthouse', description: 'A must-see while we were at Peninsula State Park', imageUrl: '/lighthouses/door-county/eagle_bluff.png', date: 'July 14, 2024' },
-                    { id: 'baileys-harbor-range-1', title: 'Baileys Harbor Range Light 1', description: "The first of the 2 range lights, near the entrance to the Ridges Sanctuary. It's so tiny!", imageUrl: '/lighthouses/door-county/baileys_harbor_range_1.png', date: 'August 31, 2024' },
-                    { id: 'baileys-harbor-range-2', title: 'Baileys Harbor Range Light 2', description: "This one is much bigger! It's the house where the lighthouse keeper lived. We got to view the other range light using an old telescope in the attic.", imageUrl: '/lighthouses/door-county/baileys_harbor_range_2.png', date: 'August 31, 2024' },
-                    { id: 'cana-island', title: 'Cana Island Lighthouse', description: 'We climbed the stairs to the top of this one! Such a beautiful view ❤️', imageUrl: '/lighthouses/door-county/cana_island.png', date: 'August 31, 2024' },
-                    { id: 'birdcage', title: 'Old Baileys Harbor Lighthouse (Bird Cage)', description: "Only accessible by boat, but we got to see it on a Bailey's Harbor cruise 🛥️", imageUrl: '/lighthouses/door-county/birdcage.png', date: 'September 8, 2024' },
-                    { id: 'plum-island', title: 'Plum Island Lighthouse', description: "Our first sighting was on the ferry ride to Washington Island; this photo is from the day we saw the Pilot Island lighthouse!", imageUrl: '/lighthouses/door-county/plum_island.jpeg', date: 'October 5, 2024' },
-                    { id: 'sherwood-point', title: 'Sherwood Point Lighthouse', description: "The last Door County lighthouse to be automated, and the only one made with red bricks! We didn't end up going inside because they took forever to get the key 🫠", imageUrl: '/lighthouses/door-county/sherwood_point.png', date: 'June 7, 2025' },
-                    { id: 'pilot-island', title: 'Pilot Island Lighthouse', description: 'We took a boat out to Plum Island so we could finally glimpse Pilot Island! And the Plum Island lighthouse up close, of course 😏', imageUrl: '/lighthouses/door-county/pilot_island.jpeg', date: 'August 2, 2025' },
-                    { id: 'old-plum-island', title: '**BONUS** Old Plum Island Lighthouse Ruins', description: 'We had no idea the current Plum Island lighthouse was actually a "remake"! The old one was built in the wrong spot and with cheap materials.', imageUrl: '/lighthouses/door-county/old_plum_island.jpeg', date: 'August 2, 2025' },
-                    { id: 'pottawatomie', title: 'Pottawatomie Lighthouse', description: "This one was probably our hardest-won lighthouse passport stamp yet! We hiked 1.25 miles uphill from the dock after driving 1 hour and taking 2 ferries! Once we reached it, we got a tour of the lighthouse and even got to be right up next to the fresnel lens! Nearby, we visited the grave of the lighthouse's 1st keeper (it's also the 1st lighthouse on Lake Michigan!). One more fun fact is that the lighthouse tower is the highest point in Door County. It's also close enough to connect to a cell tower in Michigan, so our phones changed to Eastern Time a few times.", imageUrl: '/lighthouses/door-county/pottawatomie.jpeg', date: 'September 7, 2025' },
-                    { id: 'chambers-island', title: 'Chambers Island Lighthouse', description: '', imageUrl: '', date: '' },
+                    {
+                        id: 'sturgeon-bay-coast-guard-station',
+                        title: 'Sturgeon Bay Coast Guard Station',
+                        description: 'The 1st lighthouse we saw after moving to Sturgeon Bay',
+                        imageUrl: '/lighthouses/door-county/sturgeon_bay_coast_guard_station.png',
+                        date: 'July 4, 2024'
+                    },
+                    {
+                        id: 'sturgeon-bay-ship-canal',
+                        title: 'Sturgeon Bay Ship Canal Lighthouse',
+                        description: 'The 2nd lighthouse we saw after moving to Sturgeon Bay',
+                        imageUrl: '/lighthouses/door-county/sturgen_bay_ship_canal.png',
+                        date: 'July 4, 2024'
+                    },
+                    {
+                        id: 'eagle-bluff',
+                        title: 'Eagle Bluff Lighthouse',
+                        description: 'A must-see while we were at Peninsula State Park',
+                        imageUrl: '/lighthouses/door-county/eagle_bluff.png',
+                        date: 'July 14, 2024'
+                    },
+                    {
+                        id: 'baileys-harbor-range-1',
+                        title: 'Baileys Harbor Range Light 1',
+                        description: "The first of the 2 range lights, near the entrance to the Ridges Sanctuary. It's so tiny!",
+                        imageUrl: '/lighthouses/door-county/baileys_harbor_range_1.png',
+                        date: 'August 31, 2024'
+                    },
+                    {
+                        id: 'baileys-harbor-range-2',
+                        title: 'Baileys Harbor Range Light 2',
+                        description: "This one is much bigger! It's the house where the lighthouse keeper lived. We got to view the other range light using an old telescope in the attic.",
+                        imageUrl: '/lighthouses/door-county/baileys_harbor_range_2.png',
+                        date: 'August 31, 2024'
+                    },
+                    {
+                        id: 'cana-island',
+                        title: 'Cana Island Lighthouse',
+                        description: 'We climbed the stairs to the top of this one! Such a beautiful view ❤️',
+                        imageUrl: '/lighthouses/door-county/cana_island.png',
+                        date: 'August 31, 2024'
+                    },
+                    {
+                        id: 'birdcage',
+                        title: 'Old Baileys Harbor Lighthouse (Bird Cage)',
+                        description: "Only accessible by boat, but we got to see it on a Bailey's Harbor cruise 🛥️",
+                        imageUrl: '/lighthouses/door-county/birdcage.png',
+                        date: 'September 8, 2024'
+                    },
+                    {
+                        id: 'plum-island-range-rear-light',
+                        title: 'Plum Island Rear Range Light',
+                        description: 'Our first sighting was on the ferry ride to Washington Island; this photo is from the day we saw the Pilot Island lighthouse!',
+                        imageUrl: '/lighthouses/door-county/plum_island_rear_range.jpeg',
+                        date: 'October 5, 2024'
+                    },
+                    {
+                        id: 'sherwood-point',
+                        title: 'Sherwood Point Lighthouse',
+                        description: 'The last Door County lighthouse to be automated, and the only one made with red bricks! We didn\'t end up going inside because they took forever to get the key 🫠',
+                        imageUrl: '/lighthouses/door-county/sherwood_point.png',
+                        date: 'June 7, 2025'
+                    },
+                    {
+                        id: 'plum-island-range-front-light',
+                        title: 'Plum Island Front Range Light',
+                        description: '',
+                        imageUrl: '/lighthouses/door-county/plum_island_front_range.jpg',
+                        date: 'August 2, 2025'
+                    },
+                    {
+                        id: 'pilot-island',
+                        title: 'Pilot Island Lighthouse',
+                        description: 'We took a boat out to Plum Island so we could finally glimpse Pilot Island! And the Plum Island lighthouse up close, of course 😏',
+                        imageUrl: '/lighthouses/door-county/pilot_island.jpeg',
+                        date: 'August 2, 2025'
+                    },
+                    {
+                        id: 'old-plum-island',
+                        title: '**BONUS** Old Plum Island Lighthouse Ruins',
+                        description: 'We had no idea the current Plum Island lighthouse was actually a "remake"! The old one was built in the wrong spot and with cheap materials.',
+                        imageUrl: '/lighthouses/door-county/old_plum_island.jpeg',
+                        date: 'August 2, 2025'
+                    },
+                    {
+                        id: 'pottawatomie',
+                        title: 'Pottawatomie Lighthouse',
+                        description: "This one was probably our hardest-won lighthouse passport stamp yet! We hiked 1.25 miles uphill from the dock after driving 1 hour and taking 2 ferries! Once we reached it, we got a tour of the lighthouse and even got to be right up next to the fresnel lens! Nearby, we visited the grave of the lighthouse's 1st keeper (it's also the 1st lighthouse on Lake Michigan!). One more fun fact is that the lighthouse tower is the highest point in Door County. It's also close enough to connect to a cell tower in Michigan, so our phones changed to Eastern Time a few times.",
+                        imageUrl: '/lighthouses/door-county/pottawatomie.jpeg',
+                        date: 'September 7, 2025'
+                    },
+                    {
+                        id: 'chambers-island',
+                        title: 'Chambers Island Lighthouse',
+                        description: '',
+                        imageUrl: '',
+                        date: ''
+                    },
                 ]
             },
             {
@@ -579,14 +664,12 @@ export const collections: Collection[] = [
                         date: 'September 8, 2024'
                     },
                     {
-                        id: 'plum-island',
-                        title: 'Plum Island Lighthouse',
+                        id: 'plum-island-rear-range-light',
+                        title: 'Plum Island Rear Range Light',
                         description: 'Our first sighting was on the ferry ride to Washington Island; this photo is from the day we saw the Pilot Island lighthouse!',
-                        imageUrl: '/lighthouses/door-county/plum_island.jpeg',
+                        imageUrl: '/lighthouses/door-county/plum_island_rear_range.jpeg',
                         date: 'October 5, 2024'
                     },
-                    { id: 'plum-island-range-front-light', title: 'Plum Island Range Front Light', description: '', imageUrl: '', date: '' },
-                    { id: 'plum-island-range-rear-light', title: 'Plum Island Range Rear Light', description: '', imageUrl: '', date: '' },
                     {
                         id: 'kimberly-point',
                         title: 'Kimberly Point Lighthouse',
@@ -622,13 +705,32 @@ export const collections: Collection[] = [
                         imageUrl: '/lighthouses/door-county/sherwood_point.png',
                         date: 'June 7, 2025'
                     },
-                    { id: 'raspberry-island-light', title: 'Raspberry Island Light', description: '', imageUrl: '', date: '' },
-                    { id: 'devils-island-light', title: 'Devils Island Light', description: '', imageUrl: '', date: '' },
+                    {
+                        id: 'raspberry-island-light',
+                        title: 'Raspberry Island Light',
+                        description: '',
+                        imageUrl: '/lighthouses/other/raspberry_island.jpg',
+                        date: 'July 12, 2025'
+                    },
+                    {
+                        id: 'devils-island-light',
+                        title: 'Devils Island Light',
+                        description: '',
+                        imageUrl: '/lighthouses/other/devils_island.jpg',
+                        date: 'July 12, 2025'
+                    },
                     {
                         id: 'pilot-island',
                         title: 'Pilot Island Lighthouse',
                         description: 'We took a boat out to Plum Island so we could finally glimpse Pilot Island! And the Plum Island lighthouse up close, of course 😏',
                         imageUrl: '/lighthouses/door-county/pilot_island.jpeg',
+                        date: 'August 2, 2025'
+                    },
+                    {
+                        id: 'plum-island-front-range-light',
+                        title: 'Plum Island Front Range Light',
+                        description: '',
+                        imageUrl: '/lighthouses/door-county/plum_island_front_range.jpg',
                         date: 'August 2, 2025'
                     },
                     {
@@ -999,6 +1101,86 @@ export const collections: Collection[] = [
                         designation: 'park'
                     },
                     {
+                        id: "copper-culture",
+                        title: "Copper Culture State Park",
+                        description: "Our favorite part of the visit was seeing a bunch of tadpoles and frogs down by the river! We saw a lot of beautiful flora and fauna, and there was a tree with a big sign warning visitors of the resident snake! It's cool that they let it live in the tree.",
+                        imageUrl: "/wisconsin-state-parks/copper_culture.jpeg",
+                        date: "September 13, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "governor-thompson",
+                        title: "Governor Thompson State Park",
+                        description: "We got to take a pic at the Travel Wisconsin selfie station here! It's a great park for kayaking and barbecues, but we were just here to see the view of the lake. We also got to pet some dogs when we first got there!",
+                        imageUrl: "/wisconsin-state-parks/governor_thompson.jpg",
+                        date: "September 13, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "harrington-beach",
+                        title: "Harrington Beach State Park",
+                        description: "There was a nice pond on the way to the beach, so we stopped there to walk on the trail around it for a bit. The beachfront trail had a lot of gorgeous trees and chipmunks between us and the sand. The way the trees and beach were positioned felt like a very different side of Wisconsin than we'd seen before!",
+                        imageUrl: "/wisconsin-state-parks/harrington_beach.jpg",
+                        date: "September 27, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "lizard-mound",
+                        title: "Lizard Mound State Park",
+                        description: "",
+                        imageUrl: "/wisconsin-state-parks/lizard_mound.jpg",
+                        date: "September 27, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "straight-lake",
+                        title: "Straight Lake State Park",
+                        description: "",
+                        imageUrl: "/wisconsin-state-parks/straight_lake.jpeg",
+                        date: "November 1, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "interstate",
+                        title: "Interstate State Park",
+                        description: "",
+                        imageUrl: "/wisconsin-state-parks/interstate.jpeg",
+                        date: "November 1, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "willow-river",
+                        title: "Willow River State Park",
+                        description: "",
+                        imageUrl: "/wisconsin-state-parks/willow_river.png",
+                        date: "November 1, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "kinnickinnic",
+                        title: "Kinnickinnic State Park",
+                        description: "",
+                        imageUrl: "/wisconsin-state-parks/kinnickinnic.jpg",
+                        date: "November 1, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "lake-wissota",
+                        title: "Lake Wissota State Park",
+                        description: "",
+                        imageUrl: "/wisconsin-state-parks/lake_wissota.jpeg",
+                        date: "November 2, 2025",
+                        designation: 'park'
+                    },
+                    {
+                        id: "brunet-island",
+                        title: "Brunet Island State Park",
+                        description: "This was the last park we stopped at on the way back from our 4-year anniversary weekend! We saw 3 deer on the drive out!! There's also a dam nearby, and a lot of cozy picnic areas in the park.",
+                        imageUrl: "/wisconsin-state-parks/brunet_island.jpeg",
+                        date: "November 2, 2025",
+                        designation: 'park'
+                    },
+                    {
                         id: "amnicon-falls",
                         title: "Amnicon Falls State Park",
                         description: "",
@@ -1039,40 +1221,8 @@ export const collections: Collection[] = [
                         designation: 'park'
                     },
                     {
-                        id: "brunet-island",
-                        title: "Brunet Island State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
                         id: "buckhorn",
                         title: "Buckhorn State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
-                        id: "copper-culture",
-                        title: "Copper Culture State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
-                        id: "governor-thompson",
-                        title: "Governor Thompson State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
-                        id: "harrington-beach",
-                        title: "Harrington Beach State Park",
                         description: "",
                         imageUrl: "",
                         date: "",
@@ -1087,40 +1237,8 @@ export const collections: Collection[] = [
                         designation: 'park'
                     },
                     {
-                        id: "interstate",
-                        title: "Interstate State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
-                        id: "kinnickinnic",
-                        title: "Kinnickinnic State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
-                        id: "lake-wissota",
-                        title: "Lake Wissota State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
                         id: "lakeshore",
                         title: "Lakeshore State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
-                        id: "lizard-mound",
-                        title: "Lizard Mound State Park",
                         description: "",
                         imageUrl: "",
                         date: "",
@@ -1199,14 +1317,6 @@ export const collections: Collection[] = [
                         designation: 'park'
                     },
                     {
-                        id: "straight-lake",
-                        title: "Straight Lake State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
                         id: "tower-hill",
                         title: "Tower Hill State Park",
                         description: "",
@@ -1217,14 +1327,6 @@ export const collections: Collection[] = [
                     {
                         id: "wildcat-mountain",
                         title: "Wildcat Mountain State Park",
-                        description: "",
-                        imageUrl: "",
-                        date: "",
-                        designation: 'park'
-                    },
-                    {
-                        id: "willow-river",
-                        title: "Willow River State Park",
                         description: "",
                         imageUrl: "",
                         date: "",
