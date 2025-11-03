@@ -94,7 +94,7 @@ export const collections: Collection[] = [
                     {
                         id: 'plum-island-range-front-light',
                         title: 'Plum Island Front Range Light',
-                        description: '',
+                        description: "We got to see this up close when we took a walking tour of Plum Island! Up close, it's easy to see that this range light is a lot farther away from the lighthouse than it looked when we first saw it from the deck of the Washington Island ferry.",
                         imageUrl: '/lighthouses/door-county/plum_island_front_range.jpg',
                         date: 'August 2, 2025'
                     },
@@ -708,14 +708,14 @@ export const collections: Collection[] = [
                     {
                         id: 'raspberry-island-light',
                         title: 'Raspberry Island Light',
-                        description: '',
+                        description: 'This was part of the Apostle Islands tour! The lighthouse that stands today is a much larger building than the one that came before it. It was rebuilt to accommodate the families living there.',
                         imageUrl: '/lighthouses/other/raspberry_island.jpg',
                         date: 'July 12, 2025'
                     },
                     {
                         id: 'devils-island-light',
                         title: 'Devils Island Light',
-                        description: '',
+                        description: "This one was also part of the Apostle Islands tour! Devil's Island is the northernmost point of Wisconsin, so this lighthouse was also the northernmost lighthouse in Wisconsin!",
                         imageUrl: '/lighthouses/other/devils_island.jpg',
                         date: 'July 12, 2025'
                     },
@@ -729,7 +729,7 @@ export const collections: Collection[] = [
                     {
                         id: 'plum-island-front-range-light',
                         title: 'Plum Island Front Range Light',
-                        description: '',
+                        description: "We got to see this up close when we took a walking tour of Plum Island! Up close, it's easy to see that this range light is a lot farther away from the lighthouse than it looked when we first saw it from the deck of the Washington Island ferry.",
                         imageUrl: '/lighthouses/door-county/plum_island_front_range.jpg',
                         date: 'August 2, 2025'
                     },
@@ -748,6 +748,20 @@ export const collections: Collection[] = [
                         date: 'September 7, 2025'
                     },
                     {
+                        id: 'kewaunee-pierhead-light',
+                        title: 'Kewaunee Pierhead Light',
+                        description: 'We got to go inside the lighthouse and view the fresnel lens up close! There was a video presentation detailing the history of the lighthouse, and we learned that the fresnel lens was replaced by an LED in 2019 and the fresnel lens was moved to a display case in town at the Kewaunee Historical Society! So we went there to see it afterward and ended up perusing a ton of old newspapers from the 1900s.',
+                        imageUrl: '/lighthouses/other/kewaunee_pierhead.jpg',
+                        date: 'October 4, 2025'
+                    },
+                    {
+                        id: 'grassy-island-range-lights',
+                        title: 'Grassy Island Range Lights',
+                        description: 'The staff here were so friendly! They gave a presentation on the history of the range lights, and a good summary is that the lights have survived in spite of many challenges! They were almost demolished several times, and they exist today because of the community members who fought for them to stay. We got to go inside both of the range lights while we were there. There is not much room but we managed to climb the stairs!',
+                        imageUrl: '/lighthouses/other/grassy_island_range.png',
+                        date: 'October 4, 2025'
+                    },
+                    {
                         id: 'chambers-island',
                         title: 'Chambers Island Lighthouse',
                         description: '',
@@ -759,13 +773,11 @@ export const collections: Collection[] = [
                     { id: 'chequamegon-point-light', title: 'Chequamegon Point Light', description: '', imageUrl: '', date: '' },
                     { id: 'dunlap-reef-range-lights', title: 'Dunlap Reef Range Lights', description: '', imageUrl: '', date: '' },
                     { id: 'fond-du-lac-light', title: 'Fond du Lac Light', description: '', imageUrl: '', date: '' },
-                    { id: 'grassy-island-range-lights', title: 'Grassy Island Range Lights', description: '', imageUrl: '', date: '' },
                     { id: 'green-bay-harbor-entrance', title: 'Green Bay Harbor Entrance Light', description: '', imageUrl: '', date: '' },
                     { id: 'green-island-light', title: 'Green Island Light', description: '', imageUrl: '', date: '' },
                     { id: 'gull-island-light', title: 'Gull Island Light', description: '', imageUrl: '', date: '' },
                     { id: 'kenosha-light', title: 'Kenosha Light', description: '', imageUrl: '', date: '' },
                     { id: 'kevich-light', title: 'Kevich Light', description: '', imageUrl: '', date: '' },
-                    { id: 'kewaunee-pierhead-light', title: 'Kewaunee Pierhead Light', description: '', imageUrl: '', date: '' },
                     { id: 'la-pointe-light', title: 'La Pointe Light', description: '', imageUrl: '', date: '' },
                     { id: 'long-tail-point-light-1', title: 'Long Tail Point Light (First)', description: '', imageUrl: '', date: '' },
                     { id: 'long-tail-point-light-2', title: 'Long Tail Point Light (Second)', description: '', imageUrl: '', date: '' },
