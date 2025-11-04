@@ -612,7 +612,7 @@ export const collections: Collection[] = [
                         title: 'Asylum Point Lighthouse',
                         description: 'We were in Oshkosh to try a local chocolate shop and decided to swing by a lighthouse too!',
                         imageUrl: '/lighthouses/other/asylum_point.jpeg',
-                        date: 'March 2, 2023'
+                        date: 'March 2, 2024'
                     },
                     {
                         id: 'sturgeon-bay-canal-north-pierhead',
