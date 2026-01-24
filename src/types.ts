@@ -23,5 +23,3 @@ export interface Collection {
     experiences?: Experience[];
     subCollections?: SubCollection[];
 }
-
-export type CollectionId = 'darden-restaurants' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'kewaunee-county-parks' | 'brown-county-parks' | 'starbucks-reserve-roasteries' | 'us-states' | 'canadian-provinces' | 'countries' | 'national-parks';
