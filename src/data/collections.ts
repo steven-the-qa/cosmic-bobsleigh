@@ -1,6 +1,6 @@
 import type { Collection } from '../types';
 
-export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries' | 'national-parks' | 'door-county';
+export type CollectionId = 'darden' | 'lighthouses' | 'wisconsin-state-parks' | 'door-county-parks' | 'door-county-libraries' | 'wisconsin-bookstores' | 'starbucks-reserve-roasteries' | 'states' | 'provinces' | 'countries' | 'national-parks' | 'door-county';
 
 export const collections: Collection[] = [
     // Door County
@@ -366,6 +366,113 @@ export const collections: Collection[] = [
                 description: "This one was our last Door County Park! We had the joy of seeing a woolly bear caterpillar on our way back to the car 🐛",
                 imageUrl: '/door-county-parks/percy_johnson.jpeg',
                 date: 'September 7, 2025'
+            },
+        ]
+    },
+    // Door County Libraries
+    {
+        id: 'door-county-libraries',
+        title: 'Door County Libraries',
+        description: 'Our quest to visit every public library in Door County',
+        experiences: [
+            {
+                id: 'sturgeon-bay-library',
+                title: 'Sturgeon Bay Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'baileys-harbor-library',
+                title: 'Baileys Harbor Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'egg-harbor-library',
+                title: 'Egg Harbor Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'ephraim-library',
+                title: 'Ephraim Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'fish-creek-library',
+                title: 'Fish Creek Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'forestville-library',
+                title: 'Forestville Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'sister-bay-liberty-grove-library',
+                title: 'Sister Bay/Liberty Grove Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'washington-island-library',
+                title: 'Washington Island Library',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+        ]
+    },
+    // Wisconsin Independent Bookstores
+    {
+        id: 'wisconsin-bookstores',
+        title: 'Wisconsin\'s Indie Bookstores',
+        description: 'Our journey visiting independent bookstores across Wisconsin',
+        experiences: [
+            {
+                id: 'novel-bay-booksellers',
+                title: 'Novel Bay Booksellers',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'lions-mouth',
+                title: 'Lion\'s Mouth Bookstore',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'prairie-pages',
+                title: 'Prairie Pages',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'yardstick',
+                title: 'Yardstick Books',
+                description: '',
+                imageUrl: '',
+                date: ''
+            },
+            {
+                id: 'story-cellar',
+                title: 'The Story Cellar',
+                description: '',
+                imageUrl: '',
+                date: ''
             },
         ]
     },
