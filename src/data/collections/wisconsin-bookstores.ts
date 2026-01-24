@@ -40,5 +40,12 @@ export const wisconsinBookstores: Collection = {
             imageUrl: '',
             date: ''
         },
+        {
+            id: 'fair-isle',
+            title: 'Fair Isle Books & Gifts',
+            description: '',
+            imageUrl: '',
+            date: ''
+        },
     ]
 };
