@@ -17,7 +17,7 @@ export const wisconsinBookstores: Collection = {
             title: 'Lion\'s Mouth Bookstore',
             description: '',
             imageUrl: '',
-            date: ''
+            date: 'January 24, 2026'
         },
         {
             id: 'prairie-pages',
