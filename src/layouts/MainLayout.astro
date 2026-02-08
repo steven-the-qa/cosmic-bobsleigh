@@ -112,45 +112,104 @@ const { title } = Astro.props;
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Books Dropdown -->
+                        <div class="relative group">
+                            <button class="text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E] text-sm flex items-center">
+                                Books
+                                <svg class="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-1 w-56 bg-[#0A1F19] border border-[#1B4D3E] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                                <div class="py-1">
+                                    <a href="/collections/wisconsin-bookstores" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Wisconsin's Indie Bookstores</a>
+                                    <a href="/collections/door-county-libraries" class="block px-4 py-2 text-sm text-emerald-50 hover:bg-[#1B4D3E]">Door County Libraries</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Mobile menu -->
-                <div id="mobile-menu" class="hidden lg:hidden">
-                    <div class="px-2 pt-2 pb-3 space-y-1">
-                        <a href="/" class="block text-emerald-50 px-3 py-2 rounded-md hover:bg-[#1B4D3E]">Home</a>
+                <style>
+                summary::-webkit-details-marker { display: none; }
+                summary { list-style: none; }
+                </style>
+
+                <div id="mobile-menu" class="hidden lg:hidden max-h-screen overflow-y-auto bg-[#0F2E25] border-b border-emerald-900">
+                    <div class="px-2 pt-2 pb-8 space-y-1">
                         
-                        <!-- Parks Section -->
-                        <div class="pt-2">
-                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Parks</div>
-                            <a href="/collections/wisconsin-state-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Wisconsin State Parks</a>
-                            <a href="/collections/national-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">National Parks</a>
-                            
-                            <a href="/collections/kewaunee-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Kewaunee County Parks</a>
-                            <a href="/collections/brown-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Brown County Parks</a>
-                        </div>
+                        <a href="/" class="block text-emerald-50 px-3 py-3 rounded-md hover:bg-[#1B4D3E] font-medium border-b border-emerald-800/30">Home</a>
+                        
+                        <details class="group pt-2">
+                            <summary class="flex items-center justify-between text-emerald-300 px-3 py-3 text-xs font-semibold uppercase tracking-wider cursor-pointer hover:bg-[#1B4D3E] rounded-md transition-colors">
+                                <span>Parks</span>
+                                <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="space-y-1 mt-1 ml-2 border-l border-emerald-800/50">
+                                <a href="/collections/wisconsin-state-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Wisconsin State Parks</a>
+                                <a href="/collections/national-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">National Parks</a>
+                                <a href="/collections/kewaunee-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Kewaunee County Parks</a>
+                                <a href="/collections/brown-county-parks" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Brown County Parks</a>
+                            </div>
+                        </details>
 
-                        <!-- Landmarks Section -->
-                        <div class="pt-2">
-                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Landmarks</div>
-                            <a href="/collections/lighthouses" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Lighthouses</a>
-                        </div>
+                        <details class="group pt-2">
+                            <summary class="flex items-center justify-between text-emerald-300 px-3 py-3 text-xs font-semibold uppercase tracking-wider cursor-pointer hover:bg-[#1B4D3E] rounded-md">
+                                <span>Landmarks</span>
+                                <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="space-y-1 mt-1 ml-2 border-l border-emerald-800/50">
+                                <a href="/collections/lighthouses" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Lighthouses</a>
+                            </div>
+                        </details>
 
-                        <!-- Travel Section -->
-                        <div class="pt-2">
-                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Travel</div>
-                            <a href="/collections/us-states" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">US States</a>
-                            <a href="/collections/canadian-provinces" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Canadian Provinces</a>
-                            <a href="/collections/countries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Countries</a>
-                            <a href="/collections/door-county" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Door County</a>
-                        </div>
+                        <details class="group pt-2">
+                            <summary class="flex items-center justify-between text-emerald-300 px-3 py-3 text-xs font-semibold uppercase tracking-wider cursor-pointer hover:bg-[#1B4D3E] rounded-md">
+                                <span>Travel</span>
+                                <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="space-y-1 mt-1 ml-2 border-l border-emerald-800/50">
+                                <a href="/collections/us-states" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">US States</a>
+                                <a href="/collections/canadian-provinces" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Canadian Provinces</a>
+                                <a href="/collections/countries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Countries</a>
+                                <a href="/collections/door-county" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Door County</a>
+                            </div>
+                        </details>
 
-                        <!-- Food & Drink Section -->
-                        <div class="pt-2">
-                            <div class="text-emerald-300 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Food & Drink</div>
-                            <a href="/collections/darden-restaurants" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Darden Restaurants</a>
-                            <a href="/collections/starbucks-reserve-roasteries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Starbucks Reserve Roasteries</a>
-                        </div>
+                        <details class="group pt-2">
+                            <summary class="flex items-center justify-between text-emerald-300 px-3 py-3 text-xs font-semibold uppercase tracking-wider cursor-pointer hover:bg-[#1B4D3E] rounded-md">
+                                <span>Food & Drink</span>
+                                <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="space-y-1 mt-1 ml-2 border-l border-emerald-800/50">
+                                <a href="/collections/darden-restaurants" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Darden Restaurants</a>
+                                <a href="/collections/starbucks-reserve-roasteries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Starbucks Reserve Roasteries</a>
+                            </div>
+                        </details>
+
+                        <details class="group pt-2">
+                            <summary class="flex items-center justify-between text-emerald-300 px-3 py-3 text-xs font-semibold uppercase tracking-wider cursor-pointer hover:bg-[#1B4D3E] rounded-md">
+                                <span>Books</span>
+                                <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </summary>
+                            <div class="space-y-1 mt-1 ml-2 border-l border-emerald-800/50">
+                                <a href="/collections/wisconsin-bookstores" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Wisconsin's Indie Bookstores</a>
+                                <a href="/collections/door-county-libraries" class="block text-emerald-50 px-6 py-2 rounded-md hover:bg-[#1B4D3E] text-sm">Door County Libraries</a>
+                            </div>
+                        </details>
+
                     </div>
                 </div>
             </div>
