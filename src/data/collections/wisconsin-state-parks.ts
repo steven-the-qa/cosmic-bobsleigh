@@ -253,6 +253,14 @@ export const wisconsinStateParks: Collection = {
                     designation: 'park'
                 },
                 {
+                    id: "hartman-creek",
+                    title: "Hartman Creek State Park",
+                    description: "We went on our first bike ride at a state park here! The trail circled the lake and on the last leg, we had to brave traffic on a tight road!",
+                    imageUrl: "/wisconsin-state-parks/hartman_creek.jpeg",
+                    date: "May 25, 2026",
+                    designation: 'park'
+                },
+                {
                     id: "amnicon-falls",
                     title: "Amnicon Falls State Park",
                     description: "",
@@ -295,14 +303,6 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "buckhorn",
                     title: "Buckhorn State Park",
-                    description: "",
-                    imageUrl: "",
-                    date: "",
-                    designation: 'park'
-                },
-                {
-                    id: "hartman-creek",
-                    title: "Hartman Creek State Park",
                     description: "",
                     imageUrl: "",
                     date: "",
