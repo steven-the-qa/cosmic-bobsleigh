@@ -29,16 +29,16 @@ export const doorCountyLibraries: Collection = {
         {
             id: 'egg-harbor-library',
             title: 'Egg Harbor Library',
-            description: '',
-            imageUrl: '',
-            date: ''
+            description: 'This was the day we decided to go to the libraries in both Egg Harbor and Ephraim! We went upstairs to check out the Kress Pavilion! It has a great view of the water.',
+            imageUrl: '/door-county-libraries/egg_harbor.jpeg',
+            date: 'March 14, 2026'
         },
         {
             id: 'ephraim-library',
             title: 'Ephraim Library',
-            description: '',
-            imageUrl: '',
-            date: ''
+            description: 'This was the day we decided to go to the libraries in both Egg Harbor and Ephraim! I checked out The Color of Law, which was a tough read. Mostly we remember this library as the tiniest one we had ever visited!',
+            imageUrl: '/door-county-libraries/ephraim.jpg',
+            date: 'March 14, 2026'
         },
         {
             id: 'fish-creek-library',
