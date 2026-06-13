@@ -247,7 +247,34 @@ export const lighthouses: Collection = {
                     imageUrl: '/lighthouses/other/lobster_point.png',
                     date: 'September 22, 2024'
                 },
-                
+                {
+                    id: 'table-bluff',
+                    title: 'Table Bluff Light',
+                    description: 'We stopped by the boardwalk in Eureka to see this lighthouse from across Humboldt Bay! It was right after we visited Eureka\'s indie bookstore, Eureka Books.',
+                    imageUrl: '/lighthouses/other/table_bluff.png',
+                    date: 'June 10, 2026'
+                },
+                {
+                    id: 'trinidad-head',
+                    title: 'Trinidad Head Light',
+                    description: 'We snapped a pic in front of this small lighthouse before exploring Trinidad State Beach!',
+                    imageUrl: '/lighthouses/other/trinidad_head.png',
+                    date: 'June 12, 2026'
+                },
+                {
+                    id: 'battery-point',
+                    title: 'Battery Point Light',
+                    description: 'This one needed us to hike across a pebbly beach and up a paved path to the lighthouse, but we did it! We even got our first lighthouse stamps of our Cali-Oregon trip, on the back of a couple of postcards because we forgot the lighthouse passport 😂',
+                    imageUrl: '/lighthouses/other/battery_point.png',
+                    date: 'June 12, 2026'
+                },
+                {
+                    id: 'st-george-reef',
+                    title: 'St. George Reef Light',
+                    description: 'The couple manning the Battery Point Lighthouse told us to go a few miles up the shore to catch a glimpse of this one, since it was so foggy today! If you squint, you can see it just above a triangular rock on the horizon. And yes, we had to hike up another steep hill to see it.',
+                    imageUrl: '/lighthouses/other/st_george_reef.png',
+                    date: 'June 12, 2026'
+                },
             ]
         }
     ]
