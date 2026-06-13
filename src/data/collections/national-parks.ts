@@ -30,6 +30,14 @@ export const nationalParks: Collection = {
             designation: 'national lakeshore'
         },
         {
+            id: 'redwood-national-park',
+            title: 'Redwood National Park',
+            description: 'We went to Lady Bird Johnson Grove, Elk Meadow, Trillum Falls, and Enderts Beach! There are so many more places to go in Redwoods and we couldn\'t possibly see them all in 1 visit. We also visited the Trees of Mystery attraction, walking across bridges high in the canopy of the redwoods and taking an aerial tramway to a lookout point! The photo of us at the sign was the last thing we did at the park which is what the date is based on, but we spent 2 whole days exploring the various sites!',
+            imageUrl: '/national-parks/redwood_national_park.png',
+            date: 'June 11, 2026',
+            designation: 'national park'
+        },
+        {
             id: 'sleeping-bear-dunes-national-lakeshore',
             title: 'Sleeping Bear Dunes National Lakeshore',
             description: '',
@@ -166,7 +174,6 @@ export const nationalParks: Collection = {
         { id: 'olympic-national-park', title: 'Olympic National Park', description: '', imageUrl: '', date: '', designation: 'national park' },
         { id: 'petrified-forest-national-park', title: 'Petrified Forest National Park', description: '', imageUrl: '', date: '', designation: 'national park' },
         { id: 'pinnacles-national-park', title: 'Pinnacles National Park', description: '', imageUrl: '', date: '', designation: 'national park' },
-        { id: 'redwood-national-park', title: 'Redwood National Park', description: '', imageUrl: '', date: '', designation: 'national park' },
         { id: 'rocky-mountain-national-park', title: 'Rocky Mountain National Park', description: '', imageUrl: '', date: '', designation: 'national park' },
         { id: 'saguaro-national-park', title: 'Saguaro National Park', description: '', imageUrl: '', date: '', designation: 'national park' },
         { id: 'sequoia-national-park', title: 'Sequoia National Park', description: '', imageUrl: '', date: '', designation: 'national park' },
