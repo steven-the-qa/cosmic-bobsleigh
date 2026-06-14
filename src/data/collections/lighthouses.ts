@@ -313,14 +313,14 @@ export const lighthouses: Collection = {
                 {
                     id: 'yaquina-head',
                     title: 'Yaquina Head Light',
-                    description: '',
+                    description: 'TBD',
                     imageUrl: '/lighthouses/other/yaquina_head.jpeg',
                     date: 'June 14, 2026'
                 },
                 {
                     id: 'yaquina-bay',
                     title: 'Yaquina Bay Light',
-                    description: '',
+                    description: 'TBD',
                     imageUrl: '/lighthouses/other/yaquina_bay.jpeg',
                     date: 'June 14, 2026'
                 },
