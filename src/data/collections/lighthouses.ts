@@ -324,6 +324,20 @@ export const lighthouses: Collection = {
                     imageUrl: '/lighthouses/other/yaquina_bay.jpeg',
                     date: 'June 14, 2026'
                 },
+                {
+                    id: 'cape-meares',
+                    title: 'Cape Meares Lighthouse',
+                    description: 'TBD',
+                    imageUrl: '/lighthouses/other/cape_meares.jpeg',
+                    date: 'June 14, 2026'
+                },
+                {
+                    id: 'tillamook-rock',
+                    title: 'Tillamook Rock Light',
+                    description: 'TBD',
+                    imageUrl: '/lighthouses/other/tillamook_rock.jpeg',
+                    date: 'June 14, 2026'
+                },
             ]
         }
     ]
