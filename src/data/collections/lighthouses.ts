@@ -291,7 +291,7 @@ export const lighthouses: Collection = {
                 },
                 {
                     id: 'cape-arago',
-                    title: 'Cape Arago Light',
+                    title: 'Cape Arago Lighthouse',
                     description: 'This one was fun because we got to take a little forest trail to a viewing point! You can\'t actually go to this lighthouse because it\'s on an ever-shrinking rock due to erosion, but it used to be connected to the mainland by a bridge and have a lighthouse! We also got to see some seals and sea lions when we visited this one because a wildlife advocacy group was there talking about the animals and brought telescopes for the public!',
                     imageUrl: '/lighthouses/other/cape_arago.jpeg',
                     date: 'June 13, 2026'
@@ -309,6 +309,20 @@ export const lighthouses: Collection = {
                     description: 'This one was another challenging one! We almost didn\'t get a parking spot and therefore almost abandoned getting the stamp. But we found a spot on the way out of the lot and I (Steven) ran up the path to the lighthouse and then got the stamp at the gift shop on the way back down (with a magnet and a bookmark, of course).',
                     imageUrl: '/lighthouses/other/heceta_head.jpeg',
                     date: 'June 13, 2026'
+                },
+                {
+                    id: 'yaquina-head',
+                    title: 'Yaquina Head Light',
+                    description: '',
+                    imageUrl: '/lighthouses/other/yaquina_head.jpeg',
+                    date: 'June 14, 2026'
+                },
+                {
+                    id: 'yaquina-bay',
+                    title: 'Yaquina Bay Light',
+                    description: '',
+                    imageUrl: '/lighthouses/other/yaquina_bay.jpeg',
+                    date: 'June 14, 2026'
                 },
             ]
         }
