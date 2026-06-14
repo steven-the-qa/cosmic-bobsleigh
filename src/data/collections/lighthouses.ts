@@ -275,6 +275,41 @@ export const lighthouses: Collection = {
                     imageUrl: '/lighthouses/other/st_george_reef.png',
                     date: 'June 12, 2026'
                 },
+                {
+                    id: 'cape-blanco',
+                    title: 'Cape Blanco Light',
+                    description: 'It was so windy! I (Steven) ran all the way to the lighthouse to get us our stamp! Sam was takin\' lots of nice pics of the lighthouse from afar.',
+                    imageUrl: '/lighthouses/other/cape_blanco.jpeg',
+                    date: 'June 13, 2026'
+                },
+                {
+                    id: 'coquille-river',
+                    title: 'Coquille River Light',
+                    description: 'They had a great gift shop at this one, and we didn\'t have to walk too far! There was a nice short walking trail up to the house and this one was on a river, which was different from others we\'ve visited. One mysterious aspect of this light\'s history is the 4th-order fresnel lens was lost and nobody knows what happened to it! Some think it is at the bottom of the ocean near the lighthouse.',
+                    imageUrl: '/lighthouses/other/coquille_river.jpeg',
+                    date: 'June 13, 2026'
+                },
+                {
+                    id: 'cape-arago',
+                    title: 'Cape Arago Light',
+                    description: 'This one was fun because we got to take a little forest trail to a viewing point! You can\'t actually go to this lighthouse because it\'s on an ever-shrinking rock due to erosion, but it used to be connected to the mainland by a bridge and have a lighthouse! We also got to see some seals and sea lions when we visited this one because a wildlife advocacy group was there talking about the animals and brought telescopes for the public!',
+                    imageUrl: '/lighthouses/other/cape_arago.jpeg',
+                    date: 'June 13, 2026'
+                },
+                {
+                    id: 'umpqua-river',
+                    title: 'Umpqua River Light',
+                    description: 'This was the easiest one of the day! It was on Coast Guard land, and it bordered the Oregon Dunes National Recreational Area! We saw some dune buggies in the background while we took our photo.',
+                    imageUrl: '/lighthouses/other/umpqua_river.jpeg',
+                    date: 'June 13, 2026'
+                },
+                {
+                    id: 'heceta-head',
+                    title: 'Heceta Head Light',
+                    description: 'This one was another challenging one! We almost didn\'t get a parking spot and therefore almost abandoned getting the stamp. But we found a spot on the way out of the lot and I (Steven) ran up the path to the lighthouse and then got the stamp at the gift shop on the way back down (with a magnet and a bookmark, of course).',
+                    imageUrl: '/lighthouses/other/heceta_head.jpeg',
+                    date: 'June 13, 2026'
+                },
             ]
         }
     ]
