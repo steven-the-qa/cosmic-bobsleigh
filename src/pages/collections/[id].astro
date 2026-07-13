@@ -183,7 +183,7 @@ const renderedSubCollections = (
                 <div class="mb-12" data-subcollection-id={subCollection.id}>
                     <h2 class="text-3xl font-bold text-emerald-50 mb-2">{subCollection.title}</h2>
                     {/* Subcollection progress */}
-                    {(!isLighthouses || subCollection.id === 'wisconsin') && (() => {
+                    {(!isLighthouses || ['wisconsin', 'oregon', 'california'].includes(subCollection.id)) && (() => {
                         const total = subCollection.experiences.length;
                         const visited = countVisited(subCollection.experiences);
                         const percent = total > 0 ? Math.round((visited / total) * 100) : 0;
