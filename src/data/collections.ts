@@ -2,6 +2,7 @@ import type { Collection } from '../types';
 import { doorCounty } from './collections/door-county';
 import { doorCountyParks } from './collections/door-county-parks';
 import { doorCountyLibraries } from './collections/door-county-libraries';
+import { doorCountyLandTrustNaturePreserves } from './collections/door-county-land-trust-nature-preserves';
 import { wisconsinBookstores } from './collections/wisconsin-bookstores';
 import { kewauneeCountyParks } from './collections/kewaunee-county-parks';
 import { brownCountyParks } from './collections/brown-county-parks';
@@ -18,6 +19,7 @@ export type CollectionId =
     | 'door-county'
     | 'door-county-parks'
     | 'door-county-libraries'
+    | 'door-county-land-trust-nature-preserves'
     | 'wisconsin-bookstores'
     | 'kewaunee-county-parks'
     | 'brown-county-parks'
@@ -34,6 +36,7 @@ export const collections: Collection[] = [
     doorCounty,
     doorCountyParks,
     doorCountyLibraries,
+    doorCountyLandTrustNaturePreserves,
     wisconsinBookstores,
     kewauneeCountyParks,
     brownCountyParks,

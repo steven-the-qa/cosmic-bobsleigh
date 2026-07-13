@@ -157,33 +157,41 @@ export const doorCounty: Collection = {
             title: 'Door County Libraries',
             description: 'Libraries across Door County',
             experiences: [
+                // from Door County Libraries collection
                 {
                     id: 'sturgeon-bay-library',
                     title: 'Sturgeon Bay Library',
-                    description: '',
-                    imageUrl: '',
-                    date: ''
+                    description: 'We have been here many many times since moving to the area, but we only just now took a picture of ourselves in front of it 😂 Many fond memories have been made here: going to the library book sale, finishing the 2nd half of Candide on the couch upstairs, helping a local org with their newsletter, renting the public pass to the Maritime Museum in town, just to name a few.',
+                    imageUrl: '/door-county-libraries/sturgeon_bay.jpeg',
+                    date: 'February 1, 2026'
+                },
+                {
+                    id: 'sister-bay-liberty-grove-library',
+                    title: 'Sister Bay/Liberty Grove Library',
+                    description: 'We stopped here after I met up with a local org leader to help with their newsletter at Happy Coffee nearby! Ended up renting 4 movies, including the first Creed so we can get started on that series 🥊',
+                    imageUrl: '/door-county-libraries/sister_bay.jpeg',
+                    date: 'February 7, 2026'
                 },
                 {
                     id: 'baileys-harbor-library',
                     title: 'Baileys Harbor Library',
-                    description: '',
-                    imageUrl: '',
-                    date: ''
+                    description: 'We stopped here right before they closed and managed to snag a cool tote bag with a map of the Door County Library system!',
+                    imageUrl: '/door-county-libraries/baileys_harbor.jpeg',
+                    date: 'February 7, 2026'
                 },
                 {
                     id: 'egg-harbor-library',
                     title: 'Egg Harbor Library',
-                    description: '',
-                    imageUrl: '',
-                    date: ''
+                    description: 'This was the day we decided to go to the libraries in both Egg Harbor and Ephraim! We went upstairs to check out the Kress Pavilion! It has a great view of the water.',
+                    imageUrl: '/door-county-libraries/egg_harbor.jpeg',
+                    date: 'March 14, 2026'
                 },
                 {
                     id: 'ephraim-library',
                     title: 'Ephraim Library',
-                    description: '',
-                    imageUrl: '',
-                    date: ''
+                    description: 'This was the day we decided to go to the libraries in both Egg Harbor and Ephraim! I checked out The Color of Law, which was a tough read. Mostly we remember this library as the tiniest one we had ever visited!',
+                    imageUrl: '/door-county-libraries/ephraim.jpg',
+                    date: 'March 14, 2026'
                 },
                 {
                     id: 'fish-creek-library',
@@ -200,15 +208,120 @@ export const doorCounty: Collection = {
                     date: ''
                 },
                 {
-                    id: 'sister-bay-liberty-grove-library',
-                    title: 'Sister Bay/Liberty Grove Library',
+                    id: 'washington-island-library',
+                    title: 'Washington Island Library',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+            ]
+        },
+        {
+            id: 'door-county-land-trust-nature-preserves',
+            title: 'Door County Land Trust Nature Preserves',
+            description: 'Nature preserves protected by the Door County Land Trust',
+            experiences: [
+                {
+                    id: 'heins-creek',
+                    title: 'Heins Creek Nature Preserve',
                     description: '',
                     imageUrl: '',
                     date: ''
                 },
                 {
-                    id: 'washington-island-library',
-                    title: 'Washington Island Library',
+                    id: 'bay-shore-blufflands',
+                    title: 'Bay Shore Blufflands Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'detroit-harbor',
+                    title: 'Detroit Harbor Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'domer-neff',
+                    title: 'Domer-Neff Nature Preserve and Bird Sanctuary',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'ephraim-anderson-pond',
+                    title: 'Ephraim Nature Preserve at Anderson Pond',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'three-springs',
+                    title: 'Three Springs Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'kangaroo-lake',
+                    title: 'Kangaroo Lake Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'lautenbach-woods',
+                    title: 'Lautenbach Woods Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'legacy-preserve-clay-banks',
+                    title: 'Legacy Preserve at Clay Banks',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'little-lake',
+                    title: 'Little Lake Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'oak-road',
+                    title: 'Oak Road Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'richter-community-forest',
+                    title: 'Richter Community Forest Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'sturgeon-bay-ship-canal',
+                    title: 'Sturgeon Bay Ship Canal Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'white-cliff',
+                    title: 'White Cliff Nature Preserve',
+                    description: '',
+                    imageUrl: '',
+                    date: ''
+                },
+                {
+                    id: 'bear-creek',
+                    title: 'Bear Creek Nature Preserve',
                     description: '',
                     imageUrl: '',
                     date: ''

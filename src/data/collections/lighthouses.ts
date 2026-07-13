@@ -219,62 +219,12 @@ export const lighthouses: Collection = {
                 { id: 'two-rivers-light', title: 'Two Rivers Light', description: '', imageUrl: '', date: '' },
             ]
         },
-        // Other Lighthouses
+        // Oregon Lighthouses
         {
-            id: 'other-lighthouses',
-            title: 'Other Lighthouses',
-            description: 'Lighthouses we\'ve visited beyond Door County',
+            id: 'oregon',
+            title: 'Oregon Lighthouses',
+            description: 'Lighthouses we\'ve visited on the Oregon coast',
             experiences: [
-                
-                {
-                    id: 'race-rocks-light',
-                    title: 'Race Rocks Light',
-                    description: 'We saw this on a harbor cruise in Victoria, British Columbia, on our 2nd wedding anniversary! So many seals!',
-                    imageUrl: '/lighthouses/other/race_rocks.jpg',
-                    date: 'October 30, 2023'
-                },
-                {
-                    id: 'winter-island',
-                    title: 'Winter Island Lighthouse',
-                    description: 'Surprise lighthouse visit on our trolley tour around Salem, Massachusetts',
-                    imageUrl: '/lighthouses/other/winter_island.png',
-                    date: 'September 20, 2024'
-                },
-                {
-                    id: 'lobster-point',
-                    title: 'Lobster Point Lighthouse',
-                    description: 'The tiniest little lighthouse in Ogunquit, at the end of a half-mile footpath overlooking the Atlantic Ocean. Barely made it with my knee flaring up.',
-                    imageUrl: '/lighthouses/other/lobster_point.png',
-                    date: 'September 22, 2024'
-                },
-                {
-                    id: 'table-bluff',
-                    title: 'Table Bluff Light',
-                    description: 'We stopped by the boardwalk in Eureka to see this lighthouse from across Humboldt Bay! It was right after we visited Eureka\'s indie bookstore, Eureka Books.',
-                    imageUrl: '/lighthouses/other/table_bluff.png',
-                    date: 'June 10, 2026'
-                },
-                {
-                    id: 'trinidad-head',
-                    title: 'Trinidad Head Light',
-                    description: 'We snapped a pic in front of this small lighthouse before exploring Trinidad State Beach!',
-                    imageUrl: '/lighthouses/other/trinidad_head.png',
-                    date: 'June 12, 2026'
-                },
-                {
-                    id: 'battery-point',
-                    title: 'Battery Point Light',
-                    description: 'This one needed us to hike across a pebbly beach and up a paved path to the lighthouse, but we did it! We even got our first lighthouse stamps of our Cali-Oregon trip, on the back of a couple of postcards because we forgot the lighthouse passport 😂',
-                    imageUrl: '/lighthouses/other/battery_point.png',
-                    date: 'June 12, 2026'
-                },
-                {
-                    id: 'st-george-reef',
-                    title: 'St. George Reef Light',
-                    description: 'The couple manning the Battery Point Lighthouse told us to go a few miles up the shore to catch a glimpse of this one, since it was so foggy today! If you squint, you can see it just above a triangular rock on the horizon. And yes, we had to hike up another steep hill to see it.',
-                    imageUrl: '/lighthouses/other/st_george_reef.png',
-                    date: 'June 12, 2026'
-                },
                 {
                     id: 'cape-blanco',
                     title: 'Cape Blanco Light',
@@ -337,6 +287,71 @@ export const lighthouses: Collection = {
                     description: 'TBD',
                     imageUrl: '/lighthouses/other/tillamook_rock.jpeg',
                     date: 'June 14, 2026'
+                },
+            ]
+        },
+        // California Lighthouses
+        {
+            id: 'california',
+            title: 'California Lighthouses',
+            description: 'Lighthouses we\'ve visited in northern California',
+            experiences: [
+                {
+                    id: 'table-bluff',
+                    title: 'Table Bluff Light',
+                    description: 'We stopped by the boardwalk in Eureka to see this lighthouse from across Humboldt Bay! It was right after we visited Eureka\'s indie bookstore, Eureka Books.',
+                    imageUrl: '/lighthouses/other/table_bluff.png',
+                    date: 'June 10, 2026'
+                },
+                {
+                    id: 'trinidad-head',
+                    title: 'Trinidad Head Light',
+                    description: 'We snapped a pic in front of this small lighthouse before exploring Trinidad State Beach!',
+                    imageUrl: '/lighthouses/other/trinidad_head.png',
+                    date: 'June 12, 2026'
+                },
+                {
+                    id: 'battery-point',
+                    title: 'Battery Point Light',
+                    description: 'This one needed us to hike across a pebbly beach and up a paved path to the lighthouse, but we did it! We even got our first lighthouse stamps of our Cali-Oregon trip, on the back of a couple of postcards because we forgot the lighthouse passport 😂',
+                    imageUrl: '/lighthouses/other/battery_point.png',
+                    date: 'June 12, 2026'
+                },
+                {
+                    id: 'st-george-reef',
+                    title: 'St. George Reef Light',
+                    description: 'The couple manning the Battery Point Lighthouse told us to go a few miles up the shore to catch a glimpse of this one, since it was so foggy today! If you squint, you can see it just above a triangular rock on the horizon. And yes, we had to hike up another steep hill to see it.',
+                    imageUrl: '/lighthouses/other/st_george_reef.png',
+                    date: 'June 12, 2026'
+                },
+            ]
+        },
+        // Other Lighthouses
+        {
+            id: 'other-lighthouses',
+            title: 'Other Lighthouses',
+            description: 'Lighthouses we\'ve visited beyond Wisconsin, Oregon, and California',
+            experiences: [
+                {
+                    id: 'race-rocks-light',
+                    title: 'Race Rocks Light',
+                    description: 'We saw this on a harbor cruise in Victoria, British Columbia, on our 2nd wedding anniversary! So many seals!',
+                    imageUrl: '/lighthouses/other/race_rocks.jpg',
+                    date: 'October 30, 2023'
+                },
+                {
+                    id: 'winter-island',
+                    title: 'Winter Island Lighthouse',
+                    description: 'Surprise lighthouse visit on our trolley tour around Salem, Massachusetts',
+                    imageUrl: '/lighthouses/other/winter_island.png',
+                    date: 'September 20, 2024'
+                },
+                {
+                    id: 'lobster-point',
+                    title: 'Lobster Point Lighthouse',
+                    description: 'The tiniest little lighthouse in Ogunquit, at the end of a half-mile footpath overlooking the Atlantic Ocean. Barely made it with my knee flaring up.',
+                    imageUrl: '/lighthouses/other/lobster_point.png',
+                    date: 'September 22, 2024'
                 },
             ]
         }
