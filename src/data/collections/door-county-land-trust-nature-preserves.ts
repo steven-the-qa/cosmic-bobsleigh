@@ -8,21 +8,21 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
         {
             id: 'bay-shore-blufflands',
             title: 'Bay Shore Blufflands Nature Preserve',
-            description: '',
+            description: 'This park was the first place we tried out the Seek app, and it taught us a ton about the plants and insects we saw here. Our most vivid memory was seeing not 1 but TWO Monarch caterpillars!!',
             imageUrl: '/door-county-land-trust-nature-preserves/bay_shore_blufflands_nature_preserve.jpeg',
             date: ''
         },
         {
             id: 'bear-creek',
             title: 'Bear Creek Nature Preserve',
-            description: '',
+            description: 'When we first got here, we didn\'t see why it was called Bear Creek because it just looked like a field, but we soon discovered a path leading down the hill and into the forest where we DID find a creek! Saw some water striders in the creek, but back on the hill we had seen a couple of Bobolinks! An older couple who knew the family who sold the property to the Door County Land Trust told us on our way out of the preserve that they saw THREE Bobolinks.',
             imageUrl: '/door-county-land-trust-nature-preserves/bear_creek_nature_preserve.jpeg',
             date: 'July 5, 2026'
         },
         {
             id: 'legacy-preserve-clay-banks',
             title: 'Legacy Preserve at Clay Banks',
-            description: '',
+            description: 'This one is a hidden gem, and it definitely gets prettier the further in you go. It starts at the top of a hill and leads down into a field that leads to a beach. Such a gorgeous view of Lake Michigan! Our Seek app captured some interesting plant life and taught us about the Meadow Fritillaries we saw everywhere (butterflies)!',
             imageUrl: '/door-county-land-trust-nature-preserves/legacy_preserve_at_clay_banks.jpeg',
             date: 'July 5, 2026'
         },

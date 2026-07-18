@@ -263,28 +263,28 @@ export const lighthouses: Collection = {
                 {
                     id: 'yaquina-head',
                     title: 'Yaquina Head Light',
-                    description: 'TBD',
+                    description: 'We didn\'t go up close to the lighthouse even though we could have. We were too busy on the beach watching seals! There were so many of them!',
                     imageUrl: '/lighthouses/other/yaquina_head.jpeg',
                     date: 'June 14, 2026'
                 },
                 {
                     id: 'yaquina-bay',
                     title: 'Yaquina Bay Light',
-                    description: 'TBD',
+                    description: 'We took the opportunity to go inside this lighthouse for the tour, after climbing a hill and a flight of stairs! The door at the top of the captain\'s ladder was locked because the light area wasn\'t in good enough shape to accommodate visitors, but we got to sign the visitor\'s book!',
                     imageUrl: '/lighthouses/other/yaquina_bay.jpeg',
                     date: 'June 14, 2026'
                 },
                 {
                     id: 'cape-meares',
                     title: 'Cape Meares Lighthouse',
-                    description: 'TBD',
+                    description: 'The walk back up the hill from this one was LONG lol It was a gradual incline but it must have been a half mile or something. The lighthouse itself was pretty tiny but it still had a gift shop and a volunteer inside to give us a stamp!',
                     imageUrl: '/lighthouses/other/cape_meares.jpeg',
                     date: 'June 14, 2026'
                 },
                 {
                     id: 'tillamook-rock',
                     title: 'Tillamook Rock Light',
-                    description: 'TBD',
+                    description: 'We almost gave up trying to find this one, because we thought we had to hike up a dang mountain to see it! If we had gone up the hiking trail instead of down to Indian Beach, we would have missed it, though. We had to walk halfway down the beach before we could spot it along the shore. If you zoom in really close on the picture you can see it, kind of like the St. George Reef Light.',
                     imageUrl: '/lighthouses/other/tillamook_rock.jpeg',
                     date: 'June 14, 2026'
                 },

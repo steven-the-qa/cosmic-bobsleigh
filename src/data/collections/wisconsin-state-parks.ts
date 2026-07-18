@@ -263,7 +263,7 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "aztalan",
                     title: "Aztalan State Park",
-                    description: "",
+                    description: "This park is a National Historical Landmark showing what's left of an ancient Middle-Mississippian village from between 1000-1300 AD, per the DNR website. We got to see the old stockade and several mounds while walking the path. We had our Merlin apps out and identified our first wren in Wisconsin, as well as seeing a beautiful bright yellow warbler!",
                     imageUrl: "/wisconsin-state-parks/aztalan.jpeg",
                     date: "June 26, 2026",
                     designation: 'park'
