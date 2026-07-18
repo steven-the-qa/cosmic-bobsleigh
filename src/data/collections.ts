@@ -10,6 +10,7 @@ import { lighthouses } from './collections/lighthouses';
 import { dardenRestaurants } from './collections/darden-restaurants';
 import { starbucksReserveRoasteries } from './collections/starbucks-reserve-roasteries';
 import { wisconsinStateParks } from './collections/wisconsin-state-parks';
+import { iceAgeNationalScientificReserve } from './collections/ice-age-national-scientific-reserve';
 import { usStates } from './collections/us-states';
 import { canadianProvinces } from './collections/canadian-provinces';
 import { countries } from './collections/countries';
@@ -27,6 +28,7 @@ export type CollectionId =
     | 'darden-restaurants'
     | 'starbucks-reserve-roasteries'
     | 'wisconsin-state-parks'
+    | 'ice-age-national-scientific-reserve'
     | 'us-states'
     | 'canadian-provinces'
     | 'countries'
@@ -44,6 +46,7 @@ export const collections: Collection[] = [
     dardenRestaurants,
     starbucksReserveRoasteries,
     wisconsinStateParks,
+    iceAgeNationalScientificReserve,
     usStates,
     canadianProvinces,
     countries,

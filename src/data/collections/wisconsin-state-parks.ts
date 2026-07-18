@@ -470,15 +470,6 @@ export const wisconsinStateParks: Collection = {
                     date: "",
                     designation: 'recreation area'
                 },
-                // Additional park units
-                {
-                    id: "campbellsport-drumlins",
-                    title: "Campbellsport Drumlins State Park",
-                    description: "",
-                    imageUrl: "",
-                    date: "",
-                    designation: 'park'
-                },
                 // Former parks
                 {
                     id: "old-wade-house",
