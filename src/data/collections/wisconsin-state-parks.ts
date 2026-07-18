@@ -261,16 +261,16 @@ export const wisconsinStateParks: Collection = {
                     designation: 'park'
                 },
                 {
-                    id: "amnicon-falls",
-                    title: "Amnicon Falls State Park",
+                    id: "aztalan",
+                    title: "Aztalan State Park",
                     description: "",
-                    imageUrl: "",
-                    date: "",
+                    imageUrl: "/wisconsin-state-parks/aztalan.jpeg",
+                    date: "June 26, 2026",
                     designation: 'park'
                 },
                 {
-                    id: "aztalan",
-                    title: "Aztalan State Park",
+                    id: "amnicon-falls",
+                    title: "Amnicon Falls State Park",
                     description: "",
                     imageUrl: "",
                     date: "",
