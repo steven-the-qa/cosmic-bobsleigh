@@ -13,15 +13,15 @@ export const brownCountyParks: Collection = {
             date: 'September 13, 2025'
         },
         {
-            id: 'barkhausen-waterfowl-preserve',
-            title: 'Barkhausen Waterfowl Preserve',
-            description: '',
-            imageUrl: '',
-            date: ''
-        },
-        {
             id: 'bay-shore-park',
             title: 'Bay Shore Park',
+            description: 'This park had a dang pirate ship playground! We had a blast climbing around on it (okay, mostly me) and pretending to be pirates (definitely both of us). We sword-fought with sticks on the way back to the car lol',
+            imageUrl: '/brown-county-parks/bay_shore.png',
+            date: 'July 19, 2026'
+        },
+        {
+            id: 'barkhausen-waterfowl-preserve',
+            title: 'Barkhausen Waterfowl Preserve',
             description: '',
             imageUrl: '',
             date: ''

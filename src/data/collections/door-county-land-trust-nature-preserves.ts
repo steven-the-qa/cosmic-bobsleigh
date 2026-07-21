@@ -9,14 +9,14 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             id: 'bay-shore-blufflands',
             title: 'Bay Shore Blufflands Nature Preserve',
             description: 'This park was the first place we tried out the Seek app, and it taught us a ton about the plants and insects we saw here. Our most vivid memory was seeing not 1 but TWO Monarch caterpillars!!',
-            imageUrl: '/door-county-land-trust-nature-preserves/bay_shore_blufflands_nature_preserve.jpeg',
-            date: ''
+            imageUrl: '/door-county-land-trust-nature-preserves/bay_shore_blufflands_nature_preserve.png',
+            date: 'July 2, 2026'
         },
         {
             id: 'bear-creek',
             title: 'Bear Creek Nature Preserve',
             description: 'When we first got here, we didn\'t see why it was called Bear Creek because it just looked like a field, but we soon discovered a path leading down the hill and into the forest where we DID find a creek! Saw some water striders in the creek, but back on the hill we had seen a couple of Bobolinks! An older couple who knew the family who sold the property to the Door County Land Trust told us on our way out of the preserve that they saw THREE Bobolinks.',
-            imageUrl: '/door-county-land-trust-nature-preserves/bear_creek_nature_preserve.jpeg',
+            imageUrl: '/door-county-land-trust-nature-preserves/bear_creek_nature_preserve.png',
             date: 'July 5, 2026'
         },
         {
