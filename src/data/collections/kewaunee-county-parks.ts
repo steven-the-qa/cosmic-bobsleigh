@@ -6,6 +6,13 @@ export const kewauneeCountyParks: Collection = {
     description: 'Our adventures exploring the parks of Kewaunee County',
     experiences: [
         {
+            id: 'red-river-park',
+            title: 'Red River Park',
+            description: 'This was a small one! Goose poop was scattered like landmines in the grass between the parking lot and the playground, but Sam still tried out the tire swing and I poked around the playground equipment. Not a whole lot to do without a boat or swimsuit!',
+            imageUrl: '',
+            date: 'July 19, 2026'
+        },
+        {
             id: 'blahnik-park',
             title: 'Blahnik Park',
             description: '',
@@ -29,13 +36,6 @@ export const kewauneeCountyParks: Collection = {
         {
             id: 'reckelberg-park',
             title: 'Reckelberg Park',
-            description: '',
-            imageUrl: '',
-            date: ''
-        },
-        {
-            id: 'red-river-park',
-            title: 'Red River Park',
             description: '',
             imageUrl: '',
             date: ''
