@@ -9,7 +9,7 @@ export const kewauneeCountyParks: Collection = {
             id: 'red-river-park',
             title: 'Red River Park',
             description: 'This was a small one! Goose poop was scattered like landmines in the grass between the parking lot and the playground, but Sam still tried out the tire swing and I poked around the playground equipment. Not a whole lot to do without a boat or swimsuit!',
-            imageUrl: '',
+            imageUrl: '/kewaunee-county-parks/red_river.jpeg',
             date: 'July 19, 2026'
         },
         {
