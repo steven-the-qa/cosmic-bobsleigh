@@ -1,21 +1,26 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import MainLayout from '../layouts/MainLayout.astro';
 import { collections } from '../data/collections';
 import type { Collection } from '../types';
 
-// Get all valid images for a collection
+function imageExists(imageUrl: string): boolean {
+    if (!imageUrl?.trim()) return false;
+    return fs.existsSync(path.join(process.cwd(), 'public', imageUrl.replace(/^\//, '')));
+}
+
+// Get all valid images for a collection (URLs that actually exist on disk)
 function getValidImages(collection: Collection) {
     if (collection.subCollections) {
-        // If collection has sub-collections, get images from all sub-collections
         return collection.subCollections
             .flatMap(subCollection => subCollection.experiences)
-            .filter(exp => exp.imageUrl)
-            .map(exp => exp.imageUrl);
+            .map(exp => exp.imageUrl)
+            .filter(imageExists);
     } else if (collection.experiences) {
-        // Regular collection
         return collection.experiences
-            .filter(exp => exp.imageUrl)
-            .map(exp => exp.imageUrl);
+            .map(exp => exp.imageUrl)
+            .filter(imageExists);
     }
     return [];
 }
