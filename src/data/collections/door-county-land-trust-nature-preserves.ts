@@ -27,6 +27,20 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             date: 'July 5, 2026'
         },
         {
+            id: 'lautenbach-woods',
+            title: 'Lautenbach Woods Nature Preserve',
+            description: '',
+            imageUrl: '/door-county-land-trust-nature-preserves/lautenbach_woods_nature_preserve.jpeg',
+            date: 'August 9, 2026'
+        },
+        {
+            id: 'three-springs',
+            title: 'Three Springs Nature Preserve',
+            description: '',
+            imageUrl: '/door-county-land-trust-nature-preserves/three_springs_nature_preserve.jpeg',
+            date: 'August 10, 2026'
+        },
+        {
             id: 'heins-creek',
             title: 'Heins Creek Nature Preserve',
             description: '',
@@ -55,24 +69,10 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             date: ''
         },
         {
-            id: 'three-springs',
-            title: 'Three Springs Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/three_springs_nature_preserve.jpeg',
-            date: ''
-        },
-        {
             id: 'kangaroo-lake',
             title: 'Kangaroo Lake Nature Preserve',
             description: '',
             imageUrl: '/door-county-land-trust-nature-preserves/kangaroo_lake_nature_preserve.jpeg',
-            date: ''
-        },
-        {
-            id: 'lautenbach-woods',
-            title: 'Lautenbach Woods Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/lautenbach_woods_nature_preserve.jpeg',
             date: ''
         },
         {
