@@ -6,8 +6,8 @@ import { collections } from '../../data/collections';
 
 export async function getStaticPaths() {
     const blogEntries = await getCollection('blog');
-    return blogEntries.map((entry: { slug: any; }) => ({
-        params: { id: entry.slug },
+    return blogEntries.map((entry: { id: any; }) => ({
+        params: { id: entry.id },
         props: { entry },
     }));
 }
