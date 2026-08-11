@@ -1,6 +1,6 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { collections } from '../../data/collections';
 
@@ -17,8 +17,7 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
-
+const { Content } = await render(entry);
 // Find the corresponding experience
 const experienceId = entry.data.experienceId;
 const collection = collections.find(c => experienceId.startsWith(c.id));
