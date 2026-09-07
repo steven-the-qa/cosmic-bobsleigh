@@ -44,7 +44,7 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             id: 'domer-neff',
             title: 'Domer-Neff Nature Preserve and Bird Sanctuary',
             description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/domer_neff_nature_preserve_and_bird_sanctuary.jpeg',
+            imageUrl: '/door-county-land-trust-nature-preserves/domer_neff_nature_preserve.jpeg',
             date: 'August 20, 2026'
         },
         {
@@ -65,7 +65,7 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             id: 'richter-community-forest',
             title: 'Richter Community Forest Nature Preserve',
             description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/richter_community_forest_nature_preserve.jpeg',
+            imageUrl: '/door-county-land-trust-nature-preserves/richter_community_forest.jpeg',
             date: 'August 20, 2026'
         },
         {
