@@ -9,14 +9,14 @@ export const brownCountyParks: Collection = {
             id: 'wequiock-falls',
             title: 'Wequiock Falls',
             description: "We stopped here on the way to see Copper Culture State Park! We drive by this park all the time and never knew it was a few seconds away after turning off the highway. You can't see it from the road, but there's a big staircase that leads down to the falls. There wasn't any water flowing down when we went, but it was still an impressively high rock wall to see from the ground! And there's a tunnel that locals walk through that leads into the woods. Such a strange little place.",
-            imageUrl: '/brown-county-parks/wequiock_falls.jpeg',
+            imageUrl: '/brown-county-parks/wequiock_falls.webp',
             date: 'September 13, 2025'
         },
         {
             id: 'bay-shore-park',
             title: 'Bay Shore Park',
             description: 'This park had a dang pirate ship playground! We had a blast climbing around on it (okay, mostly me) and pretending to be pirates (definitely both of us). We sword-fought with sticks on the way back to the car lol',
-            imageUrl: '/brown-county-parks/bay_shore.png',
+            imageUrl: '/brown-county-parks/bay_shore.webp',
             date: 'July 19, 2026'
         },
         {

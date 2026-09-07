@@ -69,10 +69,23 @@ A personal adventure tracking website built with Astro, where my wife and I docu
 
 When we complete new adventures together:
 
-1. **Add our photos** to the appropriate folder in `/public/`
-2. **Update collections data** in `/src/data/collections.ts`
-3. **Create blog posts** in `/src/content/blog/` for our detailed stories
-4. **Build and deploy** to see our new adventures live
+1. **Add our photos** to the appropriate folder in `/public/` (drop in the full-size
+   originals straight off the phone — the next step shrinks them)
+2. **Run `npm run optimize:images`** — this resizes every photo to at most 1200px on
+   its long edge, converts it to WebP, and updates the `imageUrl` paths in
+   `/src/data/collections/` to match. Re-runnable and safe; already-optimized photos
+   are skipped. Use `npm run optimize:images -- --dry` to preview first.
+3. **Update collections data** in `/src/data/collections/` (titles, dates, descriptions)
+4. **Create blog posts** in `/src/content/blog/` for our detailed stories
+5. **Build and deploy** to see our new adventures live
+
+### Keeping the site light
+
+We don't pay for image hosting — the photos ship as plain static files with the rest
+of the site. That only works because `optimize:images` keeps each one around
+100–300 KB instead of the 5–30 MB a phone camera produces. Always run it before
+committing new photos. Deploy on a host with a generous free bandwidth tier
+(Cloudflare Pages has no bandwidth cap; Netlify and GitHub Pages are also fine).
 
 ## 🌟 Collection Categories
 

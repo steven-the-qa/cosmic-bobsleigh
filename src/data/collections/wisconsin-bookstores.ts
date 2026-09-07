@@ -16,7 +16,7 @@ export const wisconsinBookstores: Collection = {
             id: 'redbery-books',
             title: 'Redbery Books',
             description: 'We went here during our trip to the Apostle Islands! (still need a pic of us in front of it)',
-            imageUrl: '/wisconsin-bookstores/redbery_books.jpeg',
+            imageUrl: '/wisconsin-bookstores/redbery_books.webp',
             date: 'July 11, 2025'
         },
         {
@@ -30,7 +30,7 @@ export const wisconsinBookstores: Collection = {
             id: 'yardstick',
             title: 'Yardstick Books',
             description: 'This one is over in Algoma, 20 minutes from us. I found a cool history book here that uses 47 national borders as a lens to talk about the history of various countries. (still need a pic of us in front of it)',
-            imageUrl: '/wisconsin-bookstores/yardstick.jpeg',
+            imageUrl: '/wisconsin-bookstores/yardstick.webp',
             date: 'November 15, 2025'
         },
         {
@@ -44,14 +44,14 @@ export const wisconsinBookstores: Collection = {
             id: 'lions-mouth',
             title: 'Lion\'s Mouth Bookstore',
             description: 'This one is in Green Bay! I bought my first Bernie Sanders book here, and they serve coffee drinks you can sip while you browse.',
-            imageUrl: '/wisconsin-bookstores/lions_mouth.jpeg',
+            imageUrl: '/wisconsin-bookstores/lions_mouth.webp',
             date: 'January 24, 2026'
         },
         {
             id: 'fair-isle',
             title: 'Fair Isle Books & Gifts',
             description: 'We accidentally got a discount because Sam is a bookstore employee! I also found the next Warriors book that I was going to read, and a fun shirt that says "I crossed Death\'s Door to get to this bookstore". Also ended up chatting with an older couple about the Edmund Fitzgerald because the husband was a history buff.',
-            imageUrl: '/wisconsin-bookstores/fair_isle_books.jpeg',
+            imageUrl: '/wisconsin-bookstores/fair_isle_books.webp',
             date: 'August 20, 2026'
         },
     ]
