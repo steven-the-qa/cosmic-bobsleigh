@@ -269,6 +269,14 @@ export const wisconsinStateParks: Collection = {
                     designation: 'park'
                 },
                 {
+                    id: "big-foot-beach",
+                    title: "Big Foot Beach State Park",
+                    description: "",
+                    imageUrl: "/wisconsin-state-parks/big_foot_beach.jpeg",
+                    date: "August 2, 2026",
+                    designation: 'park'
+                },
+                {
                     id: "amnicon-falls",
                     title: "Amnicon Falls State Park",
                     description: "",
@@ -287,14 +295,6 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "big-bay",
                     title: "Big Bay State Park",
-                    description: "",
-                    imageUrl: "",
-                    date: "",
-                    designation: 'park'
-                },
-                {
-                    id: "big-foot-beach",
-                    title: "Big Foot Beach State Park",
                     description: "",
                     imageUrl: "",
                     date: "",

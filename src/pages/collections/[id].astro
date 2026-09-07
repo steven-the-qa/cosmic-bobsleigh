@@ -12,7 +12,7 @@ export function getStaticPaths() {
 
 const { collection } = Astro.props;
 const blogPosts = await getCollection('blog');
-const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; }; slug: any; }) => [post.data.experienceId, post.slug]));
+const blogPostMap = new Map(blogPosts.map((post: { data: { experienceId: any; }; id: any; }) => [post.data.experienceId, post.id]));
 
 // Progress calculations
 function countVisited(experiences: Array<{ imageUrl?: string; date?: string }>) {
