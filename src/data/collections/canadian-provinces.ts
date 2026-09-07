@@ -9,7 +9,7 @@ export const canadianProvinces: Collection = {
             id: 'british-columbia',
             title: 'British Columbia',
             description: 'We went to Victoria for our 2nd wedding anniversary. Originally we decided on Victoria, BC, because of a gift card we accidentally bought to one of their coffee shops. And yes, we DID get a drink there (and some merch).',
-            imageUrl: '/canadian-provinces/british_columbia.jpg',
+            imageUrl: '/canadian-provinces/british_columbia.webp',
             date: 'October 28, 2023'
         },
         {

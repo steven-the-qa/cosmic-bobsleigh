@@ -15,168 +15,168 @@ export const lighthouses: Collection = {
                     id: 'kenosha-north-pier',
                     title: 'Kenosha North Pier Lighthouse',
                     description: 'The first lighthouse we ever saw together ❤️',
-                    imageUrl: '/lighthouses/other/kenosha_north_pier.png',
+                    imageUrl: '/lighthouses/other/kenosha_north_pier.webp',
                     date: 'May 26, 2019'
                 },
                 {
                     id: 'wind-point',
                     title: 'Wind Point Light',
                     description: 'We stopped by these lighthouses when we were shopping at the outlet mall in Kenosha! It was super hot that day.',
-                    imageUrl: '/lighthouses/other/wind_point.jpg',
+                    imageUrl: '/lighthouses/other/wind_point.webp',
                     date: 'August 9, 2020'
                 },
                 {
                     id: 'asylum-point',
                     title: 'Asylum Point Lighthouse',
                     description: 'We were in Oshkosh to try a local chocolate shop and decided to swing by a lighthouse too!',
-                    imageUrl: '/lighthouses/other/asylum_point.jpeg',
+                    imageUrl: '/lighthouses/other/asylum_point.webp',
                     date: 'March 2, 2024'
                 },
                 {
                     id: 'sturgeon-bay-canal-north-pierhead',
                     title: 'Sturgeon Bay Canal North Pierhead Light',
                     description: 'The 2nd lighthouse we saw after moving to Sturgeon Bay',
-                    imageUrl: '/lighthouses/door-county/sturgen_bay_ship_canal.png',
+                    imageUrl: '/lighthouses/door-county/sturgen_bay_ship_canal.webp',
                     date: 'July 4, 2024'
                 },
                 {
                     id: 'sturgeon-bay-canal',
                     title: 'Sturgeon Bay Canal Light',
                     description: 'The 1st lighthouse we saw after moving to Sturgeon Bay',
-                    imageUrl: '/lighthouses/door-county/sturgeon_bay_coast_guard_station.png',
+                    imageUrl: '/lighthouses/door-county/sturgeon_bay_coast_guard_station.webp',
                     date: 'July 4, 2024'
                 },
                 {
                     id: 'eagle-bluff',
                     title: 'Eagle Bluff Lighthouse',
                     description: 'A must-see while we were at Peninsula State Park',
-                    imageUrl: '/lighthouses/door-county/eagle_bluff.png',
+                    imageUrl: '/lighthouses/door-county/eagle_bluff.webp',
                     date: 'July 14, 2024'
                 },
                 {
                     id: 'baileys-harbor-range-1',
                     title: 'Baileys Harbor Range Light 1',
                     description: 'The first of the 2 range lights, near the entrance to the Ridges Sanctuary. It\'s so tiny!',
-                    imageUrl: '/lighthouses/door-county/baileys_harbor_range_1.png',
+                    imageUrl: '/lighthouses/door-county/baileys_harbor_range_1.webp',
                     date: 'August 31, 2024'
                 },
                 {
                     id: 'baileys-harbor-range-2',
                     title: 'Baileys Harbor Range Light 2',
                     description: 'This one is much bigger! It\'s the house where the lighthouse keeper lived. We got to view the other range light using an old telescope in the attic.',
-                    imageUrl: '/lighthouses/door-county/baileys_harbor_range_2.png',
+                    imageUrl: '/lighthouses/door-county/baileys_harbor_range_2.webp',
                     date: 'August 31, 2024'
                 },
                 {
                     id: 'cana-island',
                     title: 'Cana Island Lighthouse',
                     description: 'We climbed the stairs to the top of this one! Such a beautiful view ❤️',
-                    imageUrl: '/lighthouses/door-county/cana_island.png',
+                    imageUrl: '/lighthouses/door-county/cana_island.webp',
                     date: 'August 31, 2024'
                 },
                 {
                     id: 'birdcage',
                     title: 'Old Baileys Harbor Lighthouse (Bird Cage)',
                     description: 'Only accessible by boat, but we got to see it on a Bailey\'s Harbor cruise 🛥️',
-                    imageUrl: '/lighthouses/door-county/birdcage.png',
+                    imageUrl: '/lighthouses/door-county/birdcage.webp',
                     date: 'September 8, 2024'
                 },
                 {
                     id: 'plum-island-rear-range-light',
                     title: 'Plum Island Rear Range Light',
                     description: 'Our first sighting was on the ferry ride to Washington Island; this photo is from the day we saw the Pilot Island lighthouse!',
-                    imageUrl: '/lighthouses/door-county/plum_island_rear_range.jpeg',
+                    imageUrl: '/lighthouses/door-county/plum_island_rear_range.webp',
                     date: 'October 5, 2024'
                 },
                 {
                     id: 'kimberly-point',
                     title: 'Kimberly Point Lighthouse',
                     description: "We found out the daughter of Kimberly-Clark's cofounder gave this lighthouse to the city of Neenah in 1945!",
-                    imageUrl: '/lighthouses/other/kimberly_point.png',
+                    imageUrl: '/lighthouses/other/kimberly_point.webp',
                     date: 'October 25, 2024'
                 },
                 {
                     id: 'sheboygan-breakwater',
                     title: 'Sheboygan Breakwater Lighthouse',
                     description: "It was freezing and windy, but we got as close as we could! Definitely returning in the summer to get up close and personal.",
-                    imageUrl: '/lighthouses/other/sheboygan_breakwater.jpg',
+                    imageUrl: '/lighthouses/other/sheboygan_breakwater.webp',
                     date: 'January 18, 2025'
                 },
                 {
                     id: 'manitowoc-breakwater-light',
                     title: 'Manitowoc Breakwater Light',
                     description: "We were on the way back from our trip to the Green House in Sheboygan and decided to stop by this lighthouse! We plan to visit again when it's warmer to get closer.",
-                    imageUrl: '/lighthouses/other/manitowoc_north_breakwater.jpg',
+                    imageUrl: '/lighthouses/other/manitowoc_north_breakwater.webp',
                     date: 'January 18, 2025'
                 },
                 {
                     id: 'algoma-pierhead',
                     title: 'Algoma Pierhead Lighthouse',
                     description: 'I saw this one on my first drive to Algoma. When I told Sam about it, we went together to a local café there on a weekend and took this photo afterward!',
-                    imageUrl: '/lighthouses/other/algoma_pierhead.jpg',
+                    imageUrl: '/lighthouses/other/algoma_pierhead.webp',
                     date: 'April 19, 2025'
                 },
                 {
                     id: 'sherwood-point',
                     title: 'Sherwood Point Lighthouse',
                     description: 'The last Door County lighthouse to be automated, and the only one made with red bricks! We didn\'t end up going inside because they took forever to get the key 🫠',
-                    imageUrl: '/lighthouses/door-county/sherwood_point.png',
+                    imageUrl: '/lighthouses/door-county/sherwood_point.webp',
                     date: 'June 7, 2025'
                 },
                 {
                     id: 'raspberry-island-light',
                     title: 'Raspberry Island Light',
                     description: 'This was part of the Apostle Islands tour! The lighthouse that stands today is a much larger building than the one that came before it. It was rebuilt to accommodate the families living there.',
-                    imageUrl: '/lighthouses/other/raspberry_island.jpg',
+                    imageUrl: '/lighthouses/other/raspberry_island.webp',
                     date: 'July 12, 2025'
                 },
                 {
                     id: 'devils-island-light',
                     title: 'Devils Island Light',
                     description: "This one was also part of the Apostle Islands tour! Devil's Island is the northernmost point of Wisconsin, so this lighthouse was also the northernmost lighthouse in Wisconsin!",
-                    imageUrl: '/lighthouses/other/devils_island.jpg',
+                    imageUrl: '/lighthouses/other/devils_island.webp',
                     date: 'July 12, 2025'
                 },
                 {
                     id: 'pilot-island',
                     title: 'Pilot Island Lighthouse',
                     description: 'We took a boat out to Plum Island so we could finally glimpse Pilot Island! And the Plum Island lighthouse up close, of course 😏',
-                    imageUrl: '/lighthouses/door-county/pilot_island.jpeg',
+                    imageUrl: '/lighthouses/door-county/pilot_island.webp',
                     date: 'August 2, 2025'
                 },
                 {
                     id: 'plum-island-front-range-light',
                     title: 'Plum Island Front Range Light',
                     description: "We got to see this up close when we took a walking tour of Plum Island! Up close, it's easy to see that this range light is a lot farther away from the lighthouse than it looked when we first saw it from the deck of the Washington Island ferry.",
-                    imageUrl: '/lighthouses/door-county/plum_island_front_range.jpg',
+                    imageUrl: '/lighthouses/door-county/plum_island_front_range.webp',
                     date: 'August 2, 2025'
                 },
                 {
                     id: 'old-plum-island',
                     title: '**BONUS** Old Plum Island Lighthouse Ruins',
                     description: 'We had no idea the current Plum Island lighthouse was actually a "remake"! The old one was built in the wrong spot and with cheap materials.',
-                    imageUrl: '/lighthouses/door-county/old_plum_island.jpeg',
+                    imageUrl: '/lighthouses/door-county/old_plum_island.webp',
                     date: 'August 2, 2025'
                 },
                 {
                     id: 'pottawatomie',
                     title: 'Pottawatomie Lighthouse',
                     description: "This one was probably our hardest-won lighthouse passport stamp yet! We hiked 1.25 miles uphill from the dock after driving 1 hour and taking 2 ferries! Once we reached it, we got a tour of the lighthouse and even got to be right up next to the fresnel lens! Nearby, we visited the grave of the lighthouse's 1st keeper (it's also the 1st lighthouse on Lake Michigan!). One more fun fact is that the lighthouse tower is the highest point in Door County. It's also close enough to connect to a cell tower in Michigan, so our phones changed to Eastern Time a few times.",
-                    imageUrl: '/lighthouses/door-county/pottawatomie.jpeg',
+                    imageUrl: '/lighthouses/door-county/pottawatomie.webp',
                     date: 'September 7, 2025'
                 },
                 {
                     id: 'kewaunee-pierhead-light',
                     title: 'Kewaunee Pierhead Light',
                     description: 'We got to go inside the lighthouse and view the fresnel lens up close! There was a video presentation detailing the history of the lighthouse, and we learned that the fresnel lens was replaced by an LED in 2019 and the fresnel lens was moved to a display case in town at the Kewaunee Historical Society! So we went there to see it afterward and ended up perusing a ton of old newspapers from the 1900s.',
-                    imageUrl: '/lighthouses/other/kewaunee_pierhead.jpg',
+                    imageUrl: '/lighthouses/other/kewaunee_pierhead.webp',
                     date: 'October 4, 2025'
                 },
                 {
                     id: 'grassy-island-range-lights',
                     title: 'Grassy Island Range Lights',
                     description: 'The staff here were so friendly! They gave a presentation on the history of the range lights, and a good summary is that the lights have survived in spite of many challenges! They were almost demolished several times, and they exist today because of the community members who fought for them to stay. We got to go inside both of the range lights while we were there. There is not much room but we managed to climb the stairs!',
-                    imageUrl: '/lighthouses/other/grassy_island_range.png',
+                    imageUrl: '/lighthouses/other/grassy_island_range.webp',
                     date: 'October 4, 2025'
                 },
                 {
@@ -229,63 +229,63 @@ export const lighthouses: Collection = {
                     id: 'cape-blanco',
                     title: 'Cape Blanco Light',
                     description: 'It was so windy! I (Steven) ran all the way to the lighthouse to get us our stamp! Sam was takin\' lots of nice pics of the lighthouse from afar.',
-                    imageUrl: '/lighthouses/other/cape_blanco.jpeg',
+                    imageUrl: '/lighthouses/other/cape_blanco.webp',
                     date: 'June 13, 2026'
                 },
                 {
                     id: 'coquille-river',
                     title: 'Coquille River Light',
                     description: 'They had a great gift shop at this one, and we didn\'t have to walk too far! There was a nice short walking trail up to the house and this one was on a river, which was different from others we\'ve visited. One mysterious aspect of this light\'s history is the 4th-order fresnel lens was lost and nobody knows what happened to it! Some think it is at the bottom of the ocean near the lighthouse.',
-                    imageUrl: '/lighthouses/other/coquille_river.jpeg',
+                    imageUrl: '/lighthouses/other/coquille_river.webp',
                     date: 'June 13, 2026'
                 },
                 {
                     id: 'cape-arago',
                     title: 'Cape Arago Lighthouse',
                     description: 'This one was fun because we got to take a little forest trail to a viewing point! You can\'t actually go to this lighthouse because it\'s on an ever-shrinking rock due to erosion, but it used to be connected to the mainland by a bridge and have a lighthouse! We also got to see some seals and sea lions when we visited this one because a wildlife advocacy group was there talking about the animals and brought telescopes for the public!',
-                    imageUrl: '/lighthouses/other/cape_arago.jpeg',
+                    imageUrl: '/lighthouses/other/cape_arago.webp',
                     date: 'June 13, 2026'
                 },
                 {
                     id: 'umpqua-river',
                     title: 'Umpqua River Light',
                     description: 'This was the easiest one of the day! It was on Coast Guard land, and it bordered the Oregon Dunes National Recreational Area! We saw some dune buggies in the background while we took our photo.',
-                    imageUrl: '/lighthouses/other/umpqua_river.jpeg',
+                    imageUrl: '/lighthouses/other/umpqua_river.webp',
                     date: 'June 13, 2026'
                 },
                 {
                     id: 'heceta-head',
                     title: 'Heceta Head Light',
                     description: 'This one was another challenging one! We almost didn\'t get a parking spot and therefore almost abandoned getting the stamp. But we found a spot on the way out of the lot and I (Steven) ran up the path to the lighthouse and then got the stamp at the gift shop on the way back down (with a magnet and a bookmark, of course).',
-                    imageUrl: '/lighthouses/other/heceta_head.jpeg',
+                    imageUrl: '/lighthouses/other/heceta_head.webp',
                     date: 'June 13, 2026'
                 },
                 {
                     id: 'yaquina-head',
                     title: 'Yaquina Head Light',
                     description: 'We didn\'t go up close to the lighthouse even though we could have. We were too busy on the beach watching seals! There were so many of them!',
-                    imageUrl: '/lighthouses/other/yaquina_head.jpeg',
+                    imageUrl: '/lighthouses/other/yaquina_head.webp',
                     date: 'June 14, 2026'
                 },
                 {
                     id: 'yaquina-bay',
                     title: 'Yaquina Bay Light',
                     description: 'We took the opportunity to go inside this lighthouse for the tour, after climbing a hill and a flight of stairs! The door at the top of the captain\'s ladder was locked because the light area wasn\'t in good enough shape to accommodate visitors, but we got to sign the visitor\'s book!',
-                    imageUrl: '/lighthouses/other/yaquina_bay.jpeg',
+                    imageUrl: '/lighthouses/other/yaquina_bay.webp',
                     date: 'June 14, 2026'
                 },
                 {
                     id: 'cape-meares',
                     title: 'Cape Meares Lighthouse',
                     description: 'The walk back up the hill from this one was LONG lol It was a gradual incline but it must have been a half mile or something. The lighthouse itself was pretty tiny but it still had a gift shop and a volunteer inside to give us a stamp!',
-                    imageUrl: '/lighthouses/other/cape_meares.jpeg',
+                    imageUrl: '/lighthouses/other/cape_meares.webp',
                     date: 'June 14, 2026'
                 },
                 {
                     id: 'tillamook-rock',
                     title: 'Tillamook Rock Light',
                     description: 'We almost gave up trying to find this one, because we thought we had to hike up a dang mountain to see it! If we had gone up the hiking trail instead of down to Indian Beach, we would have missed it, though. We had to walk halfway down the beach before we could spot it along the shore. If you zoom in really close on the picture you can see it, kind of like the St. George Reef Light.',
-                    imageUrl: '/lighthouses/other/tillamook_rock.jpeg',
+                    imageUrl: '/lighthouses/other/tillamook_rock.webp',
                     date: 'June 14, 2026'
                 },
             ]
@@ -300,28 +300,28 @@ export const lighthouses: Collection = {
                     id: 'table-bluff',
                     title: 'Table Bluff Light',
                     description: 'We stopped by the boardwalk in Eureka to see this lighthouse from across Humboldt Bay! It was right after we visited Eureka\'s indie bookstore, Eureka Books.',
-                    imageUrl: '/lighthouses/other/table_bluff.png',
+                    imageUrl: '/lighthouses/other/table_bluff.webp',
                     date: 'June 10, 2026'
                 },
                 {
                     id: 'trinidad-head',
                     title: 'Trinidad Head Light',
                     description: 'We snapped a pic in front of this small lighthouse before exploring Trinidad State Beach!',
-                    imageUrl: '/lighthouses/other/trinidad_head.png',
+                    imageUrl: '/lighthouses/other/trinidad_head.webp',
                     date: 'June 12, 2026'
                 },
                 {
                     id: 'battery-point',
                     title: 'Battery Point Light',
                     description: 'This one needed us to hike across a pebbly beach and up a paved path to the lighthouse, but we did it! We even got our first lighthouse stamps of our Cali-Oregon trip, on the back of a couple of postcards because we forgot the lighthouse passport 😂',
-                    imageUrl: '/lighthouses/other/battery_point.png',
+                    imageUrl: '/lighthouses/other/battery_point.webp',
                     date: 'June 12, 2026'
                 },
                 {
                     id: 'st-george-reef',
                     title: 'St. George Reef Light',
                     description: 'The couple manning the Battery Point Lighthouse told us to go a few miles up the shore to catch a glimpse of this one, since it was so foggy today! If you squint, you can see it just above a triangular rock on the horizon. And yes, we had to hike up another steep hill to see it.',
-                    imageUrl: '/lighthouses/other/st_george_reef.png',
+                    imageUrl: '/lighthouses/other/st_george_reef.webp',
                     date: 'June 12, 2026'
                 },
             ]
@@ -336,21 +336,21 @@ export const lighthouses: Collection = {
                     id: 'race-rocks-light',
                     title: 'Race Rocks Light',
                     description: 'We saw this on a harbor cruise in Victoria, British Columbia, on our 2nd wedding anniversary! So many seals!',
-                    imageUrl: '/lighthouses/other/race_rocks.jpg',
+                    imageUrl: '/lighthouses/other/race_rocks.webp',
                     date: 'October 30, 2023'
                 },
                 {
                     id: 'winter-island',
                     title: 'Winter Island Lighthouse',
                     description: 'Surprise lighthouse visit on our trolley tour around Salem, Massachusetts',
-                    imageUrl: '/lighthouses/other/winter_island.png',
+                    imageUrl: '/lighthouses/other/winter_island.webp',
                     date: 'September 20, 2024'
                 },
                 {
                     id: 'lobster-point',
                     title: 'Lobster Point Lighthouse',
                     description: 'The tiniest little lighthouse in Ogunquit, at the end of a half-mile footpath overlooking the Atlantic Ocean. Barely made it with my knee flaring up.',
-                    imageUrl: '/lighthouses/other/lobster_point.png',
+                    imageUrl: '/lighthouses/other/lobster_point.webp',
                     date: 'September 22, 2024'
                 },
             ]

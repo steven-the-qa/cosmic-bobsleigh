@@ -9,21 +9,21 @@ export const starbucksReserveRoasteries: Collection = {
             id: 'chicago',
             title: 'Chicago',
             description: 'Our first Starbucks Reserve Roastery visit! This inspired us to try to hit all 6. Definitely the most impressive one in the US.',
-            imageUrl: '/starbucks-reserve-roasteries/chicago.jpg',
+            imageUrl: '/starbucks-reserve-roasteries/chicago.webp',
             date: 'October 1, 2021'
         },
         {
             id: 'seattle',
             title: 'Seattle',
             description: 'This was our first stop after arriving in Seattle for our honeymoon. We rode Lime scooters in the rain to get there!',
-            imageUrl: '/starbucks-reserve-roasteries/seattle.jpg',
+            imageUrl: '/starbucks-reserve-roasteries/seattle.webp',
             date: 'November 4, 2021'
         },
         {
             id: 'new-york-city',
             title: 'New York City',
             description: 'We went to New York City for our birthdays! Obviously had to stop here too.',
-            imageUrl: '/starbucks-reserve-roasteries/new_york_city.jpg',
+            imageUrl: '/starbucks-reserve-roasteries/new_york_city.webp',
             date: 'April 2, 2022'
         },
         {

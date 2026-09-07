@@ -37,7 +37,7 @@ export const iceAgeNationalScientificReserve: Collection = {
             id: 'cross-plains',
             title: 'Cross Plains',
             description: 'We came here the first time we attempted the Mammoth Challenge! It\'s a beautiful quiet loop and the foliage was so vibrant that day! Who knew we\'d eventually live in the city with a mammoth statue lol',
-            imageUrl: '/ice-age-national-scientific-reserve/cross_plains.jpg',
+            imageUrl: '/ice-age-national-scientific-reserve/cross_plains.webp',
             date: 'October 15, 2023'
         },
         {

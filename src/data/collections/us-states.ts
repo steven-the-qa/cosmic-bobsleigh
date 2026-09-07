@@ -9,28 +9,28 @@ export const usStates: Collection = {
             id: 'indiana',
             title: 'Indiana',
             description: 'We went to Indiana for my brother\'s wedding!',
-            imageUrl: '/us-states/indiana.jpg',
+            imageUrl: '/us-states/indiana.webp',
             date: 'July 27, 2019'
         },
         {
             id: 'tennessee',
             title: 'Tennessee',
             description: 'Stayed overnight in Chattanooga on the way to Florida! Wasn\'t her first Waffle House, but it was mine!',
-            imageUrl: '/us-states/tennessee.png',
+            imageUrl: '/us-states/tennessee.webp',
             date: 'October 1, 2019'
         },
         {
             id: 'georgia',
             title: 'Georgia',
             description: 'Stopped in Georgia for some peach merch on the way to Florida! Still need to go back for a proper visit.',
-            imageUrl: '/us-states/georgia.png',
+            imageUrl: '/us-states/georgia.webp',
             date: 'October 2, 2019'
         },
         {
             id: 'kentucky',
             title: 'Kentucky',
             description: 'We drove through Kentucky on our way to & from Florida! Still need to go back for a proper visit.',
-            imageUrl: '/us-states/kentucky.png',
+            imageUrl: '/us-states/kentucky.webp',
             date: 'October 6, 2019'
         },
         {

@@ -9,7 +9,7 @@ export const nationalParks: Collection = {
             id: 'grand-canyon-national-park',
             title: 'Grand Canyon National Park',
             description: 'This was a double "first" for us: first time at the Grand Canyon and first helicopter ride!',
-            imageUrl: '/national-parks/grand_canyon.jpeg',
+            imageUrl: '/national-parks/grand_canyon.webp',
             date: 'November 10, 2021',
             designation: 'national park'
         },
@@ -17,7 +17,7 @@ export const nationalParks: Collection = {
             id: 'pictured-rocks-national-lakeshore',
             title: 'Pictured Rocks National Lakeshore',
             description: 'Our first trip up to the UP! We got to see Munising Falls along the way ❤️',
-            imageUrl: '/national-parks/pictured_rocks_national_lakeshore.jpg',
+            imageUrl: '/national-parks/pictured_rocks_national_lakeshore.webp',
             date: 'October 19, 2024',
             designation: 'national lakeshore'
         },
@@ -25,7 +25,7 @@ export const nationalParks: Collection = {
             id: 'apostle-islands-national-lakeshore',
             title: 'Apostle Islands National Lakeshore',
             description: 'We got to see Devil\'s Island, the highest point in Wisconsin!',
-            imageUrl: '/national-parks/apostle_islands_national_lakeshore.jpg',
+            imageUrl: '/national-parks/apostle_islands_national_lakeshore.webp',
             date: 'July 12, 2025',
             designation: 'national lakeshore'
         },
@@ -33,7 +33,7 @@ export const nationalParks: Collection = {
             id: 'redwood-national-park',
             title: 'Redwood National Park',
             description: 'We went to Lady Bird Johnson Grove, Elk Meadow, Trillum Falls, and Enderts Beach! There are so many more places to go in Redwoods and we couldn\'t possibly see them all in 1 visit. We also visited the Trees of Mystery attraction, walking across bridges high in the canopy of the redwoods and taking an aerial tramway to a lookout point! The photo of us at the sign was the last thing we did at the park which is what the date is based on, but we spent 2 whole days exploring the various sites!',
-            imageUrl: '/national-parks/redwood_national_park.png',
+            imageUrl: '/national-parks/redwood_national_park.webp',
             date: 'June 11, 2026',
             designation: 'national park'
         },
