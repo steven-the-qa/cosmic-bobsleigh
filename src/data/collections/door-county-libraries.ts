@@ -41,6 +41,13 @@ export const doorCountyLibraries: Collection = {
             date: 'March 14, 2026'
         },
         {
+            id: 'washington-island-library',
+            title: 'Washington Island Library',
+            description: 'This was a tiny library just like Ephraim\'s! It was tough to find a day to go see this one because it\'s only open on weekdays, but we really liked the room at the back where more natural light filtered through. The library also shared a building with a community center, which was unique.',
+            imageUrl: '/door-county-libraries/washington_island.jpeg',
+            date: 'August 20, 2026'
+        },
+        {
             id: 'fish-creek-library',
             title: 'Fish Creek Library',
             description: '',
@@ -50,13 +57,6 @@ export const doorCountyLibraries: Collection = {
         {
             id: 'forestville-library',
             title: 'Forestville Library',
-            description: '',
-            imageUrl: '',
-            date: ''
-        },
-        {
-            id: 'washington-island-library',
-            title: 'Washington Island Library',
             description: '',
             imageUrl: '',
             date: ''
