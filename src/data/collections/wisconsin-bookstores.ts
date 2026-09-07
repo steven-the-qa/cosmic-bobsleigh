@@ -51,8 +51,8 @@ export const wisconsinBookstores: Collection = {
             id: 'fair-isle',
             title: 'Fair Isle Books & Gifts',
             description: '',
-            imageUrl: '',
-            date: ''
+            imageUrl: '/wisconsin-bookstores/fair_isle_books.jpeg',
+            date: 'August 20, 2026'
         },
     ]
 };

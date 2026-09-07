@@ -41,6 +41,13 @@ export const doorCountyLibraries: Collection = {
             date: 'March 14, 2026'
         },
         {
+            id: 'washington-island-library',
+            title: 'Washington Island Library',
+            description: '',
+            imageUrl: '/door-county-libraries/washington_island.jpeg',
+            date: 'August 20, 2026'
+        },
+        {
             id: 'fish-creek-library',
             title: 'Fish Creek Library',
             description: '',
@@ -50,13 +57,6 @@ export const doorCountyLibraries: Collection = {
         {
             id: 'forestville-library',
             title: 'Forestville Library',
-            description: '',
-            imageUrl: '',
-            date: ''
-        },
-        {
-            id: 'washington-island-library',
-            title: 'Washington Island Library',
             description: '',
             imageUrl: '',
             date: ''
