@@ -43,7 +43,7 @@ export const doorCountyLibraries: Collection = {
         {
             id: 'washington-island-library',
             title: 'Washington Island Library',
-            description: '',
+            description: 'This was a tiny library just like Ephraim\'s! It was tough to find a day to go see this one because it\'s only open on weekdays, but we really liked the room at the back where more natural light filtered through. The library also shared a building with a community center, which was unique.',
             imageUrl: '/door-county-libraries/washington_island.jpeg',
             date: 'August 20, 2026'
         },
