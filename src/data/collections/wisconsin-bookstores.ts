@@ -50,7 +50,7 @@ export const wisconsinBookstores: Collection = {
         {
             id: 'fair-isle',
             title: 'Fair Isle Books & Gifts',
-            description: '',
+            description: 'We accidentally got a discount because Sam is a bookstore employee! I also found the next Warriors book that I was going to read, and a fun shirt that says "I crossed Death\'s Door to get to this bookstore". Also ended up chatting with an older couple about the Edmund Fitzgerald because the husband was a history buff.',
             imageUrl: '/wisconsin-bookstores/fair_isle_books.jpeg',
             date: 'August 20, 2026'
         },

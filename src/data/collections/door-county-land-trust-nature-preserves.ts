@@ -43,28 +43,28 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
         {
             id: 'domer-neff',
             title: 'Domer-Neff Nature Preserve and Bird Sanctuary',
-            description: '',
+            description: 'Surprised we didn\'t notice this one when we first visited the Stavkirke Church! We heard a LOT of blue jays and robins, a few cardinals, not exactly what we expected for one termed a "bird sanctuary". That said, we enjoyed the path and saw some really cool fall web worms, which kinda looked like cotton candy straight out of a Goosebumps book (a bunch of worms wriggling around in a web cone on a branch). It was also just nice to revisit the church, and we were the only ones there!',
             imageUrl: '/door-county-land-trust-nature-preserves/domer_neff_nature_preserve.jpeg',
             date: 'August 20, 2026'
         },
         {
             id: 'little-lake',
             title: 'Little Lake Nature Preserve',
-            description: '',
+            description: 'This one was really hard to find, so we ended up just going to Little Lake itself, which we think is on the edge of the nature preserve. The actual preserve we think might be behind the Jacobsens Museum next to the lake, but we had already left by the time we thought to check there. We saw huge millipedes, a woolly caterpillar and some fish. We also met a grandpa and his grandkids and they told us we should check out Jill\'s Park up the road, which we did! And it had a great view of the water, similar to other cliff views in Door County.',
             imageUrl: '/door-county-land-trust-nature-preserves/little_lake_nature_preserve.jpeg',
             date: 'August 20, 2026'
         },
         {
             id: 'detroit-harbor',
             title: 'Detroit Harbor Nature Preserve',
-            description: '',
+            description: 'By far the most poorly maintained nature preserve in the Door County Land Trust system! We barely made it 100 feet into the preserve before the trail disappeared amongst thick brush and tall grasses, with fallen trees and branches littering the path. They seriously need a weed whacker out there. That said, it was morbidly enjoyable in a creep kind of way. We didn\'t stay very long.',
             imageUrl: '/door-county-land-trust-nature-preserves/detroit_harbor_nature_preserve.jpeg',
             date: 'August 20, 2026'
         },
         {
             id: 'richter-community-forest',
             title: 'Richter Community Forest Nature Preserve',
-            description: '',
+            description: 'This one took a while to find, but it was nicely maintained and we heard a red-breasted nuthatch here for the first time! It sounded like it was laughing at us while we were exhausted from going to 3 other nature preserves in the same day.',
             imageUrl: '/door-county-land-trust-nature-preserves/richter_community_forest.jpeg',
             date: 'August 20, 2026'
         },
