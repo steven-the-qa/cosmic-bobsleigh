@@ -27,38 +27,66 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             date: 'July 5, 2026'
         },
         {
-            id: 'heins-creek',
-            title: 'Heins Creek Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/heins_creek_nature_preserve.jpeg',
-            date: ''
+            id: 'lautenbach-woods',
+            title: 'Lautenbach Woods Nature Preserve',
+            description: 'This was where we first saw and heard an ovenbird! They\'re super tiny and have iron lungs! We also saw our first looper moth caterpillar inching its way up a tree next to a common green darner!',
+            imageUrl: '/door-county-land-trust-nature-preserves/lautenbach_woods_nature_preserve.jpeg',
+            date: 'August 9, 2026'
         },
         {
-            id: 'detroit-harbor',
-            title: 'Detroit Harbor Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/detroit_harbor_nature_preserve.jpeg',
-            date: ''
+            id: 'three-springs',
+            title: 'Three Springs Nature Preserve',
+            description: 'This one has a beatiful view of a pond and we heard a lot of really loud crows that wanted to chat with us! There was a creepy barn that we investigated, but on the way back we really enjoyed listening to and watching all the black-capped chickadees and nashville warblers in the trees next to the path.',
+            imageUrl: '/door-county-land-trust-nature-preserves/three_springs_nature_preserve.jpeg',
+            date: 'August 10, 2026'
         },
         {
             id: 'domer-neff',
             title: 'Domer-Neff Nature Preserve and Bird Sanctuary',
             description: '',
             imageUrl: '/door-county-land-trust-nature-preserves/domer_neff_nature_preserve_and_bird_sanctuary.jpeg',
-            date: ''
+            date: 'August 20, 2026'
+        },
+        {
+            id: 'little-lake',
+            title: 'Little Lake Nature Preserve',
+            description: '',
+            imageUrl: '/door-county-land-trust-nature-preserves/little_lake_nature_preserve.jpeg',
+            date: 'August 20, 2026'
+        },
+        {
+            id: 'detroit-harbor',
+            title: 'Detroit Harbor Nature Preserve',
+            description: '',
+            imageUrl: '/door-county-land-trust-nature-preserves/detroit_harbor_nature_preserve.jpeg',
+            date: 'August 20, 2026'
+        },
+        {
+            id: 'richter-community-forest',
+            title: 'Richter Community Forest Nature Preserve',
+            description: '',
+            imageUrl: '/door-county-land-trust-nature-preserves/richter_community_forest_nature_preserve.jpeg',
+            date: 'August 20, 2026'
+        },
+        {
+            id: 'heins-creek',
+            title: 'Heins Creek Nature Preserve',
+            description: 'This was a nice little half-mile loop through various types of terrain, including quiet forest and sandy dunes. Towards the end of the loop, we found ourselves opening our Merlin app to capture almost 10 different birds singing at the same time! We also found the dried-up creek for which the preserve was named, and it was blocked off to protect against erosion.',
+            imageUrl: '/door-county-land-trust-nature-preserves/heins_creek_nature_preserve.jpeg',
+            date: 'September 6, 2026'
+        },
+        {
+            id: 'sturgeon-bay-ship-canal',
+            title: 'Sturgeon Bay Ship Canal Nature Preserve',
+            description: 'We saw a ton of mushrooms at this one, of all different shapes, sizes, and colors! Lots of yellows and oranges, but also the typical white mushrooms you might expect. More sandy dunes here than at Heins Creek, plus a view of the ship canal for which this preserve is named! Next time we might go find the spot where we can view the lighthouse from the preserve.',
+            imageUrl: '/door-county-land-trust-nature-preserves/sturgeon_bay_ship_canal_nature_preserve.jpeg',
+            date: 'September 6, 2026'
         },
         {
             id: 'ephraim-anderson-pond',
             title: 'Ephraim Nature Preserve at Anderson Pond',
             description: '',
             imageUrl: '/door-county-land-trust-nature-preserves/ephraim_nature_preserve_at_anderson_pond.jpeg',
-            date: ''
-        },
-        {
-            id: 'three-springs',
-            title: 'Three Springs Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/three_springs_nature_preserve.jpeg',
             date: ''
         },
         {
@@ -69,38 +97,10 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             date: ''
         },
         {
-            id: 'lautenbach-woods',
-            title: 'Lautenbach Woods Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/lautenbach_woods_nature_preserve.jpeg',
-            date: ''
-        },
-        {
-            id: 'little-lake',
-            title: 'Little Lake Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/little_lake_nature_preserve.jpeg',
-            date: ''
-        },
-        {
             id: 'oak-road',
             title: 'Oak Road Nature Preserve',
             description: '',
             imageUrl: '/door-county-land-trust-nature-preserves/oak_road_nature_preserve.jpeg',
-            date: ''
-        },
-        {
-            id: 'richter-community-forest',
-            title: 'Richter Community Forest Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/richter_community_forest_nature_preserve.jpeg',
-            date: ''
-        },
-        {
-            id: 'sturgeon-bay-ship-canal',
-            title: 'Sturgeon Bay Ship Canal Nature Preserve',
-            description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/sturgeon_bay_ship_canal_nature_preserve.jpeg',
             date: ''
         },
         {
