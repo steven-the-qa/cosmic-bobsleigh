@@ -22,8 +22,8 @@ export const wisconsinBookstores: Collection = {
         {
             id: 'story-cellar',
             title: 'The Story Cellar',
-            description: 'We went here on our trip to see Rib Mountain State Park! The basement has used books and a really cool speakeasy vibe. (still need a pic of us in front of it)',
-            imageUrl: '',
+            description: 'We went here on our trip to see Rib Mountain State Park! The basement has used books and a really cool speakeasy vibe.',
+            imageUrl: '/wisconsin-bookstores/story_cellar.png',
             date: 'October 25, 2025'
         },
         {
@@ -36,8 +36,8 @@ export const wisconsinBookstores: Collection = {
         {
             id: 'prairie-pages',
             title: 'Prairie Pages',
-            description: 'We came back to Sun Prairie a year and a half after moving away just to see this bookstore! It opened right next to a café and the two businesses promote each other ❤️ (still need a pic of us in front of it)',
-            imageUrl: '',
+            description: 'We came back to Sun Prairie a year and a half after moving away just to see this bookstore! It opened right next to a café and the two businesses promote each other ❤️',
+            imageUrl: '/wisconsin-bookstores/prairie_pages.png',
             date: 'November 22, 2025'
         },
         {
@@ -48,11 +48,32 @@ export const wisconsinBookstores: Collection = {
             date: 'January 24, 2026'
         },
         {
+            id: 'janke-book-store',
+            title: 'Janke Book Store',
+            description: 'We wandered in here the same day we checked out The Story Cellar\'s new 2nd location in Wausau! This one is pretty large and has a big bear statue we posed in front of right when you walk into the store. Not as cozy as The Story Cellar but still I was able to find a David Graeber book I\'d been eyeing.',
+            imageUrl: '/wisconsin-bookstores/janke_book_store.png',
+            date: 'August 15, 2026'
+        },
+        {
             id: 'fair-isle',
             title: 'Fair Isle Books & Gifts',
             description: 'We accidentally got a discount because Sam is a bookstore employee! I also found the next Warriors book that I was going to read, and a fun shirt that says "I crossed Death\'s Door to get to this bookstore". Also ended up chatting with an older couple about the Edmund Fitzgerald because the husband was a history buff.',
             imageUrl: '/wisconsin-bookstores/fair_isle_books.webp',
             date: 'August 20, 2026'
         },
+        {
+          id: 'arcadia-books',
+          title: 'Arcadia Books',
+          description: 'We went here a long time ago when Sam was working for Girl Scouts and did an event out here in Spring Green! Coming back to visit for our 5th wedding anniversary weekend, what we remember most is vastness of their collection! We both found several titles we don\'t usually see elsewhere and wanted to buy, but alas we were limiting ourselves to only a couple of books each this weekend. Definitely one of our top 3 in Wisconsin!',
+          imageUrl: '/wisconsin-bookstores/arcadia_books.png',
+          date: 'October 30, 2026'
+        },
+        {
+          id: 'books-on-main',
+          title: 'Books on Main',
+          description: 'This was also part of our wedding anniversary weekend and it was in a little town called Friendship! In the story they had a few adopted pigeons hanging out in cages being adorable, and the ceiling was covered with fake leaves, so the whole place had a really chill vibe to it. We got each other another book as part of our "book swap" tradition we started this anniversary, and we learned that the bookstore called Boswell in Milwaukee is a popular site for author visits. Another fun fact about this place is it\'s kitty-corner from the Dem and Republican Party offices which are right next to each other!',
+          imageUrl: '/wisconsin-bookstores/books_on_main.png',
+          date: 'October 31, 2026'
+        }
     ]
 };
