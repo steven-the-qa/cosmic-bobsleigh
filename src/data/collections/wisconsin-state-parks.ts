@@ -277,6 +277,38 @@ export const wisconsinStateParks: Collection = {
                     designation: 'park'
                 },
                 {
+                    id: "tower-hill",
+                    title: "Tower Hill State Park",
+                    description: "",
+                    imageUrl: "/wisconsin-state-parks/tower_hill.png",
+                    date: "October 30, 2026",
+                    designation: 'park'
+                },
+                {
+                    id: "natural-bridge",
+                    title: "Natural Bridge State Park",
+                    description: "",
+                    imageUrl: "/wisconsin-state-parks/natural_bridge.png",
+                    date: "October 31, 2026",
+                    designation: 'park'
+                },
+                {
+                    id: "rocky-arbor",
+                    title: "Rocky Arbor State Park",
+                    description: "",
+                    imageUrl: "/wisconsin-state-parks/rocky_arbor.png",
+                    date: "October 31, 2026",
+                    designation: 'park'
+                },
+                {
+                    id: "roche-a-cri",
+                    title: "Roche-a-Cri State Park",
+                    description: "",
+                    imageUrl: "/wisconsin-state-parks/roche_a_cri.png",
+                    date: "October 31, 2026",
+                    designation: 'park'
+                },
+                {
                     id: "amnicon-falls",
                     title: "Amnicon Falls State Park",
                     description: "",
@@ -333,14 +365,6 @@ export const wisconsinStateParks: Collection = {
                     designation: 'park'
                 },
                 {
-                    id: "natural-bridge",
-                    title: "Natural Bridge State Park",
-                    description: "",
-                    imageUrl: "",
-                    date: "",
-                    designation: 'park'
-                },
-                {
                     id: "nelson-dewey",
                     title: "Nelson Dewey State Park",
                     description: "",
@@ -367,30 +391,6 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "perrot",
                     title: "Perrot State Park",
-                    description: "",
-                    imageUrl: "",
-                    date: "",
-                    designation: 'park'
-                },
-                {
-                    id: "roche-a-cri",
-                    title: "Roche-a-Cri State Park",
-                    description: "",
-                    imageUrl: "",
-                    date: "",
-                    designation: 'park'
-                },
-                {
-                    id: "rocky-arbor",
-                    title: "Rocky Arbor State Park",
-                    description: "",
-                    imageUrl: "",
-                    date: "",
-                    designation: 'park'
-                },
-                {
-                    id: "tower-hill",
-                    title: "Tower Hill State Park",
                     description: "",
                     imageUrl: "",
                     date: "",
