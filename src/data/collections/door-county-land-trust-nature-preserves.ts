@@ -83,31 +83,38 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
             date: 'September 6, 2026'
         },
         {
+            id: 'chambers-island',
+            title: 'Chambers Island Nature Preserve',
+            description: '',
+            imageUrl: '/door-county-land-trust-nature-preserves/chambers_island_nature_preserve.png',
+            date: 'October 3, 2026'
+        },
+        {
             id: 'ephraim-anderson-pond',
             title: 'Ephraim Nature Preserve at Anderson Pond',
             description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/ephraim_nature_preserve_at_anderson_pond.jpeg',
+            imageUrl: '',
             date: ''
         },
         {
             id: 'kangaroo-lake',
             title: 'Kangaroo Lake Nature Preserve',
             description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/kangaroo_lake_nature_preserve.jpeg',
+            imageUrl: '',
             date: ''
         },
         {
             id: 'oak-road',
             title: 'Oak Road Nature Preserve',
             description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/oak_road_nature_preserve.jpeg',
+            imageUrl: '',
             date: ''
         },
         {
             id: 'white-cliff',
             title: 'White Cliff Nature Preserve',
             description: '',
-            imageUrl: '/door-county-land-trust-nature-preserves/white_cliff_nature_preserve.jpeg',
+            imageUrl: '',
             date: ''
         },
     ]

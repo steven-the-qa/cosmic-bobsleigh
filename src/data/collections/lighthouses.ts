@@ -183,8 +183,8 @@ export const lighthouses: Collection = {
                     id: 'chambers-island',
                     title: 'Chambers Island Lighthouse',
                     description: '',
-                    imageUrl: '',
-                    date: ''
+                    imageUrl: '/lighthouses/door-county/chambers_island.png',
+                    date: 'October 3, 2026'
                 },
                 { id: 'ashland-harbor-breakwater', title: 'Ashland Harbor Breakwater Light', description: '', imageUrl: '', date: '' },
                 { id: 'calumet-light', title: 'Calumet Light', description: '', imageUrl: '', date: '' },
