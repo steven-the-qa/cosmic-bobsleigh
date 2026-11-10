@@ -271,7 +271,7 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "big-foot-beach",
                     title: "Big Foot Beach State Park",
-                    description: "",
+                    description: "This park in Lake Geneva had more trails than we had energy for, but we happened to get lucky on the trail we DID go on because we saw a groundhog! It was next to the trail lumbering back to its hole in the ground.",
                     imageUrl: "/wisconsin-state-parks/big_foot_beach.webp",
                     date: "August 2, 2026",
                     designation: 'park'
@@ -279,7 +279,7 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "tower-hill",
                     title: "Tower Hill State Park",
-                    description: "",
+                    description: "This park's trail has a gradual incline that gets steeper once you get toward the tower. We were amazed by just how tall the shaft is, and you can view it from the bottom looking up or the top looking down. We let our Merlin app listen for birds while we were examining the artifacts in the house, and that's how we recorded the call of a red-tailed hawk! On the way back, we took a different trail and got to enjoy a cute little gazebo for a while to give our legs a rest.",
                     imageUrl: "/wisconsin-state-parks/tower_hill.png",
                     date: "October 30, 2026",
                     designation: 'park'
@@ -287,7 +287,7 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "natural-bridge",
                     title: "Natural Bridge State Park",
-                    description: "",
+                    description: "This one went right into our top 5 for sure. The hike was pretty easy, and the payoff was huge, and not just because the bridge is massive! We had fun clambering up a hill across from the bridge to get a better vantage point, and it was funny to see some of the things people had carved into the sandstone (even if it's dumb that someone wrote 'TOES' on a wall).",
                     imageUrl: "/wisconsin-state-parks/natural_bridge.png",
                     date: "October 31, 2026",
                     designation: 'park'
@@ -295,7 +295,7 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "rocky-arbor",
                     title: "Rocky Arbor State Park",
-                    description: "",
+                    description: "We found a big rock along the trail that reminded us of Haystack Rock from our trip out west, so that's the photo we went with! We made it all the way down that trail to the broken staircase near the interstate before heading back, but the rock formations we saw along the way were by far the coolest part of the park.",
                     imageUrl: "/wisconsin-state-parks/rocky_arbor.png",
                     date: "October 31, 2026",
                     designation: 'park'
@@ -303,7 +303,7 @@ export const wisconsinStateParks: Collection = {
                 {
                     id: "roche-a-cri",
                     title: "Roche-a-Cri State Park",
-                    description: "",
+                    description: "Admittedly, we had to ask a couple for directions to the petroglyphs because the signs weren't super clear about it, but we got there! The petroglyphs are old carvings in the tall mound at the center of the park. We noticed a lot of blue jays were nesting high up in that mound, flying to and from the mound the entire time we were there!",
                     imageUrl: "/wisconsin-state-parks/roche_a_cri.png",
                     date: "October 31, 2026",
                     designation: 'park'
