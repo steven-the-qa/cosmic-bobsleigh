@@ -85,7 +85,7 @@ export const doorCountyLandTrustNaturePreserves: Collection = {
         {
             id: 'chambers-island',
             title: 'Chambers Island Nature Preserve',
-            description: '',
+            description: 'This nature preserve seemed largely synonymous with the section of the island that led to the lighthouse, but we didn\'t end up with time to go check out the little lake on the island, Lake Mackaysee, before the tour boat was ready to depart. We did get to check out the lighthouse, though!',
             imageUrl: '/door-county-land-trust-nature-preserves/chambers_island_nature_preserve.png',
             date: 'October 3, 2026'
         },

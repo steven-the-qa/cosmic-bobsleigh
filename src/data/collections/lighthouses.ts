@@ -182,7 +182,7 @@ export const lighthouses: Collection = {
                 {
                     id: 'chambers-island',
                     title: 'Chambers Island Lighthouse',
-                    description: '',
+                    description: 'This was the last lighthouse left to visit in Door County! We did it! Yayyyy 🎉 The view from the top of the lighthouse was pretty, but a bit cramped with the rest of the tour group jockeying for space up there lol Definitely worth the mile-and-a-half hike it took to get there, most of which was flat ground!',
                     imageUrl: '/lighthouses/door-county/chambers_island.png',
                     date: 'October 3, 2026'
                 },
